@@ -1,0 +1,11 @@
+{
+ "name": "微出国·学 · LLQP 人寿保险牌照",
+ "short_name": "LLQP 人寿保险牌照",
+ "start_url": "./index.html",
+ "scope": "./",
+ "display": "standalone",
+ "background_color": "#ffffff",
+ "theme_color": "#0f172a",
+ "lang": "zh-CN",
+ "icons": []
+}

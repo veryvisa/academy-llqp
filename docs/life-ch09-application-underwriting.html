@@ -1,0 +1,691 @@
+<!doctype html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<title>投保与核保：保险公司在查什么，加费、除外与拒保怎么来的（Application and Underwriting） · 微出国 · 学</title>
+<link rel="stylesheet" href="../assets/style.css?v=1789338933">
+<script>var PREV_URL="life-ch08-business-life.html";var NEXT_URL="life-ch10-assessing-needs.html";</script>
+<link rel="manifest" href="../manifest.webmanifest">
+</head>
+<body class="vv">
+<header class="vv-header">
+  <a class="vv-brand" href="../index.html"><svg viewBox="102.305 90.391 73.617 59.957" width="28" aria-hidden="true" class="mark">
+<path fill="#30D9C4" d="M 107.894531 95.808594 L 127.277344 95.808594 C 127.277344 95.808594 129.507812 95.628906 130.835938 97.679688 C 131.585938 98.910156 131.65625 100.316406 131.082031 101.546875 L 121.609375 117.953125 C 121.609375 117.953125 120.335938 120.65625 117.011719 120.824219 C 113.714844 120.910156 112.242188 118.40625 112.242188 118.40625 L 103.722656 103.652344 C 103.722656 103.652344 102.304688 101.792969 103.09375 99.332031 C 103.878906 96.878906 106.148438 95.773438 107.894531 95.808594 "/>
+<path fill="#0082CA" d="M 115.964844 124.792969 C 115.847656 124.59375 116.09375 124.378906 116.277344 124.519531 C 117.195312 125.21875 118.664062 125.902344 120.683594 125.515625 C 122.164062 125.210938 123.550781 124.296875 124.402344 122.757812 C 125.242188 121.300781 138.8125 97.8125 138.8125 97.8125 C 138.8125 97.8125 141.9375 90.917969 150.207031 90.550781 L 169.96875 90.550781 C 169.96875 90.550781 173 90.390625 174.503906 93.40625 C 175.921875 96.433594 173.941406 98.695312 173.667969 99.109375 C 173.394531 99.523438 142.203125 146.726562 142.203125 146.726562 C 142.203125 146.726562 140.003906 150.347656 135.40625 150.347656 C 130.808594 150.347656 128.707031 146.878906 128.417969 146.398438 C 128.175781 145.992188 118.835938 129.78125 115.964844 124.792969 "/></svg>微出国 · 学</a>
+  <nav><a href="../index.html">路线</a><a href="../slides.html">讲义</a><a href="../docs/" aria-current="page">讲解</a><a href="../drill.html">练习</a><a href="../exam.html">模考</a><a href="../progress.html">进度</a></nav>
+  <button class="theme" onclick="var r=document.documentElement,d=r.getAttribute('data-theme')==='dark';r.setAttribute('data-theme',d?'light':'dark');localStorage.setItem('vv-theme',d?'light':'dark')">◐</button>
+</header>
+<main><a href="life-ch08-business-life.html" class="vv-float-nav vv-float-nav--prev" title="上一篇: 企业寿险：关键人、买卖协议与公司持有保单，温哥华小老板最常问的三件事"><span class="vv-float-nav__icon">‹</span><span class="vv-float-nav__card"><small>← 上一篇</small><strong>企业寿险：关键人、买卖协议与公司持有保单，温</strong></span></a><a href="life-ch10-assessing-needs.html" class="vv-float-nav vv-float-nav--next" title="下一篇: 评估客户处境：一个人到底需要多少寿险（收入替代法 vs 资本需求法）"><span class="vv-float-nav__card"><small>下一篇 →</small><strong>评估客户处境：一个人到底需要多少寿险（收入替</strong></span><span class="vv-float-nav__icon">›</span></a><div class="vv-max-dock"><span class="vv-max-dock__hint">键盘 ← → 切页 | Esc 退出</span><button class="vv-reader-btn vv-reader-btn-max" onclick="toggleDocMaximize()">✕ 退出专注</button></div>
+<div class="doc-wrap">
+  <article class="doc">
+    <div class="doc-bar">
+      <p class="crumb"><a href="../index.html">路线</a> › 人寿保险（E311）</p>
+      <div class="doc-bar-actions">
+        <span class="vv-reader-hint">键盘 ← → 翻页</span>
+        <button class="vv-reader-btn vv-aside-btn" onclick="toggleSidebarCollapse()" title="折叠/展开右侧栏">◧ 折叠侧栏</button>
+        <button class="vv-reader-btn vv-reader-btn-max" onclick="toggleDocMaximize()" title="最大化专注阅读 (快捷键 F)">⛶ 专注阅读</button>
+      </div>
+    </div>
+    <h1>投保与核保：保险公司在查什么，加费、除外与拒保怎么来的（Application and Underwriting）</h1>
+    <div class="doc-meta"><span class="vv-badge vv-badge--accent">人寿保险（E311） · 考纲 25%</span><span class="vv-badge">14,724 字</span><span class="vv-badge">约 29 分钟</span></div>
+    <p>这一节讲 E311 第 9 章：投保与核保。考纲位置在 component 3「落实推荐」（占本模块 25% 权重），对应两个子能力——评估核保标准对客户处境的影响、确认落实推荐所需满足的条件。读者有两类：准备 LLQP Life 模块的考生，以及已执业、要向客户解释「为什么我的保费比朋友贵」的代理人。</p>
+<p>学完这一节，你应该能做三件事：分清核保三类风险各自在问什么、常见信息来源是什么；说清一份申请从填表到交付、再到 10 天冷静期结束的完整时间轴，每一步代理人能做什么、不能做什么；答出教材没讲但现行法律存在的两条边界——核保能不能碰基因检测结果、身份核验背后的法律义务是什么。</p>
+<div class="vv-callout vv-callout--info">
+<p><span class="vv-callout__icon">ℹ️</span></p>
+<div>
+<p><strong>本页的数字都是带日期的快照</strong></p>
+<p>教材（AMF 9e，2022）在这一章给的很多数字是「示例」而非行业统一标准（TIA 保额上限、财务核保收入倍数、非公民保额上限，教材原文自己写的是「one insurance company」的做法）。本页照实标注哪些是机制、哪些是某一保司的示例、哪些是本课尚未核实的现行值。</p>
+</div>
+</div>
+<hr />
+<h2 id="s1">一、制度设计与底层逻辑：核保在博弈什么</h2>
+<h3 id="s1-1">1. 核保是一场信息不对称的博弈</h3>
+<p>保司卖的是一份承诺：收固定的保费，换取未来某个不确定时点支付一笔确定的身故金。这笔交易能不能成立，取决于保司能不能把「这个人的死亡风险有多大」估计准，但关于这个风险，<strong>申请人知道的永远比保司多</strong>。核保（<strong>underwriting</strong>）就是保司用来消除这道信息差的程序：从一个基准分（如 100 分）出发，代表「标准人」的死亡率风险，再按医学、财务、生活方式一长串标准逐项加减分，汇总后把申请人放进某一个风险等级。</p>
+<p>这场博弈的法律后果很具体：如实告知是保司愿意按约定费率承保的前提，隐瞒或谎报则赋予保司事后撤单或拒赔的权利——这条规则在合同法层面就是「重大事实（<strong>material fact</strong>）披露义务」，核保程序本身就是在执行这项义务的核查。</p>
+<h3 id="s1-2">2. 代理人是保司的眼睛，不是核保员</h3>
+<p>教材把代理人的角色定得很窄：<strong>实地核保（field underwriting）</strong>——代理人可观察风险、收集事实并按权限判断是否可申请临时保障，但不能代替核保员决定正式承保等级；代理人只负责收集信息、核实身份、见证签字，常被称为保司的「眼睛」（如今可能是通过视频会议完成的虚拟眼睛）。这条边界同时划定了代理人的义务：确保申请表信息完整准确、让申请人明白不实信息的后果、核验身份证件、见证签字——可以按申请人逐项口述如实录入，并交其核对确认；不得擅自替申请人回答健康问题、改答案或编造事实，也不能替申请人判断「这算不算重大事实」。</p>
+<p>代理人意见栏（<strong>agent's comments</strong>）是这条边界的一个具体体现：代理人要在这里记录他对申请人雇佣稳定性、健康或吸烟状况的个人观察，尤其是当这些观察与申请人自述矛盾时。这一栏写的是「我看到了什么」，不是「我认为这个人该不该被加费」——后者仍然是核保员的活。</p>
+<h3 id="s1-3">3. 三类风险，各自答不同的问题</h3>
+<p>核保员真正在评估的不是一个笼统的「风险」，而是三个性质不同的问题，各自的信息来源也不一样：</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>风险类别</th>
+<th>核保员在问什么</th>
+<th>常见信息源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>医疗风险（physical/medical risk）</strong></td>
+<td>这个人的身体状况会不会让他比同龄人更早去世？</td>
+<td>投保单医疗问卷、体检（medical exam，含验血验尿心电图）、主治医生报告（Attending Physician's Statement, APS）、MIB 编码记录</td>
+</tr>
+<tr>
+<td><strong>财务风险（financial risk）</strong></td>
+<td>申请的保额是不是真的对应这个人的经济处境，还是被用来做别的事？</td>
+<td>投保单财务申报（职业/收入/净值）、财务证明文件、代理人意见栏对雇佣稳定性的观察、投保历史（是否已有或在办的其他保单）</td>
+</tr>
+<tr>
+<td><strong>道德风险（moral hazard）</strong></td>
+<td>这份保单会不会被用来投机、诈保，或者申请人本身的行为方式带来了非医疗性的死亡风险？</td>
+<td>MIB 记录的危险爱好与不良驾驶史编码、机动车记录（MVR）、调查报告（inspection report，多经电话完成，大额保单可能上门）、代理人意见栏对诚实度的观察</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>核保结论是三者叠加后的综合判断，不是各自独立打分再简单相加。</strong> 财务与道德风险都正常的申请人，仍可能因医疗风险单项过高被加费；医疗完全健康但保额与收入严重不匹配的申请人，核保员会先问「你为什么需要这么多保额」。</p>
+<hr />
+<h2 id="s2">二、2026 现行政策与数字</h2>
+<h3 id="s2-1">1. 核保结论：从最优惠到拒保的五档</h3>
+<p>核保结束时，申请人会被归进以下五档之一，档位之间的法律后果各不相同：</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>档位</th>
+<th>什么意思</th>
+<th>法律后果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>优选（preferred）</strong></td>
+<td>风险显著低于标准人群，通常需要额外的医学筛查才能确认</td>
+<td>按优选费率承保，保费低于标准档</td>
+</tr>
+<tr>
+<td><strong>标准（standard）</strong></td>
+<td>风险与基准人群相当</td>
+<td>按标准费率全额承保</td>
+</tr>
+<tr>
+<td><strong>加费（rated）</strong></td>
+<td>风险高于平均水平，但仍在保司愿意承保的范围内</td>
+<td>在标准保费基础上加收额外保费（评级加费），仍然全额承保</td>
+</tr>
+<tr>
+<td><strong>除外（exclusion）</strong></td>
+<td>只有单一顾虑因素，保司选择用一条除外条款处理，而不是整体加费或拒保</td>
+<td>费率及其他条件另核，但对特定风险（如某类高风险运动、特定国家旅行身故）不予理赔</td>
+</tr>
+<tr>
+<td><strong>拒保（declined）</strong></td>
+<td>风险超出保司愿意承保的范围</td>
+<td>临时性拒保（注明何时可重新申请）或永久性拒保两种</td>
+</tr>
+</tbody>
+</table></div>
+<p>两条机制值得单独记住。第一，<strong>加费不是惩罚，是价格调整</strong>——承认风险更高但仍完成承保；除外是限定保障范围，评级是调整价格，两者可能同时出现；不能保证有除外就保留原费率。第二，<strong>已有效承保并符合续保保证的寿险，不因以后单纯健康恶化重新作个人风险评级；签发至交付生效之间仍须核变化</strong>——单向保护投保人；反过来加费原因消失（如吸烟者戒烟满一定年限），投保人可申请撤销或降低评级、相应减保费，保司出于竞争压力通常愿意配合。</p>
+<p><strong>核保补件、附条件承保与拒保后替代方案的边界</strong>：核保过程中最常见的不是「一次性通过或拒绝」，是核保员回头要求补件——补交体检报告、补做特定检验、补交财务证明、或补一份医生说明信；补件本身不是加费或拒保的信号，只是核保员判断信息不够充分。「附条件承保」在实务里通常就是加费档或除外条款档的另一种说法——保司愿意承保，但条件不同于申请人原本预期的标准费率。<strong>拒保之后不是走投无路</strong>：拒保分临时性（注明何时可重新申请，如「戒烟满一年后」）与永久性两种；即便是永久性拒保，也不构成对<strong>另一家</strong>保司投保资格的法律障碍——以 Canada Protection Plan from Foresters Financial 的公开核保说明为例（品牌/销售渠道与实际承保法人须分别核对），其投保单本身<strong>不询问</strong>申请人是否曾在别处被拒保、加费或延期（<a class="src-ref" href="https://www.cpp.ca/advisors/underwriting/" title="Underwriting Guide for Advisors">Canada Protection Plan</a>）。换句话说，「换一家保司重新申请」「换一条核保通道（如从传统核保转简化承保或担保承保）」是教材未展开但真实存在的执业路径；但这不等于「随便换一家就能绕开风险」——MIB 共享的是具体医疗/道德风险编码事实，不是「被拒保」这个结论本身，新保司仍会通过自己的问卷与 MIB/处方数据库独立评估。</p>
+<h3 id="s2-2">2. 哪些因素触发加费，哪些只是费率分类：CISRO 样题的经典陷阱</h3>
+<p>这是本章最容易答错的一类判断，也是 CISRO 公开样题第一题的考点（<a class="src-ref" href="https://www.cisro-ocra.com/Documents/View/168" title="Examples of exam questions – Life insurance（另 170 A&amp;S / 171 Seg / 169 Ethics common law）">CISRO</a>）：<strong>同一份生活方式清单里，有的因素会把申请人推进「加费」档，有的因素只是决定他落在哪一个标准费率分类里</strong>。</p>
+<p>吸烟就是最典型的例子。吸烟状态（吸烟人 / 非吸烟人）是保司设定<strong>基础费率分类</strong>的依据，几乎每一张定期险或终身寿险的费率表都按这两档分别定价——但这不等于「吸烟人的保单是一张加费保单」：加费是叠加在某一档基础费率之上的额外风险溢价，吸烟人费率本身就是一档独立的标准费率，两者不在同一层面。偶尔小酌同理：只要不构成滥用或伴随其他健康问题，通常不会单独触发加费。</p>
+<p>真正会把申请人推向加费或除外的，是那些<strong>超出常规费率分类框架</strong>的因素：频繁的高风险爱好（滑翔伞、潜水、赛车、后山滑雪）、频繁前往高风险地区旅行、多次严重的驾驶违规记录——它们代表的是附加在基础风险之上、可以被单独度量定价的额外死亡率，而吸烟与否早已在费率表里被充分定价过了。</p>
+<div class="vv-callout vv-callout--warn">
+<p><span class="vv-callout__icon">⚠️</span></p>
+<div>
+<p><strong>「会影响保费的因素」≠「会导致加费的因素」</strong></p>
+<p>教材列出的核保标准清单很长——年龄、性别、健康状况、职业、生活方式——它们全部会影响保费，但影响路径不同：年龄和性别决定你落在哪张费率表上；健康状况决定你在标准/加费/除外/拒保之间落在哪一档；职业与生活方式两者都可能发生，取决于风险的严重程度与频率。把「影响保费」直接等同于「会加费」，是本章第一位的陷阱形态。</p>
+</div>
+</div>
+<h3 id="s2-3">3. 三列双口径之一：基因检测结果不能问，家族病史可以问</h3>
+<p>教材 §9.2.3.2 详细列出核保医疗问卷内容，明确包含「父母与/或兄弟姐妹健康问题」这一项家族病史（family history）问询——这本身完全合法。但<strong>教材全章没有一处提到《基因非歧视法》（Genetic Non-Discrimination Act, GNDA）</strong>，读者容易把家族病史问询与基因检测结果这两件性质不同的事混为一谈。</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>判据</th>
+<th>教材（2022）怎么写</th>
+<th>2026 现行</th>
+<th>考场答 · 柜台做</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>家族病史问询</td>
+<td>§9.2.3.2 列为标准医疗问卷项目</td>
+<td>现行法律未改变——询问家族病史仍合法，属核保正当信息来源</td>
+<td>题目问「能否询问父母是否患某病」，答<strong>能</strong></td>
+</tr>
+<tr>
+<td>基因检测结果</td>
+<td><strong>全章未提及</strong></td>
+<td>《基因非歧视法》（S.C. 2017, c. 3）2017 年生效、2020 年最高法院裁定合宪，现行有效（<a class="src-ref" href="https://laws-lois.justice.gc.ca/eng/acts/g-2.5/" title="Genetic Non-Discrimination Act (S.C. 2017, c. 3)">Justice Laws Website (Govern…</a>）：<strong>禁止把检测或披露结果作为合同条件，也禁止因拒检或拒绝披露而拒绝有关合同活动；未经本人书面同意，不得收集、使用或披露结果</strong></td>
+<td>题目问「能否要求提供基因检测报告」，答<strong>不能</strong>；柜台：客户拒绝提供检测结果，不能因此拒保或加费</td>
+</tr>
+</tbody>
+</table></div>
+<p>一句话记住：<strong>问「你父母得过什么病」合法，要「你的基因检测报告」不合法</strong>——GNDA 还禁止强迫进行检测，并不限纸本文件；涉及结果的收集、使用及披露须看 s.5 书面同意条件。</p>
+<h3 id="s2-4">4. 三列双口径之二：免体检额度，教材写的是示例，实务额度按当前核保手册</h3>
+<p>教材写道，疫情期间及之后，很多保司放宽了体检门槛，部分保司免体检额度提高到「高达 $2,000,000」（视年龄而定）——这是教材原文自己的措辞，本身带不确定性，没有点名具体保司。</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>判据</th>
+<th>教材（2022）说</th>
+<th>2026 现行/市场</th>
+<th>考场答 · 柜台做</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>免体检核保额度</td>
+<td>"as much as $2,000,000"，示例性质，未点名保司</td>
+<td>本页不把教材示例当作2026年报价上限；实务额度随公司、年龄和承保流程变化，须查当前核保手册</td>
+<td>考场：以指定教材及题干为准，重点分清「加速核保 vs 简化承保」机制，不把示例当统一额度；柜台：额度须查签约保司当前核保指引，不能凭教材或本页数字报价</td>
+</tr>
+</tbody>
+</table></div>
+<p>长青且能考能用的是机制本身：教材把两种流程作如下对比；现行产品使用相同营销名称时仍须核实际流程。<strong>加速核保（accelerated underwriting）是「全面核保但跳过传统体检」</strong>，算法与既有数据（MIB、驾驶记录、信用记录）代替体检，仍给出优选、标准、加费等分级；<strong>简化承保（simplified issue）是「短表格 + 即时数据直接接受或拒绝」</strong>，无优选费率也无加费评级，跳过的信息更多，无体检保单保费通常整体更高。两者都不体检，区别在于是否仍分级。</p>
+<div class="vv-callout vv-callout--danger">
+<p><span class="vv-callout__icon">✕</span></p>
+<div>
+<p><strong>把加速核保当成简化承保来卖，是执业风险</strong></p>
+<p>客户以为「免体检」就是「随便买、保费差不多」，但一张走加速核保流程的保单仍然可能因为吸烟或危险爱好被评为加费；而走简化承保流程的保单，保费本身就整体偏高，与被评级无关。跟客户说清楚他走的是哪一条流程，是代理人的专业价值所在。</p>
+</div>
+</div>
+<h3 id="s2-5">5. 代理人核验身份背后的法律义务：教材没接上的那一段</h3>
+<p>教材 §9.1.2 要求代理人「核验申请人与被保险人的身份（如驾照、护照）」，但全章没说明这个动作背后的法律依据。现行制度下，寿险公司、经纪与代理人是《犯罪所得（洗钱）和恐怖主义融资法》（<strong>PCMLTFA</strong>）下的<strong>报告实体（reporting entity）</strong>，须履行客户身份核实、合规计划（合规官、书面政策、风险评估、<strong>两年一次有效性复查</strong>）、持续监控、受益所有权核实等义务；触发时按类提交报告——可疑交易、大额现金交易（达到 $10,000，符合条件的交易适用 24 小时合并规则；LCTR 通常在收到现金之日后 15 个日历日内提交）、大额虚拟货币交易、被列名人员或实体财产（<a class="src-ref" href="https://fintrac-canafe.canada.ca/re-ed/li-eng" title="Life insurance sector guidance">FINTRAC</a>）。执行机构是 <strong>FINTRAC</strong>。若代理人是保险公司或经纪公司的雇员，多数所列义务由保险公司负责；可疑交易报告则同时适用于雇员及雇主。须按个人角色及交易触发条件分配责任。</p>
+<p>也就是说，「看一眼驾照」这个动作不是流程惯例，是一项独立的法定义务——它和「核对健康问卷填得对不对」性质完全不同：核对驾照用于身份识别，其中法定义务须看反洗钱触发条件；健康问卷则关系保险合同的重大事实披露，两者恰好发生在填表同一步，容易被当成同一件事。</p>
+<hr />
+<div class="vv-callout vv-callout--info">
+<p><span class="vv-callout__icon">🔧</span></p>
+<div>
+<p><strong>法定核验有触发点和例外</strong></p>
+<p>FINTRAC对information records、交易和向受益人首次付款等分别设要求，并列有exempt policy等例外；可疑交易又须另判。不能把所有保单签署都写成「当天核实所有受益人」。商业信息跨省或跨境时，PIPEDA也可能适用。<a href="https://fintrac-canafe.canada.ca/guidance-directives/client-clientele/client/li-eng.php">fintrac-canafe.canada.ca</a> <a href="https://www.priv.gc.ca/en/privacy-topics/privacy-laws-in-canada/the-personal-information-protection-and-electronic-documents-act-pipeda/pipeda_brief/">priv.gc.ca</a></p>
+</div>
+</div>
+<h2 id="s3">三、实务流程：从填表到冷静期结束</h2>
+<h3 id="s3-1">1. 投保流程时间轴</h3>
+<p>下面是教学用的常见流程；电子申请、承保方式及临时保障起点可不同，实际生效按合同条件判断：</p>
+<p><strong>① 填写申请单</strong>（代理人协助，即实地核保）→ <strong>② 缴纳首期保费并单独申请临时保险协议</strong>（若客户需要立即获得过渡保障）→ <strong>③ 保司核保</strong>（核保指引 + APS + 体检 + MIB + MVR + 调查报告 + 财务核保，必要时用加速核保算法）→ <strong>④ 核保结论</strong>（标准/优选/加费/除外/拒保）→ <strong>⑤ 签发保单</strong> → <strong>⑥ 交付</strong>（代理人确认申请人状况未变）→ <strong>⑦ 投保人签署接受</strong> → <strong>⑧ 按合同规定的收单时点起算审阅期（常见至少 10 天）</strong>。</p>
+<h3 id="s3-2">2. 临时保险协议：核保期间的过渡保障</h3>
+<p>从递交申请到保司做出核保结论，中间往往有几周甚至更久的空窗期。<strong>临时保险协议（Temporary Insurance Agreement, TIA）</strong>——业内也称有条件收据（conditional receipt）——就是为了填补这段空窗期而设计的过渡性保障。</p>
+<p>教材示范 TIA 生效需满足以下条件；具体协议可能采用不同健康问题、年龄及起算方式：提交完整正式申请、缴纳至少一个月保费、单独填写 TIA 专用申请表；这份表上的健康问卷<strong>只要有任何一项回答「是」，就自动拒绝签发</strong>——把「核保结论还没出来」和「已知存在健康顾虑」明确分开处理。教材举例的年龄限制是 15 天到 70 岁，因保司而异。</p>
+<p><strong>两家保司的真实条款实例（2026-09-05 回读，非教材虚拟示例）</strong>：Equitable Life 与 RBC Life 的 TIA 条款高度一致——保额上限均为<strong>申请保额与 $1,000,000 取较小者</strong>（含同一被保险人名下其他 TIA 累计不超 $1,000,000）；有效期均为 <strong>90 天</strong>（RBC 明确写「自申请签署日起 90 天」，Equitable 写「自本协议保险生效日起 90 天」）；均不覆盖意外身故附加险、重疾附加险等其他给付；自杀除外均限于退还已缴保费。RBC 的条款更细：年龄限制写死「出生至少 15 天、不超过上次生日年龄 65 岁」，健康问卷是<strong>4 道具体问题</strong>（心脏/血压/中风/糖尿病等重大病史、近一年住院或被建议住院、有尚未完成的检查或手术建议、近一年有保险申请被拒/加费/修改），任一答「是」即不得受理，比教材泛泛写的「任一项答是」更具体。两份已取得文件可证明各自采用「$100 万上限 + 90 天」，不能推出全行业统一，更不能断言教材其他数字是虚构。教材的 $250,000/$500,000 与 60 天保留为其示例，办理前确认当前适用表格版本（<a class="src-ref" href="https://advisor.equitable.ca/advisor/getattachment/1d491aeb-7620-4b1a-99cd-2d991c1ddf4c/Temporary-Life-Insurance-Agreement-TIA_EN.pdf" title="Application for Life and/or Critical Illness Insurance — Section 20: Temporary Life Insurance Agreement">The Equitable Life Insurance…</a>、<a class="src-ref" href="https://www1.rbcinsurance.com/pdf/life/src/forms/customerservice/src.en.5.3.14.pdf" title="Application for Life Insurance — Temporary Life Insurance Application / Receipt / Agreement + BC Disclosure Statement">RBC Life Insurance Company</a>）。</p>
+<p>TIA 按具体协议所列最早终止事件确定。RBC 所引文件列 90 天、公司通知与正式保单生效；Equitable 还列其他终止事件。不得把未及时收到退款理解为临时保障必然仍在；RBC 的条款额外写明——申请人自签署起 <strong>90 天内</strong>若保司未给出核保结论，<strong>该申请视为已被拒保（deemed decline）</strong>，这条时限本库此前未记录。</p>
+<p>代理人在这一步有实质裁量权：<strong>只有在①对申请没有疑虑、②已收到首期保费两个条件都满足时，才应签发 TIA</strong>——教材举的例子是代理人基于糖尿病、高血压、吸烟或持续咳嗽的观察，主动拒绝签发。这不是越权替客户做核保判断，而是「我已心存疑虑，不该在核保结论出来前给出过渡保障」。</p>
+<h3 id="s3-3">3. 保司核保：谁在查什么</h3>
+<p>完整风险手册可能限内部使用，但部分公司公开顾问核保指引，规定各项条件的评估要点、需补充的信息、常见结果范围与身高体重标准表；代理人可依据适用版本和经验说明可能结果，不能把预判当承保承诺，这是提前设定合理预期的价值所在。</p>
+<p>几个信息源的边界值得单独记住。<strong>主治医生报告（APS）</strong>由核保员针对特定病史直接向申请人的医生索取，费用由保司承担。<strong>MIB</strong> 是会员保司间共享编码化风险信息（含医疗与非医疗，如危险爱好、不良驾驶记录）的组织——但 <strong>MIB 报告本身不能单独作为拒保依据，核保员必须先核实报告所指的问题确实存在</strong>，才能据此决策；它的价值在于防止申请人跨保司隐瞒同一份病史重复投保。<strong>机动车记录（MVR）</strong>提供 3–10 年驾驶史（因司法辖区而异），违规记录导致加费。<strong>财务核保</strong>核对保额是否合理——收入替代型保单常按年龄段设收入倍数上限（教材举例 16–30 岁最高 30 倍，60–69 岁降至 10 倍），同时判断申请人是否负担得起保费。</p>
+<p>非加拿大公民按身份类别分层处理：永久居民一般与公民同等待遇，但居加不满一年或频繁返回原籍国可能需额外体检、评级或地域除外条款；等待永久居民身份者，部分保司按职业技能等级设保额上限（教材举例：高技能职业最高、技术工种次之、住家看护类最低，配偶子女按比例）；<strong>教材 2022 年概括国际学生通常不合资格，但不能当成现行禁令</strong>：iA 官方新来加者页明确，国际学生可申请最高 $500,000 寿险；仍须符合该产品资格与核保条件。频繁旅行者可能触发地域除外或评级加费；危险爱好核保员问的是频率、经验认证、事故史，多用除外条款而非直接拒保。</p>
+<h3 id="s3-4">4. 签发与交付：核保没有真正结束</h3>
+<p>签发保单不是核保流程的终点。<strong>交付本身被视为核保流程的延续</strong>——代理人必须核对合同内容，并确认申请人（与被保险人）自申请以来的健康、职业、爱好、财务状况<strong>没有发生重大变化</strong>。加速核保案件可能全程电子化交付，甚至短信通知；但代理人若无法确认「无重大变化」，<strong>不得完成交付，必须联系核保员</strong>。</p>
+<p><strong>交付要件的真实条款写法（RBC 投保单，2026-09-05 回读）</strong>：保单生效须<strong>同时满足三个条件</strong>——① 交付的保单被申请人/所有人接受；② 首期保费<strong>全额</strong>付清；③ 从申请到交付之间，被保险人的可保性<strong>没有发生变化</strong>。代理人须在投保单上签署书面声明，确认「只有在核实上述交付条件完全满足、且可保性没有变化后，才会交付保单」——这不是口头承诺，是投保单里代理人自己签字确认的一项声明，出问题时会被追责到这一条。</p>
+<p>寿险审阅期应按实际合同及适用的 CLHIA 指引起算，常见为收到保单后的至少 10 天；不能把晚签接受书当成自动延后起算。审阅取消与保险人因重大不实陈述撤销合同是不同权利：后者必须有适用法律和事实基础，并非两年内可随意撤单。</p>
+<h3 id="s3-5">5. 信息不实的三种情形，法律后果完全不同</h3>
+<p>信息不全通常需要补件；重大不实陈述的后果则须区分欺诈、一般重大错误及年龄误报等专门规则。BC《Insurance Act》s52 对一般重大不实陈述的保护条件，是合同或有关新增保障已在被保险人生存期间有效满两年，且不存在欺诈。不是「保险人两年后才发现便一律不能处理」；例如两年内死亡、两年后才提出或完成理赔，不能机械获得这项保护。</p>
+<p>欺诈不能援用该不可抗辩保护，但也不能把它改写成诉讼程序永无时限。年龄误报另按 s54 调整保障；超出可投保年龄还涉及该条特别条件。代理人应记录原始回答和更正过程，将争议交承保及理赔部门处理，不自行承诺必赔或必拒。</p>
+<hr />
+<h2 id="s4">四、2026 市场：免体检、快捷出单与保证承保要分开</h2>
+<p>以下是 2026-09-04 回读官网确认的产品实例。各行说明它对应本章的哪个判断；实际销售资格和责任范围仍须核对具体合同。</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>公司与产品线</th>
+<th>对应本章的判断与使用边界</th>
+<th>官网出处</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>RBC Insurance · RBC Simplified Term Life Insurance</td>
+<td>官网说符合条件者可能免体检，并非每名申请人都自动获批。代理人仍须完整记录健康与生活习惯问题，不能把 simplified 翻成「什么都不用告知」。</td>
+<td><a href="https://www.rbcinsurance.com/en-ca/life-insurance/term-life-insurance/">RBC Insurance</a></td>
+</tr>
+<tr>
+<td>Canada Life · Canada Life My Term</td>
+<td>官网把健康史与个人情况列入价格因素，同时提供有条件的合同转换选项。初次申请时的核保，与已有转换权行使时不需重新证明健康，是两个不同环节。</td>
+<td><a href="https://www.canadalife.com/insurance/life-insurance/term-life-insurance/myterm.html">canadalife.com</a></td>
+</tr>
+<tr>
+<td>iA Financial Group · Pick-A-Term</td>
+<td>官网描述在特定条件下可以快捷接受申请。速度是流程结果，不能拿来保证有既往病史的客户必定按标准费率通过。</td>
+<td><a href="https://ia.ca/individuals/insurance/life-insurance/pick-a-term">iA Financial Group</a></td>
+</tr>
+</tbody>
+</table></div>
+<p>本章不把三种营销标签画成一条从严到松的直线。传统核保可能通过电子资料完成而不安排体检；简化核保仍有问题和拒保可能；保证承保也有合同约定的资格、给付及除外范围，必须取得具体产品文件才能比较。</p>
+<p>递交申请前，把健康、职业、财务和出行等回答交客户核对；收到附条件承保、加费或其他变更时，解释其影响并留下客户决定。若主张有临时保障（temporary insurance），须出示适用的临时保险协议，核清开始与终止条件，不能把「已交申请或已扣款」当成正式保单生效。</p>
+<p>身份资料也须分清用途。保险人的合同核保要求与 FINTRAC 法定身份核验并不完全重合，法定义务有交易触发点及例外；具名受益人的身份核验也不一律发生在投保当天。</p>
+<h2 id="s5">五、历史变革：从纸质核保到算法核保</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>时期</th>
+<th>变了什么</th>
+<th>为什么改</th>
+<th>对读者的意义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>传统流程（教材基准叙事）</td>
+<td>纸质申请表（5–50 页）、面对面填表、核保员逐项人工评分、体检需数周</td>
+<td>核保三类风险的评估方法在算法化之前已成型，本身长青</td>
+<td>「基准分 + 加减分」是理解后续所有自动化变体的前提</td>
+</tr>
+<tr>
+<td>2020 年新冠疫情起</td>
+<td>远程会议、电子签名、电子投保普及；体检门槛普遍放宽</td>
+<td>线下流程在隔离期间难以为继，倒逼数字化改造提前完成</td>
+<td>「代理人是保司的眼睛」依然成立，只是眼睛换成了摄像头</td>
+</tr>
+<tr>
+<td>近五年（教材写作时仍在演进）</td>
+<td>部分产品采用加速或自动化核保；当前免体检额度逐份查</td>
+<td>既有数据（MIB、驾驶记录、信用记录）与算法评分能力提升，使「跳过体检但仍分级」经济上可行</td>
+<td>「加速核保 vs 简化承保」是理解 2026 市场产品结构的钥匙</td>
+</tr>
+<tr>
+<td>2017 年（教材完全未提及）</td>
+<td>《基因非歧视法》生效，2020 年最高法院裁定合宪</td>
+<td>防止基因信息被用于歧视性的保险或雇佣决策</td>
+<td>「家族病史」问询没被动摇，但基因检测结果这条线教材从未画出来</td>
+</tr>
+<tr>
+<td>现行（教材同样未提及）</td>
+<td>现行寿险行业受 PCMLTFA 约束；雇员身份与交易类别影响具体义务</td>
+<td>反洗钱与反恐怖融资立法把金融服务业各环节纳入报告体系</td>
+<td>「核验身份」不再只是流程步骤，而是独立的合规义务</td>
+</tr>
+</tbody>
+</table></div>
+<p>最容易被误解的一点：<strong>核保的判断逻辑（三类风险、五档结论、加费与除外之分）几乎没变</strong>，变的是信息收集手段（纸质→电子→算法）和外部合规环境（GNDA、PCMLTFA）——教材讲对了逻辑，讲漏了两条外部约束。</p>
+<hr />
+<h2 id="s6">六、案例：三个 BC 场景</h2>
+<h3 id="case1">案例一：温哥华的 Grace 问「我这些爱好会不会让保费翻倍」（示例）</h3>
+<p><strong>情景</strong>：Grace 是一名 34 岁软件工程师，每周末去霍山滑雪，三年前戒烟，偶尔喝一杯红酒。她申请 $500,000 定期寿险，担心生活方式被大幅加费。</p>
+<p><strong>适用规则</strong>：先分清三类因素。戒烟三年影响的是费率分类（多数保司要求戒烟满一定年限才按非吸烟人费率核保），不构成加费；偶尔小酌通常不触发加费；常规雪场滑雪多数保司按标准处理，但若常去后山非雪道区域，核保员会问频率与经验认证，可能触发加费或除外。</p>
+<p><strong>结果</strong>：最可能的结论是标准费率 + 非吸烟人分类，滑雪爱好视频率决定是否需要除外条款；不太会出现「爱好多就整体大幅加费」的结果。</p>
+<p><strong>常见错法</strong>：把「问得多」直接理解成「更可能加费」，混淆了信息收集范围广与加费判定严格这两件事。</p>
+<h3 id="case2">案例二：素里的 Amanda 离婚后，原来给前夫买的保单还有效吗（示例）</h3>
+<p><strong>情景</strong>：Amanda 三年前在素里给丈夫 Daniel 投了一张 $300,000 定期寿险，自己是投保人兼受益人。去年两人离婚，她想知道保单是否还有效，能否再给 Daniel 追加保额。</p>
+<p><strong>适用规则</strong>：可保利益（insurable interest）只需在<strong>签发时</strong>存在——投保时两人是夫妻，可保利益成立，此后关系变化不溯及既往。但追加新保单是一次新的投保行为，须在新的签发时点重新满足可保利益；离婚后仍可能因抚养或扶养付款、债务等存在经济利益；即使不具可保利益，BC s45(2)(b) 另允许被保险人书面同意的路径。</p>
+<p><strong>结果</strong>：原有 $300,000 保单继续有效；追加申请须核新的利益关系或书面同意及财务、健康等条件，仅凭离婚不足以预测拒保。</p>
+<p><strong>常见错法</strong>：以为可保利益是持续性要求，关系一旦变化原保单就自动失效——把「签发时」的标准错误套用到了「理赔时」。</p>
+<h3 id="case3">案例三：列治文的 Sophia 被问「你父母是不是有癌症」，她担心这算基因歧视（示例）</h3>
+<p><strong>情景</strong>：Sophia 申请终身寿险，代理人协助填写医疗问卷时问到「你的父母或兄弟姐妹是否曾患心脏病、癌症或糖尿病」。她曾在网上看到「保险公司不能用基因信息歧视投保人」的说法，担心这个问题违法。</p>
+<p><strong>适用规则</strong>：家族病史问询与基因检测结果是两件不同的事。问父母、兄弟姐妹的健康状况，问的是<strong>已发生的家族病史事实</strong>，合法且标准；GNDA ss3–4 禁止强迫检测、强迫披露或因此拒绝有关合同活动；s5 则禁止未经本人书面同意收集、使用或披露结果——Sophia 没被要求提供任何检测报告，这个问题本身完全合规。</p>
+<p><strong>结果</strong>：Sophia 应如实回答家族病史；如果她此前做过基因检测，有权不主动提供结果，保司也无权因此拒保或加费。</p>
+<p><strong>常见错法</strong>：把「问家族病史」和「用基因检测结果」混为一谈——要么误以为正常问卷违法而拒答（可能构成信息不全甚至日后被认定重大隐瞒），要么反过来误以为核保员可以合法索要基因检测报告。</p>
+<hr />
+<h2 id="s7">七、考试陷阱与双口径清单</h2>
+<p><strong>陷阱一：把吸烟或偶尔饮酒当成会导致加费的因素。</strong> 识别——吸烟状态决定基础费率分类（吸烟人/非吸烟人两档独立费率表），不是加费；真正触发加费的是超出常规分类框架的因素，如频繁高风险爱好、高风险地区旅行、多次严重驾驶违规（CISRO 样题第一题考点，<a class="src-ref" href="https://www.cisro-ocra.com/Documents/View/168" title="Examples of exam questions – Life insurance（另 170 A&amp;S / 171 Seg / 169 Ethics common law）">CISRO</a>）。</p>
+<p><strong>陷阱二：把 MIB 报告当成可单独作为拒保依据。</strong> 识别——核保员必须先核实报告所指问题确实存在，才能据此决策；选项里「MIB 报告显示 X，保司据此直接拒保」排除中间那道核实步骤。</p>
+<p><strong>陷阱三：认为 TIA 只要交了保费就一定生效。</strong> 识别——健康问卷任一项答「是」即自动拒绝；代理人对是否签发也保留基于个人观察的裁量权，「已交保费」不是充分条件。</p>
+<p><strong>陷阱四：把可保利益理解成必须持续存在到理赔时。</strong> 识别——可保利益只需在<strong>签发时</strong>存在，事后关系变化（离婚、雇佣关系终止）不影响已生效合同，但会影响此后新的投保行为。</p>
+<p><strong>陷阱五：把无意错误与欺诈性虚报套用同一条 2 年时效规则。</strong> 识别——无意错误在 相关保障在被保险人生存期间有效满 2 年且无欺诈时，适用一般不可抗辩保护；年龄等特别规则另判；欺诈不能援用这项不可抗辩保护；不等于所有诉讼程序都无期限。</p>
+<p><strong>陷阱六：把加速核保等同于简化承保。</strong> 识别——加速核保全面核保但省略体检，仍给出优选/标准/加费分级；简化承保是短表格 + 即时数据直接接受或拒绝，无分级，保费通常更高。</p>
+<p><strong>陷阱七：认为保司可以在签发后因健康恶化把已承保保单降级加费。</strong> 识别——规则单向保护投保人：保司不能事后加费，但加费原因消失时投保人可主动申请降级或撤销评级。</p>
+<p><strong>陷阱八：把 GNDA 理解成核保员不能问任何与遗传或家族有关的问题。</strong> 识别——GNDA 禁止强迫检测或披露，并限制未经书面同意收集、使用或披露<strong>基因检测结果</strong>，不禁止询问<strong>家族病史</strong>；「父母/兄弟姐妹健康问题」问询本身合法，选项里「保司不能询问家族病史」应予排除。</p>
+<h3 id="双口径清单考场答什么-柜台做什么">双口径清单（考场答什么 / 柜台做什么）</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>判据</th>
+<th>考场答</th>
+<th>柜台做</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>家族病史 vs 基因检测结果</td>
+<td>前者能问，后者不能要（GNDA）</td>
+<td>问卷正常问家族史；不强迫检测或披露；客户主动提供时须核书面同意及保险人合规规则，不能把自愿交来等同可任意使用</td>
+</tr>
+<tr>
+<td>免体检额度具体数字</td>
+<td>按指定教材及题干作答，不推断实际试卷绝不涉及具体数字</td>
+<td>具体额度回签约保司当前核保指引，不用教材或本页数字报价</td>
+</tr>
+<tr>
+<td>加速核保 vs 简化承保</td>
+<td>前者仍分级、后者不分级，是标准区分题</td>
+<td>向客户说明自己走的是哪一条流程，避免客户误以为「免体检＝随便买」</td>
+</tr>
+<tr>
+<td>身份核验的法律依据</td>
+<td>教材只写「核验身份证件」，未涉及 FINTRAC/PCMLTFA，按教材字面理解即可</td>
+<td>须知道自己是 PCMLTFA 下的报告实体，履行合规计划与报告义务</td>
+</tr>
+<tr>
+<td>无意错误 vs 欺诈性虚报</td>
+<td>2 年不可抗辩期是否受保护，是本章高频考点</td>
+<td>任何时候发现欺诈都可以拒赔，向客户强调「如实告知没有过期日」</td>
+</tr>
+</tbody>
+</table></div>
+<p>本节对应的练习题共 32，按三层难度分布：核保机制与信息来源辨析（第一层）、教材与现行值双口径及流程时间轴（第二层）、跨概念情景判断（第三层）。</p>
+<hr />
+<h2 id="术语双语对照表">术语双语对照表</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>English</th>
+<th>中文</th>
+<th>一句机制</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Underwriting</td>
+<td>核保</td>
+<td>评估医学、财务与生活方式风险；教材用基准评分解释，不是所有系统唯一算法</td>
+</tr>
+<tr>
+<td>Field underwriting</td>
+<td>实地核保</td>
+<td>代理人协助收集/核实申请信息的角色，观察并记录风险，正式承保等级由核保员决定</td>
+</tr>
+<tr>
+<td>Insurable interest</td>
+<td>可保利益</td>
+<td>须在保单签发时存在，事后关系变化不溯及既往影响已生效合同</td>
+</tr>
+<tr>
+<td>Material fact</td>
+<td>重大事实</td>
+<td>若如实披露会影响核保决定的信息</td>
+</tr>
+<tr>
+<td>Mistake (innocent misrepresentation)</td>
+<td>无意错误</td>
+<td>须相关保障在被保险人生存期间满 2 年且无欺诈；年龄等专门规则另判</td>
+</tr>
+<tr>
+<td>Fraudulent misrepresentation</td>
+<td>欺诈性虚报</td>
+<td>任何时候发现均可撤单/拒赔，不能援用不可抗辩保护；谎报吸烟是教材例子，不作发生率排名</td>
+</tr>
+<tr>
+<td>Temporary Insurance Agreement (TIA) / Conditional receipt</td>
+<td>临时保险协议 / 有条件收据</td>
+<td>核保期间的过渡保障，健康问卷任一「是」即自动拒绝</td>
+</tr>
+<tr>
+<td>Medical Information Bureau (MIB)</td>
+<td>医疗信息局</td>
+<td>会员保司间共享编码化风险信息，报告本身不能单独作拒保依据</td>
+</tr>
+<tr>
+<td>Attending Physician's Statement (APS)</td>
+<td>主治医生报告</td>
+<td>核保员就特定病史向申请人医生索取的报告，费用由保司承担</td>
+</tr>
+<tr>
+<td>Motor Vehicle Record (MVR)</td>
+<td>机动车记录</td>
+<td>提供 3–10 年驾驶史，违规记录影响评级</td>
+</tr>
+<tr>
+<td>Avocation</td>
+<td>危险爱好</td>
+<td>高风险业余活动，核保员评估频率、经验认证与事故史</td>
+</tr>
+<tr>
+<td>Accelerated underwriting</td>
+<td>加速核保</td>
+<td>用算法/既有数据代替体检，仍给出优选/标准/加费分级</td>
+</tr>
+<tr>
+<td>Simplified issue</td>
+<td>简化承保</td>
+<td>短表格 + 即时数据直接接受/拒绝，无分级，保费通常更高</td>
+</tr>
+<tr>
+<td>Rated policy</td>
+<td>加费保单</td>
+<td>在标准保费基础上加收额外保费，仍属全额承保</td>
+</tr>
+<tr>
+<td>Exclusion clause</td>
+<td>除外条款</td>
+<td>对特定风险不予理赔，是否另有加费须看报价，用于处理单一顾虑因素</td>
+</tr>
+<tr>
+<td>Moral hazard</td>
+<td>道德风险</td>
+<td>与申请人诚信/动机相关的风险类别，区别于医疗与财务风险</td>
+</tr>
+<tr>
+<td>Retention limit / Reinsurance</td>
+<td>自留额 / 再保险</td>
+<td>保司对单一被保险人愿自担的保额上限，超额部分转分给再保公司</td>
+</tr>
+<tr>
+<td>Right of rescission / 10-day free-look</td>
+<td>撤销权 / 10 天冷静期</td>
+<td>投保人接受保单后至少 10 天内可无条件全额退保退费</td>
+</tr>
+<tr>
+<td>Post-claim underwriting</td>
+<td>理赔后核保</td>
+<td>投保时几乎不核保，理赔时才做全面核保，可能导致身故后才发现不合格而拒赔</td>
+</tr>
+<tr>
+<td>Genetic Non-Discrimination Act (GNDA)</td>
+<td>基因非歧视法</td>
+<td>2017 年生效、2020 年最高法院裁定合宪，禁强迫检测/披露；未经书面同意不得收集、使用或披露结果</td>
+</tr>
+<tr>
+<td>FINTRAC / PCMLTFA</td>
+<td>加拿大金融交易与报告分析中心 / 反洗钱立法</td>
+<td>寿险代理人是 PCMLTFA 下的报告实体，须履行身份核实与报告义务</td>
+</tr>
+<tr>
+<td>Know your client (KYC)</td>
+<td>认识你的客户</td>
+<td>按适用条件进行客户及受益人身份核实、持续监控、受益所有权识别的统称义务</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2 id="本页的适用边界">本页的适用边界</h2>
+<p>所用条款证据包括：两家保司（Equitable、RBC）真实 TIA 条款全文（<a class="src-ref" href="https://advisor.equitable.ca/advisor/getattachment/1d491aeb-7620-4b1a-99cd-2d991c1ddf4c/Temporary-Life-Insurance-Agreement-TIA_EN.pdf" title="Application for Life and/or Critical Illness Insurance — Section 20: Temporary Life Insurance Agreement">The Equitable Life Insurance…</a>、<a class="src-ref" href="https://www1.rbcinsurance.com/pdf/life/src/forms/customerservice/src.en.5.3.14.pdf" title="Application for Life Insurance — Temporary Life Insurance Application / Receipt / Agreement + BC Disclosure Statement">RBC Life Insurance Company</a>）、RBC 真实交付要件三条件（<a class="src-ref" href="https://www1.rbcinsurance.com/pdf/life/src/forms/customerservice/src.en.5.3.14.pdf" title="Application for Life Insurance — Temporary Life Insurance Application / Receipt / Agreement + BC Disclosure Statement">RBC Life Insurance Company</a>）、拒保后换保司重新申请的边界（Canada Protection Plan 投保单不问既往拒保史，<a class="src-ref" href="https://www.cpp.ca/advisors/underwriting/" title="Underwriting Guide for Advisors">Canada Protection Plan</a>——但这是单一保司证据，不能推广为行业通则）。</p>
+<p>本页不列一张跨公司通用的免体检额度表：额度按公司、年龄、健康条件及申请流程变化，应查当前核保手册。GNDA s.3已回原文，禁止强制基因检测及因拒检拒绝相应合同活动（<a class="src-ref" href="https://laws-lois.justice.gc.ca/eng/acts/G-2.5/section-3.html" title="Genetic Non-Discrimination Act s.3">加拿大联邦法规库</a>）；FINTRAC报告义务见职业实践两章的对应官方来源。</p>
+<p>复查节奏：GNDA 现行状态 2027-09-01（<a class="src-ref" href="https://laws-lois.justice.gc.ca/eng/acts/g-2.5/" title="Genetic Non-Discrimination Act (S.C. 2017, c. 3)">Justice Laws Website (Govern…</a>）；FINTRAC/PCMLTFA 义务清单 2027-03-01（<a class="src-ref" href="https://fintrac-canafe.canada.ca/re-ed/li-eng" title="Life insurance sector guidance">FINTRAC</a>，该领域近两年连续加码）；免体检额度与加速核保市场格局需持续跟踪。本页整体复查日 2027-03-01。</p>
+    <div class="doc-nav"><a href="life-ch08-business-life.html">← 企业寿险：关键人、买卖协议与公司持有保单，温哥华小老</a><a href="life-ch10-assessing-needs.html" class="r">评估客户处境：一个人到底需要多少寿险（收入替代法 v →</a></div>
+    <div class="doc-src">本站依据官方原文自撰 · 出处见正文链接</div>
+  </article>
+  <aside class="doc-aside">
+    <details class="doc-toc-details" open>
+      <summary class="doc-toc-summary"><span>本页目录</span><span class="doc-toc-icon">▾</span></summary>
+      <div class="toc"><div class="toc">
+<ul>
+<li><a href="#s1">一、制度设计与底层逻辑：核保在博弈什么</a><ul>
+<li><a href="#s1-1">1. 核保是一场信息不对称的博弈</a></li>
+<li><a href="#s1-2">2. 代理人是保司的眼睛，不是核保员</a></li>
+<li><a href="#s1-3">3. 三类风险，各自答不同的问题</a></li>
+</ul>
+</li>
+<li><a href="#s2">二、2026 现行政策与数字</a><ul>
+<li><a href="#s2-1">1. 核保结论：从最优惠到拒保的五档</a></li>
+<li><a href="#s2-2">2. 哪些因素触发加费，哪些只是费率分类：CISRO 样题的经典陷阱</a></li>
+<li><a href="#s2-3">3. 三列双口径之一：基因检测结果不能问，家族病史可以问</a></li>
+<li><a href="#s2-4">4. 三列双口径之二：免体检额度，教材写的是示例，实务额度按当前核保手册</a></li>
+<li><a href="#s2-5">5. 代理人核验身份背后的法律义务：教材没接上的那一段</a></li>
+</ul>
+</li>
+<li><a href="#s3">三、实务流程：从填表到冷静期结束</a><ul>
+<li><a href="#s3-1">1. 投保流程时间轴</a></li>
+<li><a href="#s3-2">2. 临时保险协议：核保期间的过渡保障</a></li>
+<li><a href="#s3-3">3. 保司核保：谁在查什么</a></li>
+<li><a href="#s3-4">4. 签发与交付：核保没有真正结束</a></li>
+<li><a href="#s3-5">5. 信息不实的三种情形，法律后果完全不同</a></li>
+</ul>
+</li>
+<li><a href="#s4">四、2026 市场：免体检、快捷出单与保证承保要分开</a></li>
+<li><a href="#s5">五、历史变革：从纸质核保到算法核保</a></li>
+<li><a href="#s6">六、案例：三个 BC 场景</a><ul>
+<li><a href="#case1">案例一：温哥华的 Grace 问「我这些爱好会不会让保费翻倍」（示例）</a></li>
+<li><a href="#case2">案例二：素里的 Amanda 离婚后，原来给前夫买的保单还有效吗（示例）</a></li>
+<li><a href="#case3">案例三：列治文的 Sophia 被问「你父母是不是有癌症」，她担心这算基因歧视（示例）</a></li>
+</ul>
+</li>
+<li><a href="#s7">七、考试陷阱与双口径清单</a><ul>
+<li><a href="#双口径清单考场答什么-柜台做什么">双口径清单（考场答什么 / 柜台做什么）</a></li>
+</ul>
+</li>
+<li><a href="#术语双语对照表">术语双语对照表</a></li>
+<li><a href="#本页的适用边界">本页的适用边界</a></li>
+</ul>
+</div>
+</div>
+    </details>
+    
+    <h3>同板块</h3><ul class="rel"><li><a href="life-ch01-why-life-insurance.html">为什么需要人寿保险：死亡风险、财务冲击与四种风险管理策略（Life 模块地图）</a></li><li><a href="life-ch02-term-life.html">定期寿险：可续、可转、按年定制，2026 市场谁在卖什么（Term Life I</a></li><li><a href="life-ch03-whole-life-t100.html">终身寿险与 T-100：分红、现金价值、保费抵扣，2026 市场的分红险长什么样</a></li><li><a href="life-ch04-universal-life.html">万能寿险：拆开的三要素、YRT 与 LCOI、免税测试，为什么它最容易卖错</a></li><li><a href="life-ch05-riders.html">附加条款与补充保障：每个 rider 解决什么需求，多花的钱值不值</a></li><li><a href="life-ch06-group-life.html">团体寿险：谁是被保险人，离职怎么转换，福利计划里寿险那一格怎么读</a></li></ul>
+    <a class="deck-cta" href="../slides.html?deck=life-ch09-application-underwriting"><b>先过讲义 →</b><span>23 张 · 含 5 道自测 · 约 24 分钟<br>一屏一个意思，比直接啃全文省力</span></a>
+    <a class="vv-btn vv-btn--primary" style="width:100%;margin-top:16px"
+       href="../drill.html?bp=life">练这个板块的题 →</a>
+  </aside>
+</div></main>
+<footer class="foot">
+  <p><b>微出国 · 学</b> — LLQP 人寿保险牌照（BC 省考）备考。内容是学习者视角的整理，不是 AMF 教材。<br>
+  考试以 CISRO 现行考纲为准；实务以 Insurance Council of BC 与各监管机构现行文件为准。发现错的地方，回论坛帖里说一声。</p>
+</footer>
+<script>var UP_PATH="../";var BUILD_TIME="1789338933";</script>
+<script>
+if((localStorage.getItem('vv-theme')||'')==='dark')
+  document.documentElement.setAttribute('data-theme','dark');
+
+// 自动版本更新检测：对比 DOM 的 BUILD_TIME 与服务器最新 manifest.json，出现新版本时带时间戳无缝重载绕过 HTTP 磁盘缓存
+(function(){
+  function checkVersion(){
+    var up = typeof UP_PATH !== 'undefined' ? UP_PATH : '';
+    fetch(up + 'assets/manifest.json?t=' + Date.now(), { cache: 'no-store' }).then(function(r){
+      return r.ok ? r.json() : null;
+    }).then(function(m){
+      if(!m || !m.build_time) return;
+      var serverBuild = String(m.build_time);
+      var clientBuild = typeof BUILD_TIME !== 'undefined' ? String(BUILD_TIME) : '';
+      if(clientBuild && serverBuild && clientBuild !== serverBuild){
+        var reloaded = sessionStorage.getItem('vv_reloaded_build');
+        if(reloaded !== serverBuild){
+          sessionStorage.setItem('vv_reloaded_build', serverBuild);
+          var u = new URL(location.href);
+          u.searchParams.set('_v', serverBuild);
+          location.replace(u.href);
+        } else if(!document.getElementById('vv-update-banner')) {
+          var bar = document.createElement('div');
+          bar.id = 'vv-update-banner';
+          bar.className = 'vv-update-banner';
+          bar.innerHTML = '🎉 网站已更新到最新版本，建议按 <b>Ctrl+F5</b> (或 <b>Cmd+Shift+R</b>) 强制刷新页面。<button onclick="location.reload(true)">立即刷新</button>';
+          document.body.prepend(bar);
+        }
+      }
+    }).catch(function(){});
+  }
+
+  checkVersion();
+  document.addEventListener('visibilitychange', function(){
+    if(document.visibilityState === 'visible') checkVersion();
+  });
+  window.addEventListener('focus', checkVersion);
+  setInterval(checkVersion, 5 * 60 * 1000);
+})();
+
+// 页眉登录态。身份服务不在（纯静态托管、或还没起 dev-server）时静默跳过——
+// 内容页是公开的，永远不该因为身份服务缺席而坏掉。
+fetch('/api/me').then(function(r){return r.ok?r.json():null;}).then(function(m){
+  if(!m||document.getElementById('vv-auth'))return;
+  var n=document.querySelector('.vv-header nav');if(!n)return;
+  var e=document.createElement('span');e.id='vv-auth';e.className='auth';
+  e.innerHTML=m.loggedIn
+    ?'<span title="学习记录已跨设备同步">'+m.username+'</span> <a href="/auth/logout">退出</a>'
+    :'<a href="/auth/login?next='+encodeURIComponent(location.pathname)+'">登录</a>';
+  n.after(e);
+}).catch(function(){});
+
+// ── 阅读器增强：专注/最大化模式 & 键盘/手势切页 ──
+(function(){
+  var prevUrl = typeof PREV_URL !== 'undefined' ? PREV_URL : '';
+  var nextUrl = typeof NEXT_URL !== 'undefined' ? NEXT_URL : '';
+
+  function updateMaxBtns(isMax) {
+    var btns = document.querySelectorAll('.vv-reader-btn-max');
+    for(var i=0; i<btns.length; i++) {
+      btns[i].innerHTML = isMax ? '✕ 退出专注' : '⛶ 专注阅读';
+    }
+  }
+
+  window.toggleDocMaximize = function() {
+    var root = document.documentElement;
+    var isMax = root.classList.toggle('is-doc-maximized');
+    try { localStorage.setItem('vv_doc_maximized', isMax ? 'true' : 'false'); } catch(e){}
+    updateMaxBtns(isMax);
+  };
+
+  function updateAsideBtns(isCol) {
+    var btns = document.querySelectorAll('.vv-aside-btn');
+    for(var i=0; i<btns.length; i++) {
+      btns[i].innerHTML = isCol ? '◨ 展开侧栏' : '◧ 折叠侧栏';
+    }
+  }
+
+  window.toggleSidebarCollapse = function() {
+    var root = document.documentElement;
+    var isCol = root.classList.toggle('is-aside-collapsed');
+    try { localStorage.setItem('vv_aside_collapsed', isCol ? 'true' : 'false'); } catch(e){}
+    updateAsideBtns(isCol);
+  };
+
+  try {
+    if(localStorage.getItem('vv_aside_collapsed') === 'true') {
+      document.documentElement.classList.add('is-aside-collapsed');
+      setTimeout(function(){ updateAsideBtns(true); }, 0);
+    }
+  } catch(e){}
+
+  // 本页目录 <details> 状态记忆
+  var tocDet = document.querySelector('.doc-toc-details');
+  if(tocDet) {
+    try {
+      if(localStorage.getItem('vv_toc_open') === 'false') {
+        tocDet.removeAttribute('open');
+      }
+    } catch(e){}
+    tocDet.addEventListener('toggle', function() {
+      try { localStorage.setItem('vv_toc_open', tocDet.open ? 'true' : 'false'); } catch(e){}
+    });
+  }
+
+  document.addEventListener('keydown', function(e) {
+    var tag = (e.target && e.target.tagName) || '';
+    if (tag === 'INPUT' || tag === 'TEXTAREA' || tag === 'SELECT' || e.target.isContentEditable) return;
+    if (e.key === 'ArrowLeft' && prevUrl) {
+      location.href = prevUrl;
+    } else if (e.key === 'ArrowRight' && nextUrl) {
+      location.href = nextUrl;
+    } else if (e.key === 'f' || e.key === 'F' || e.key === 'm' || e.key === 'M') {
+      toggleDocMaximize();
+    } else if (e.key === 'Escape' && document.documentElement.classList.contains('is-doc-maximized')) {
+      toggleDocMaximize();
+    }
+  });
+
+  var touchStartX = 0, touchStartY = 0;
+  document.addEventListener('touchstart', function(e) {
+    if (e.touches && e.touches.length === 1) {
+      touchStartX = e.touches[0].clientX;
+      touchStartY = e.touches[0].clientY;
+    }
+  }, { passive: true });
+
+  document.addEventListener('touchend', function(e) {
+    if (!e.changedTouches || e.changedTouches.length !== 1) return;
+    var dx = e.changedTouches[0].clientX - touchStartX;
+    var dy = e.changedTouches[0].clientY - touchStartY;
+    if (Math.abs(dx) > 90 && Math.abs(dy) < 60) {
+      if (dx > 0 && prevUrl) {
+        location.href = prevUrl;
+      } else if (dx < 0 && nextUrl) {
+        location.href = nextUrl;
+      }
+    }
+  }, { passive: true });
+})();
+</script>
+<script>if('serviceWorker' in navigator){addEventListener('load',()=>navigator.serviceWorker.register('../sw.js').catch(()=>{}))}</script>
+</body></html>

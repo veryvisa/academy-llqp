@@ -1,0 +1,230 @@
+{
+  "id": "ethics-ch04a-client-protection-bodies",
+  "lesson": "ethics-ch04a-client-protection-bodies",
+  "title": "机构地图：谁在管加拿大寿险",
+  "title_en": "Bodies That Protect the Client",
+  "blueprint": "ethics",
+  "source": { "doc": "self", "lesson": "ethics-ch04a-client-protection-bodies", "chapter": "E112 ch04 §4.1（仅结构参照）", "anchor": "bodies that protect the client" },
+  "textbook_edition": "AMF-9e-2022",
+  "est_minutes": 23,
+  "why": "component 2 的入口——违规找监管、不服找 Ombuds、倒闭找基金，三条路互不替代也互不越权。",
+  "note": "本组数字是 2026 年快照，出处见讲解页。",
+  "slides": [
+    {
+      "type": "cover",
+      "title": "机构地图：谁在管加拿大寿险",
+      "title_en": "Bodies That Protect the Client",
+      "lede": "违规找监管、不服找 Ombuds、倒闭找基金，三条路互不替代也互不越权。",
+      "points": [
+        "联邦管钱（偿付能力），省管人（持牌与市场行为）",
+        "BC 的《Insurance Act》没有代理人专章——管人的实体条文在《Financial Institutions Act》里",
+        "Assuris五项均核教材与现行：累积价值超过门槛也有90%保护"
+      ]
+    },
+    {
+      "type": "map",
+      "title": "四块地图",
+      "hint": "考纲划的是考试边界，不是执业边界——柜台上客户不会按考纲提问。",
+      "groups": [
+        { "key": "①", "label": "机构分工", "en": "Who Manages What", "ns": ["联邦/省", "三个名字"], "tone": "principle" },
+        { "key": "②", "label": "三层保护网", "en": "Three Layers", "ns": ["监管", "Ombuds", "基金"], "tone": "principle" },
+        { "key": "③", "label": "双口径", "en": "Outdated Numbers", "ns": ["Assuris", "CIRO"], "tone": "warn" },
+        { "key": "④", "label": "三条链", "en": "Three Chains", "ns": ["投诉", "破产", "持牌"], "tone": "number" }
+      ]
+    },
+
+    { "type": "section", "key": "①", "title": "联邦管钱，省管人", "en": "Federal Manages Money, Provinces Manage People",
+      "lede": "两件事的边界形状不一样，法律后果分得同样干净。" },
+
+    {
+      "type": "concept", "en": "Federal Manages Money, Provinces Manage People", "cn": "联邦管钱，省管人",
+      "body": "联邦依《Insurance Companies Act》通过 **OSFI** 判断联邦注册寿险公司的**财务是否稳健**；各省除了对本省注册公司做同样判断外，还负责**代理人持牌**与保险产品的营销行为监管——**OSFI 不负责保险代理人执业的持牌、规范与监督**。<br>**BC 三个名字要成套记**：**Insurance Council of BC** 给代理人与法人代理机构**发牌**；**BCFSA** 向保险公司**签发经营授权**；约束代理人的规范是三份——《Financial Institutions Act》、Council 的 *Rules*、Council 的 *Code of Conduct*。",
+      "hook": "**BC 的《Insurance Act》里没有专门管代理人的一章**——这是全章最高频陷阱。",
+      "watch": "⚠️ BC 管代理人的实体条文在《Financial Institutions Act》里：s.79（保费回佣）、s.94（强制搭售）、ss.168–180（保险代理人与理赔人）、s.252（罪行）、s.253/253.1（罚则与行政罚款）。"
+    },
+    {
+      "type": "concept", "en": "Same Transaction, Two Regulators, Two Layers", "cn": "先问它问的是机构资格还是个人行为",
+      "body": "FIA **s.75** 禁止未取得 business authorization 者在 BC 经营保险业务，**s.76** 开了口子——由本省持牌代理人代居民安排合同的情形除外。『公司能不能在 BC 做生意』归 **BCFSA**（联邦注册公司的财务稳健另找 OSFI），『这个人能不能替它卖』归 **Insurance Council**。",
+      "hook": "**遇到任何一个『谁管』的题，先问它问的是机构资格还是个人行为。**",
+      "watch": "同一个坑姊妹模块 Seg funds 也挖了一遍——BC 禁止分离基金 DSC 的执法依据同样是 FIA s.244(2)(e)(ii)，不是 Insurance Act。看到『BC + 法律依据』的组合，先想 FIA。"
+    },
+    {
+      "type": "check",
+      "q": "一位 BC 代理人误导客户签了不合适的保单，同一天他签约的那家保险公司被曝资不抵债。客户想知道：这两件事分别归谁管？",
+      "a": "代理人误导客户——归 **Insurance Council of BC**（能吊他牌）；保险公司资不抵债——归依适用清算程序任命清算人那条路（**BCFSA**/联邦注册公司归 OSFI 判断偿付能力）。两条线各自走到底，中间不交叉。",
+      "why": "这题测的是『机构资格 vs 个人行为』这把刀能不能切干净——很多学员会把两件事混成一件事去找同一个机构，而这两条线的法律后果完全独立。",
+      "tier": 2
+    },
+
+    { "type": "section", "key": "②", "title": "三层保护网", "en": "Three Layers of Protection",
+      "lede": "公司还活着时管行为，公司倒了才管钱——按启动条件分开就清楚了。" },
+
+    {
+      "type": "concept", "en": "Behaviour, Complaints, Insolvency — Three Separate Layers", "cn": "违规找监管，不服找 Ombuds，倒闭找基金",
+      "body": "**第一层**在市场正常运转时约束**行为**：Insurance Council、BCFSA、OSFI、隐私专员、FINTRAC，以及 CCIR 与 CISRO 联合推的『公平对待客户』框架。<br>**第二层**处理『没到违法程度、但客户不服』的争议：保险公司内部投诉处理，再往上是 **OLHI**。<br>**第三层**只在公司倒下时才启动，管的是钱：寿险侧是 **Assuris**，财产与意外险侧是 **PACICC**。",
+      "hook": "三条路互不替代，也互不越权——**OLHI 不能吊牌，Insurance Council 不能替客户拿到赔款，Assuris 不处理服务态度。**",
+      "watch": "考纲要的清单是隐私专员/FINTRAC/Assuris/OLHI/CCIR 五家；PACICC 与 FCAC 不在教材清单上，但柜台上客户不会按考纲提问——考纲划的是考试边界，不是执业边界。"
+    },
+    {
+      "type": "check",
+      "q": "客户对代理人的产品推荐不满意，先后想到『去找 Insurance Council 让他们赔我钱』和『去找 OLHI 吊销这个代理人的牌』。",
+      "a": "两个想法都用错了机构——Insurance Council 能吊牌但不能替客户拿到赔款；OLHI 是独立投诉处理组织，不发牌不吊牌。客户该走的是：先公司内部投诉，不服再去 OLHI（钱/服务问题）；若主张代理人违反执业规则，另走 Insurance Council 的纪律渠道（人的问题）。",
+      "why": "考场上把这三者互换是本章最标准的干扰项做法——一句话记法：违规找监管，不服找 Ombuds，倒闭找基金，三条路各管一段。",
+      "tier": 2
+    },
+
+    { "type": "section", "key": "③", "title": "机构地图", "en": "Institution Map",
+      "lede": "每一行都能回答『读者什么时候会碰到它』。" },
+
+    {
+      "type": "numbers",
+      "title": "谁管谁：机构地图速查",
+      "hint": "PACICC 与 FCAC 不在教材 4.1.4 清单上——但柜台上客户不会按考纲提问。",
+      "rows": [
+        { "v": "OSFI", "k": "联邦注册寿险公司的财务稳健性，**不管**代理人持牌与执业" },
+        { "v": "BCFSA", "k": "向保险公司签发经营授权；BC 的市场行为监管（如分离基金 DSC 禁令依 FIA）" },
+        { "v": "Insurance Council of BC", "k": "管**人**：代理人与法人代理机构发牌、Rules、Code of Conduct、纪律、CE", "flag": true },
+        { "v": "CISRO", "k": "制定一致的中介资格与执业标准；**不能立法**；挂跨省纪律处分数据库" },
+        { "v": "CCIR", "k": "推『风险导向市场行为监管框架』；**同样不能立法**" },
+        { "v": "隐私专员(联邦OPC)", "k": "执行 PIPEDA；对 BC/AB/QC 三省省内活动通常让位于省法" },
+        { "v": "OIPC BC", "k": "对 BC 的 FOIPPA 与**PIPA**提供独立监督执法，可调查隐私投诉" },
+        { "v": "FINTRAC", "k": "反洗钱与反恐怖融资；代理人是 reporting entity" },
+        { "v": "Assuris", "k": "寿险公司破产时保护保单持有人；联邦受监管保险人与多数省监管公司**必须加入**", "flag": true },
+        { "v": "OLHI", "k": "寿险与健康险独立投诉处理组织；受理前须先取得保险公司**最终立场信**" }
+      ]
+    },
+    {
+      "type": "check",
+      "q": "客户想查一位同行代理人有没有在其他省被处分过，问该去哪查。",
+      "a": "去 CISRO 网站挂的跨省纪律处分数据库——CISRO 本身不能立法、不能吊牌，但它维护这个跨省查询入口。",
+      "why": "这题测的是能不能分清『谁能立法/发牌』和『谁维护信息平台』——CISRO、CCIR 都是跨辖区协调组织，不能立法，但各自承担具体的信息或标准职能。",
+      "tier": 1
+    },
+
+    { "type": "section", "key": "④", "title": "双口径：Assuris 保障上限", "en": "Assuris Coverage Limits",
+      "lede": "全课教材与现行值落差最大的一张表。" },
+
+    {
+      "type": "compare",
+      "title": "Assuris：教材五项均须核对，累积价值比例也已调整",
+      "cols": [
+        { "head": "教材2022说(TABLE 4.1)", "body": "死亡给付 $200,000 或 85% 取高者；健康费用 $60,000 或 85%；月收入 $2,000 或 85%；现金价值 $60,000 或 85%；累积价值 100% 至 $100,000", "tone": "warn" },
+        { "head": "2026现行", "body": "现行死亡100万/90%、健康25万/90%、月收入5000/90%、现金及累积价值10万/90%；实际保护不超过原利益。", "tone": "ok" },
+        { "head": "考场答·柜台做", "body": "考场：题干若明写『按教材表』答旧值，否则答现行值；柜台一律答现行值", "tone": "principle" }
+      ],
+      "hook": "原死亡利益$500,000：现行保护min(500,000,max(1,000,000,90%×500,000))=$500,000；旧口径max(200,000,85%×500,000)=$425,000。"
+    },
+    {
+      "type": "check",
+      "q": "陈太太持有 $500,000 定期寿险，问代理人『公司倒了我这张保单还算不算数』。",
+      "a": "先核保单利益和适用保障类别；原死亡利益$500,000在现行门槛内全额保护$500,000，不能凭门槛把原利益变成$1,000,000。",
+      "why": "如果照抄教材旧值($200,000/85%)会算出 $425,000、告诉客户有 $75,000 缺口——这个错误方向恰好是吓着客户，而且客户上网三十秒就能在 Assuris 官网查到你说错了。",
+      "tier": 3
+    },
+
+    { "type": "section", "key": "⑤", "title": "双口径：CIRO 与一条从未生效的规则", "en": "CIRO & the G19 Myth",
+      "lede": "一个是真的改名，一个是从来没生效过。" },
+
+    {
+      "type": "compare",
+      "title": "投资业自律机构：合并与改名",
+      "cols": [
+        { "head": "教材2022说", "body": "E112 本册正文**完全不讲**，MFDA/IIROC 只出现在缩略语表；这部分内容属 E313 分离基金教材范围", "tone": "warn" },
+        { "head": "2026现行", "body": "MFDA 与 IIROC 于 **2023-01-01** 合并运营、**2023-06-01** 品牌全面启用为 **CIRO**；两个投资者保护基金（CIPF、IPC）已合并为单一 **CIPF**", "tone": "ok" },
+        { "head": "考场答·柜台做", "body": "现行机构名CIRO；题干指定历史时期时按当时名称判断。分离基金的保险监管与证券注册分开。", "tone": "principle" }
+      ]
+    },
+    {
+      "type": "concept", "en": "The G19 Rumour That Never Took Effect", "cn": "一条差点成为规则的规则",
+      "body": "行业里长期流传『CLHIA G19 佣金披露指引已经生效』的说法。回源结果是：G19 是**团体福利与团体退休计划**的佣金披露指引，原定 2018-07-01 生效，历经多次延期，最终于**2019-05-31 被 CLHIA 整体撤回，从未全面生效**。CLHIA 官方指引列表页今天只列到 G18，与佣金/薪酬披露直接相关的是**G13 与 G14**（均 2007 年）。",
+      "hook": "『佣金披露的现行依据是什么』——本页答案是：**不要引 G19**。",
+      "watch": "可依的是 CCIR 与 CISRO 2018-09 联合发布的《公平对待客户》指引，以及 BC Code **7.3.3**（交易前披露额外收费）与**7.3.6**（完整公平披露重大事实）。"
+    },
+    {
+      "type": "check",
+      "q": "同行说『按 CLHIA G19，团体计划的佣金必须向客户全额披露，这是现行强制规则』。",
+      "a": "这个说法是错的——G19 已于 2019-05-31 被 CLHIA 整体撤回，从未全面生效。现行可依的是《公平对待客户》指引与 BC Code 7.3.3/7.3.6，团体计划的具体佣金安排要按合同与适用监管要求核对。",
+      "why": "这是本页专门设计的反幻觉训练——考的不是背哪条规则，而是能不能在同行说错的时候纠正它。回源核实比记住一个流传已久的说法更重要。",
+      "tier": 2
+    },
+
+    { "type": "section", "key": "⑥", "title": "FINTRAC：两层新义务与四类报告", "en": "FINTRAC's New Layers & Four Report Types",
+      "lede": "报告类型不止一种，提交时限完全不同，不能记成一个数字。" },
+
+    {
+      "type": "numbers",
+      "title": "四类报告：门槛与时限都不一样",
+      "hint": "『24 小时窗口』管的是要不要报（触发判定），『15 天/尽快/5 个工作日/5 个营业日』管的是多久之内报（提交时限）——两件不同的事。",
+      "rows": [
+        { "v": "STR 可疑交易报告", "k": "无固定金额门槛；提交时限『**合理可行的最早时间**』，一旦确立合理怀疑就要当优先事项处理", "flag": true },
+        { "v": "LCTR 大额现金交易报告", "k": "门槛**$10,000**，带 24 小时合并规则；提交时限收到现金起**15 个日历日**内" },
+        { "v": "LVCTR 大额虚拟货币交易报告", "k": "门槛**$10,000**，同带 24 小时合并规则；提交时限**5 个工作日**内" },
+        { "v": "EFTR 电汇报告", "k": "寿险实体在提供贷款或预付支付产品、按金融实体范围处理时，另核国际电汇$10,000门槛、24小时合计与5营业日报告要求" },
+        { "v": "受益所有权差异报告", "k": "**2025-10-01 起**新增义务——评估存在较高洗钱或资恐风险时，向 Corporations Canada 管理的联邦受益所有权登记处报告与登记记录不符之处（教材完全空白）", "flag": true }
+      ]
+    },
+    {
+      "type": "check",
+      "q": "客户把 $18,000 拆成两次 $9,000，分别在当天上午和下午存入储蓄计划账户，说『这样就不用报了吧』。",
+      "a": "照报不误——两笔加起来落在同一 24 小时窗口内，累计已达 $10,000 门槛，触发 LCTR。拆分规避没有用。",
+      "why": "$10,000 门槛管的是『要不要报』这个触发判定，不是『一笔交易』的门槛；提交时限（如 LCTR 的 15 个日历日）是另一件事，两者不能混着问。",
+      "tier": 2
+    },
+
+    { "type": "section", "key": "⑦", "title": "三条链：投诉、破产、持牌", "en": "Three Chains",
+      "lede": "每条链都有一个前置条件，一步都不能省。" },
+
+    {
+      "type": "concept", "en": "The Complaint Chain", "cn": "内部 → OLHI → 监管机构",
+      "body": "客户不满意的第一站永远是**保险公司的内部投诉处理程序**。走完仍不满意，客户可以去**OLHI**——**去 OLHI 有一个前置条件**：客户必须先取得保险公司出具的**最终立场信（final position letter）**，不能跳过直接找 OLHI。<br>如果客户主张的是**代理人违反了执业规则**（未披露利益冲突、未做替换披露、伪造签名、挪用保费），那不是投诉链而是**纪律链**，入口在省监管机构——BC 是 Insurance Council of BC。",
+      "hook": "**OLHI 帮客户把事情说清楚，监管机构决定这个人还能不能干。**",
+      "watch": "OLHI 官方目标是正式审查阶段自确认收件起**120 天**内完成，升级到调查阶段目标**45 天**——这两个数字是 OLHI 自定的**服务目标**，不是成文法定期限，柜台上要讲清『目标』不是『保证』。"
+    },
+    {
+      "type": "concept", "en": "The Insolvency Chain", "cn": "清算人 → 转移保单 → Assuris",
+      "body": "顺序固定四步：**公司资不抵债 → 依适用清算程序任命清算人 → 清算人首先尝试把保单整体转移给其他保险公司 → 只有必须削减给付时，Assuris 的保护才启动**。<br>两个最常被跳过的点：**客户不需要申请、不需要另外加保**——所有联邦受监管保险人与多数省监管公司必须加入 Assuris，客户自动被覆盖；**Assuris 保的是保单持有人，不是保险公司**。",
+      "hook": "财产与意外险那一侧的对应物是**PACICC**——BC 的强制 Basic Autoplan**不在**PACICC 保护范围内，但 ICBC 的 Optional 保障在保护范围内。"
+    },
+    {
+      "type": "concept", "en": "BC's Licensing Chain — Not in the Textbook", "cn": "BC 独有，教材完全不写",
+      "body": "完成**Council Rules Course**（$160）→ 与至少一家保险公司签约或经 MGA 挂靠 → 申请前 90 天内完成犯罪记录核查 → 安排 E&O 覆盖 → 递交申请（$390＋$25 政府费）→ 在合格监管人之下执业**24 个月**（持 CLU/CFP/RFP 者减为**12 个月**，依 ICN 19-004，交 Supervisor Undertaking Form）→ 每年**5 月 31 日**前完成 CE 与续牌（$350＋$25）。<br>E&O 最低限额：每次索赔**$1,000,000**/累计**$2,000,000**；CE 学时每个牌照周期**15 credits**。",
+      "hook": "教材按全国通则写，完全不提这条——只学教材会误以为四个模块考完就能独立执业。",
+      "watch": "⚠️ **24 个月监管期不是挂个名**——监管期内业务活动要接受监管人审阅，监管人对这期间的执业行为承担相应责任。选签约公司或 MGA 时，『它能不能提供合格的监管人』这个问题不亚于佣金结构。"
+    },
+    {
+      "type": "check",
+      "q": "May 刚拿到 LLQP 四模块合格证，同时又考了基金牌照，现在既卖分离基金也卖共同基金。她问：这两块业务归同一个机构管吗？",
+      "a": "不是。分离基金是**保险合同**，销售行为归保险监管线——BC 市场行为规则依 FIA，持牌与行为规范归 Insurance Council of BC；共同基金那一半才归**CIRO**。同一个人，两条监管线并行，不能互相替代。",
+      "why": "看到『基金』两个字就答 CIRO 是 2023 年 CIRO 成立之后新增的高频陷阱——分离基金虽然底层含证券投资，但它的法律性质是保险合同，销售行为不归 CIRO。",
+      "tier": 3
+    },
+
+    {
+      "type": "recap",
+      "title": "这一章记这些就够",
+      "hint": "机构分工、双口径、三条链——碰到场景先判归属，再判数字，最后判流程。",
+      "items": [
+        { "n": 1, "en": "Federal money, provincial people", "cn": "OSFI 管公司偿付能力不管持牌；Insurance Council 发牌、BCFSA 发经营授权", "g": "①" },
+        { "n": 2, "en": "No agent chapter in Insurance Act", "cn": "BC 管代理人的实体条文在 Financial Institutions Act", "g": "①" },
+        { "n": 3, "en": "Three layers", "cn": "违规找监管，不服找 Ombuds，倒闭找基金", "g": "②" },
+        { "n": 4, "en": "CISRO/CCIR can't legislate", "cn": "两者都是跨辖区协调组织，不能立法", "g": "③" },
+        { "n": 5, "en": "Assuris take the greater", "cn": "累积价值10万门槛未变，超过门槛的90%保护亦须更新", "g": "④" },
+        { "n": 6, "en": "CIRO since 2023", "cn": "MFDA+IIROC 合并为 CIRO，投资者保护基金并为单一 CIPF，两者都不管分离基金", "g": "⑤" },
+        { "n": 7, "en": "G19 never took effect", "cn": "2019-05-31 被撤回，现行依 FTC 指引与 BC Code 7.3.3/7.3.6", "g": "⑤" },
+        { "n": 8, "en": "Four FINTRAC reports", "cn": "STR 尽快/LCTR 15 天/LVCTR 5 工作日/EFTR 5 营业日，2025-10-01 起加受益所有权差异报告", "g": "⑥" },
+        { "n": 9, "en": "OLHI needs final position letter", "cn": "去 OLHI 前必须先走完公司内部投诉并拿到最终立场信", "g": "⑦" },
+        { "n": 10, "en": "BC's 24-month supervision", "cn": "新代理人监管期 24 个月（CLU/CFP/RFP 减为 12 个月），教材完全不写", "g": "⑦" }
+      ]
+    },
+    {
+      "type": "outro",
+      "title": "学完了，去练",
+      "lede": "这一章是 component 2 的入口——机构分工、Assuris 双口径、FINTRAC 四类报告，是官方样题反复考的组合。",
+      "actions": [
+        { "label": "练伦理与普通法的题", "href": "drill.html?bp=ethics", "primary": true },
+        { "label": "下一组：代理人的义务与十一类违规", "href": "slides.html?deck=ethics-ch04b-agent-duties" }
+      ],
+      "honest": "本讲没有展开三件纪律案例的具体事实与处分结果——那是下一组讲解页的正题；也没有细讲隐私投诉与 OIPC BC 的具体调查流程。"
+    }
+  ]
+}

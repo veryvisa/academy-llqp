@@ -1,0 +1,692 @@
+<!doctype html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<title>评估客户处境：一个人到底需要多少寿险（收入替代法 vs 资本需求法） · 微出国 · 学</title>
+<link rel="stylesheet" href="../assets/style.css?v=1789338933">
+<script>var PREV_URL="life-ch09-application-underwriting.html";var NEXT_URL="life-ch11-recommending.html";</script>
+<link rel="manifest" href="../manifest.webmanifest">
+</head>
+<body class="vv">
+<header class="vv-header">
+  <a class="vv-brand" href="../index.html"><svg viewBox="102.305 90.391 73.617 59.957" width="28" aria-hidden="true" class="mark">
+<path fill="#30D9C4" d="M 107.894531 95.808594 L 127.277344 95.808594 C 127.277344 95.808594 129.507812 95.628906 130.835938 97.679688 C 131.585938 98.910156 131.65625 100.316406 131.082031 101.546875 L 121.609375 117.953125 C 121.609375 117.953125 120.335938 120.65625 117.011719 120.824219 C 113.714844 120.910156 112.242188 118.40625 112.242188 118.40625 L 103.722656 103.652344 C 103.722656 103.652344 102.304688 101.792969 103.09375 99.332031 C 103.878906 96.878906 106.148438 95.773438 107.894531 95.808594 "/>
+<path fill="#0082CA" d="M 115.964844 124.792969 C 115.847656 124.59375 116.09375 124.378906 116.277344 124.519531 C 117.195312 125.21875 118.664062 125.902344 120.683594 125.515625 C 122.164062 125.210938 123.550781 124.296875 124.402344 122.757812 C 125.242188 121.300781 138.8125 97.8125 138.8125 97.8125 C 138.8125 97.8125 141.9375 90.917969 150.207031 90.550781 L 169.96875 90.550781 C 169.96875 90.550781 173 90.390625 174.503906 93.40625 C 175.921875 96.433594 173.941406 98.695312 173.667969 99.109375 C 173.394531 99.523438 142.203125 146.726562 142.203125 146.726562 C 142.203125 146.726562 140.003906 150.347656 135.40625 150.347656 C 130.808594 150.347656 128.707031 146.878906 128.417969 146.398438 C 128.175781 145.992188 118.835938 129.78125 115.964844 124.792969 "/></svg>微出国 · 学</a>
+  <nav><a href="../index.html">路线</a><a href="../slides.html">讲义</a><a href="../docs/" aria-current="page">讲解</a><a href="../drill.html">练习</a><a href="../exam.html">模考</a><a href="../progress.html">进度</a></nav>
+  <button class="theme" onclick="var r=document.documentElement,d=r.getAttribute('data-theme')==='dark';r.setAttribute('data-theme',d?'light':'dark');localStorage.setItem('vv-theme',d?'light':'dark')">◐</button>
+</header>
+<main><a href="life-ch09-application-underwriting.html" class="vv-float-nav vv-float-nav--prev" title="上一篇: 投保与核保：保险公司在查什么，加费、除外与拒保怎么来的（Application and Underwriting）"><span class="vv-float-nav__icon">‹</span><span class="vv-float-nav__card"><small>← 上一篇</small><strong>投保与核保：保险公司在查什么，加费、除外与拒</strong></span></a><a href="life-ch11-recommending.html" class="vv-float-nav vv-float-nav--next" title="下一篇: 提出保险推荐：从需求到产品，披露、比较与 reason-why 信怎么写（Recommending an Insurance Policy）"><span class="vv-float-nav__card"><small>下一篇 →</small><strong>提出保险推荐：从需求到产品，披露、比较与 r</strong></span><span class="vv-float-nav__icon">›</span></a><div class="vv-max-dock"><span class="vv-max-dock__hint">键盘 ← → 切页 | Esc 退出</span><button class="vv-reader-btn vv-reader-btn-max" onclick="toggleDocMaximize()">✕ 退出专注</button></div>
+<div class="doc-wrap">
+  <article class="doc">
+    <div class="doc-bar">
+      <p class="crumb"><a href="../index.html">路线</a> › 人寿保险（E311）</p>
+      <div class="doc-bar-actions">
+        <span class="vv-reader-hint">键盘 ← → 翻页</span>
+        <button class="vv-reader-btn vv-aside-btn" onclick="toggleSidebarCollapse()" title="折叠/展开右侧栏">◧ 折叠侧栏</button>
+        <button class="vv-reader-btn vv-reader-btn-max" onclick="toggleDocMaximize()" title="最大化专注阅读 (快捷键 F)">⛶ 专注阅读</button>
+      </div>
+    </div>
+    <h1>评估客户处境：一个人到底需要多少寿险（收入替代法 vs 资本需求法）</h1>
+    <div class="doc-meta"><span class="vv-badge vv-badge--accent">人寿保险（E311） · 考纲 25%</span><span class="vv-badge">13,923 字</span><span class="vv-badge">约 27 分钟</span></div>
+    <blockquote>
+<p>核实日期：2026-09-06｜本页现行数字的出处：CPP 遗属与身故给付 2026 现行值（<a class="src-ref" href="https://www.canada.ca/en/services/benefits/publicpensions/cpp/payment-amounts.html" title="Canada Pension Plan (CPP) payment amounts">Employment and Social Develo…</a>）、终身资本利得豁免 LCGE 现行值（<a class="src-ref" href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/deductions-credits-expenses/line-25400-capital-gains-deduction.html" title="Line 25400 — Capital gains deduction / LCGE">CRA</a>）、2026 BPA 与LCGE年度指数表（<a class="src-ref" href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/frequently-asked-questions-individuals/adjustment-personal-income-tax-benefit-amounts.html" title="Indexation adjustment for personal income tax and benefit amounts - Canada.ca">canada.ca</a>）。
+复核周期：2026-10-01（先复核按季度调整的 OAS；CPP及WorkSafeBC年度数字在2027年初复核）。CPP 各项给付每年会调；OAS 遗属津贴、BC WorkSafeBC 工伤致死给付、BC PBSA 遗属年金比例三项已于 2026-09-05 回源，见第二节第4条与文末「来源」。</p>
+</blockquote>
+<h2 id="s0">0. 这一篇解决什么问题</h2>
+<p>你要考的是 <strong>E311 人寿保险</strong>，本篇对应 CISRO 能力组件 <strong>c1「评估客户需求与处境」，占本模块 35%</strong>——是整个 Life 牌照考纲里单一权重最大的一块，比第二大的 c2「分析可用产品」（30%）还要重。</p>
+<p>这一篇讲的不是「寿险有哪些种类」，而是<strong>一个具体的人，到底该买多少保额</strong>——这个数字从哪里来，用哪种方法算，算出来的候选答案为什么可以相差三倍以上。需求分析（needs analysis）是整个销售流程里唯一一步先算清楚再谈产品的环节：算错这一步，后面推荐得再漂亮的产品组合也是建在错的地基上。</p>
+<p>学完这一篇，你应该能做三件事：① 用一张清单把客户处境完整问一遍，不漏掉前配偶赡养费、企业股权、注册账户展期这类容易被忽略的项目；② 分别用两种方法算出保额建议，并说清楚数字为什么不一样；③ 识别「用房价代替按揭余额」「忘了减既有保障」这类最常见的算数陷阱。</p>
+<hr />
+<h2 id="s1">一、制度设计与底层逻辑：为什么需求分析必须先于产品推荐</h2>
+<h3 id="s1-1">1. 它解决的不是「要不要买保险」，是「买多少」</h3>
+<p>E311 前九章讲的都是产品——定期险、终身寿险、万能寿险、附加险各自的机制。但一份保单最容易出问题的地方，往往不是产品条款，而是<strong>保额定错了</strong>：保额定低了，家庭在真正需要钱的那一刻缺口打开；保额定高了，客户为用不上的保障年复一年多缴保费。需求分析法（needs analysis approach）存在的唯一理由，就是把「买多少」这个问题从代理人的直觉，变成一套客户能看懂、能核对、能签字确认的计算过程。</p>
+<p>由此产生本章第一条底层逻辑：<strong>需求分析不是产品销售的前奏，是一份独立的、客户应该拿到手的财务分析文件</strong>。它的产出不是「该买哪张保单」，是「这个家庭如果现在少了这份收入，缺口是多少」——产品配置是下一步的事。</p>
+<h3 id="s1-2">2. 谁与谁在博弈：代理人的执业风险 vs 客户的信息不对称</h3>
+<p>需求分析的执业风险集中在<strong>代理人有没有问全</strong>。客户不会主动提起「我和前任还有一份调解协议里的抚养费义务」「我的合伙企业权益身故时要视同处置」——只问「你一年赚多少」就报保额，遗漏的部分不会自动消失，只会在理赔发生、家庭最脆弱的那一刻才暴露出来。</p>
+<p>反过来，代理人也有把需求分析做得<strong>过于粗糙以卖出更大保额</strong>的诱因——收入替代法在某些假设下会比资本需求法算出更大数字，若只用前者又不做假设说明，客户很容易在不知情的情况下买下超出实际需要、保费也更贵的保单。这正是为什么代理人必须能对客户讲清楚假设是什么，而不是只报一个数字。</p>
+<h3 id="s1-3">3. 法律后果：法院判令与调解协议里的「投保义务」</h3>
+<p>需求分析不只是财务算术，还牵涉家庭法。在 BC，Family Law Act s.170(e) 可针对供养方已有的寿险要求指定配偶或子女并维持缴费；不能把这项规定直接改写成一律命令购买新险，以担保其身故后配偶赡养费或子女抚养费仍能持续支付，此时前配偶或子女通常被指定为受益人。即使协议或判决没有明文要求投保，前配偶仍可能在被保险人身故后对遗产提出索赔，主张抚养义务应当延续。这意味着代理人在评估「对前配偶的抚养义务」这一项时，不能只看合同有没有写投保条款，还要判断这项义务本身有没有随身故终止的措辞——这正是六要素清单里最容易被代理人跳过的一格。</p>
+<div class="vv-callout vv-callout--danger">
+<p><span class="vv-callout__icon">✕</span></p>
+<div>
+<p><strong>「协议没写要投保」不等于「身故后义务自动消失」</strong></p>
+<p>调解协议与法院判决是两回事：调解协议里的抚养费条款，须结合协议措辞与 Family Law Act s.171 判断；协议沉默时，受供养人可向法院申请，但不是自动获准；没写清楚时，前配偶仍可能对遗产提出索赔。代理人看到客户有再婚/离婚史，第一件事是要客户拿出协议原文核对措辞，而不是假设「没提保险就不用管」。</p>
+</div>
+</div>
+<h3 id="s1-4">4. 底层逻辑延伸：企业主的处境不是「雇员处境的放大版」</h3>
+<p>企业主客户会分叉成三条完全不同的路径：<strong>独资企业</strong>身故后企业通常随之消亡，遗属损失的是自雇收入，企业资产按视同处置计算；公司股东身故可能触发其股权视同处置的资本利得，若符合合格小型企业公司条件可用终身资本利得豁免（LCGE）部分抵消；合伙企业权益同样视同处置触发资本利得，普通经营合伙通常不享有 LCGE；合格家族农渔业合伙权益须另核——这条税负差异是本章最容易被误答的一处（详见第二节）。</p>
+<hr />
+<h2 id="s2">二、2026 现行政策与数字：教材写的和柜台用的不是一回事</h2>
+<p>这一章的教材过期密度和伤残险那一章一样高，原因相同：它大量引用政府遗属给付项目，而这些项目每年都在指数化调整。以下现行数字全部挂了 LWS 出处并标了年份快照。</p>
+<h3 id="s2-1">1. CPP 给付：基本额与附加额分开</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>教材 2022 说</th>
+<th>2026 现行</th>
+<th>考场答·柜台做</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>一次性身故给付 $2,500</td>
+<td>基本额 $2,500；符合2025年起附加条件时另加 $2,500，最高 $5,000</td>
+<td>按题干版本作答；实务先判资格，不能给所有家庭统一代入最高额</td>
+</tr>
+<tr>
+<td>遗属与子女给付使用旧年度金额</td>
+<td>月给付依年度和受益人条件变化，且上限不是每个人实际领取额</td>
+<td>需求分析应取得客户预计/核定给付，不能把各项最高值无条件相加</td>
+</tr>
+</tbody>
+</table></div>
+<p>附加额要求死者满足基本供款资格、从未领取 CPP/QPP 退休、伤残或退休后伤残给付，并无合资格领取遗属养老金的配偶或同居伴侣；社保协定可能使金额降低。<a href="https://www.canada.ca/en/services/benefits/publicpensions/cpp/cpp-death-benefit.html">canada.ca</a></p>
+<h3 id="s2-2">2. LCGE：年度金额与资产资格是两道不同的问题</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>教材 2022 说</th>
+<th>2026 现行</th>
+<th>考场答·柜台做</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>合格小型企业股份上限 $913,630；农渔业财产另有旧上限</td>
+<td>LCGE $1,275,000；2025 的 $1,250,000 不可沿用</td>
+<td>核处置年度、剩余额度及资产资格；题干明示旧年度时按题干</td>
+</tr>
+<tr>
+<td>普通经营合伙权益不适用</td>
+<td>普通合伙与合格家族农渔业合伙须区分，后者符合定义时可适用</td>
+<td>不能把教材的一类企业场景推广为所有合伙权益都不适用</td>
+</tr>
+</tbody>
+</table></div>
+<p>CRA年度指数表与 ITA s.110.6 分别支持金额及资格边界。<a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/frequently-asked-questions-individuals/adjustment-personal-income-tax-benefit-amounts.html">canada.ca</a> <a href="https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-110.6.html">laws-lois.justice.gc.ca</a></p>
+<h3 id="s2-3">3. 联邦税率与基本个人免税额（BPA）：影响的是收入替代法里的「税后调整」这一步</h3>
+<p>分析家庭可支配收入时可用与现金流相符的有效税率；估算一笔新增保单利得的税负时则要看边际税率，复杂情况应计算新增前后税额差。2026 联邦 BPA 最高 $16,452、最低 $14,829，属于税收抵免金额，不能单凭它定义边际税率的起点。<a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/frequently-asked-questions-individuals/adjustment-personal-income-tax-benefit-amounts.html">canada.ca</a></p>
+<h3 id="s2-4">4. 政府与省级给付侧的现行数字快照（按资格与日期核对）</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>项目</th>
+<th>2026 现行值</th>
+<th>出处</th>
+<th>教材怎么写</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CPP 遗属月给付（65 岁以下 / 65 岁及以上上限）</td>
+<td>$803.54 / $904.59</td>
+<td><a class="src-ref" href="https://www.canada.ca/en/services/benefits/publicpensions/cpp/payment-amounts.html" title="Canada Pension Plan (CPP) payment amounts">Employment and Social Develo…</a>；表下注：2026 年 1 月起领最高额，非所有月份实领额</td>
+<td>$674.79 / $752.15（2022 值，已过期）</td>
+</tr>
+<tr>
+<td>CPP 子女月给付（未满18岁，或18–25岁且合资格就读）</td>
+<td>$307.81；合资格非全日制学生 $153.91</td>
+<td><a class="src-ref" href="https://www.canada.ca/en/services/benefits/publicpensions/cpp/payment-amounts.html" title="Canada Pension Plan (CPP) payment amounts">Employment and Social Develo…</a></td>
+<td>$264.53（2022 值）</td>
+</tr>
+<tr>
+<td>CPP 一次性身故给付上限</td>
+<td>基本 $2,500；符合附加条件最高 $5,000</td>
+<td><a class="src-ref" href="https://www.canada.ca/en/services/benefits/publicpensions/cpp/cpp-death-benefit.html" title="Death Benefit - Canada.ca">canada.ca</a></td>
+<td>教材旧额；现行须再判附加条件</td>
+</tr>
+<tr>
+<td>LCGE（小型企业股份 / 农渔业财产，现已统一）</td>
+<td>$1,275,000</td>
+<td><a class="src-ref" href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/frequently-asked-questions-individuals/adjustment-personal-income-tax-benefit-amounts.html" title="Indexation adjustment for personal income tax and benefit amounts - Canada.ca">canada.ca</a>（2026年度）</td>
+<td>$913,630 / $1,000,000（2022 值）</td>
+</tr>
+<tr>
+<td>OAS 遗属津贴（Allowance for the Survivor，60–64 岁低收入遗属）</td>
+<td>2026年7-9月季度 <strong>$1,702.34/月</strong>；年收入门槛官网自身两处不一致——开篇写 $30,336，收入门槛表写 $30,696（页面标注最后更新2026-05-01，未注明各自对应哪个时段）</td>
+<td>Government of Canada (Servic…（<a class="src-ref" href="https://www.canada.ca/en/services/benefits/publicpensions/old-age-security/guaranteed-income-supplement/allowance-survivor.html" title="Allowance for the Survivor">1</a>、<a class="src-ref" href="https://www.canada.ca/en/services/benefits/publicpensions/old-age-security/guaranteed-income-supplement/allowance-survivor/eligibility.html" title="Allowance for the Survivor — Eligibility">2</a>）</td>
+<td>教材给出 2022 年 Q2 数字 $1,468.47/月，收入门槛 $24,496，均属过期快照；现行月给付已涨约16%</td>
+</tr>
+<tr>
+<td>BC WorkSafeBC 工伤致死给付具体标准</td>
+<td>2026年（2026-01-01至2026-12-31）：丧葬及相关费用上限 <strong>$11,704.51</strong>、遗体运送上限 $1,849.23；无子女遗属配偶最低月给付 <strong>$1,451.63</strong>（不扣联邦给付）；超3名子女后每名子女每月额外 $449.20；有子女家庭最低月给付按视同年收入$48,395.62计算下限。无子女配偶须分流：50岁及以上或因身心障碍不能工作者以60%为基准；50岁以下且能工作者，每少一岁减1个百分点，最低30%。再按法例抵扣50%对应联邦给付，并受最低月额保护；有子女家庭另按其规则计算；计算基准年薪上限即2026最高可保工资$127,500</td>
+<td><a class="src-ref" href="https://www.worksafebc.com/en/resources/law-policy/rehabilitation-services-and-claims-manual-volume-ii/rehabilitation-services-and-claims-manual-volume-ii/chapter-8?lang=en&amp;direct=" title="Rehabilitation Services &amp; Claims Manual, Volume II, Chapter 8 — Compensation on the Death of a Worker">WorkSafeBC</a>、<a class="src-ref" href="https://www.worksafebc.com/en/resources/law-policy/board-minutes/2026-maximum-wage-rate?lang=en" title="WorkSafeBC 2026 Maximum Wage Rate">worksafebc.com</a></td>
+<td>教材只给全国 AWCBC 汇总区间（丧葬费 $4,000 至无上限、一次性给付 $2,000 至逾 $100,000、月给付低至 $400），未点名 BC 具体数字</td>
+</tr>
+<tr>
+<td>BC《Pension Benefits Standards Act》法定 DBPP 遗属年金比例是否落在 60%–66% 区间</td>
+<td>BC 对受现行 PBSA 管辖、含给付公式条款的计划，以 s.80 规定符合条件的退休会员默认联合遗属年金，任一方死亡后不低于原额60%；配偶可在起领前90天内，在见证人面前且会员不在场时签署规定豁免</td>
+<td><a class="src-ref" href="https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/00_12030" title="BC PBSA现行s80遗属年金">bclaws.gov.bc.ca</a></td>
+<td>教材给出因省而异的 60%–66% 区间，未点名 BC 具体条款——现已确认 BC 落在区间下限 60%</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2 id="s3">三、实务流程：把「问处境」和「算保额」拆成两件不同的事</h2>
+<h3 id="s3-1">1. 客户处境六要素清单</h3>
+<p>需求分析的第一步不是打开计算器，是把客户的处境<strong>问全</strong>。以下六要素，任何一格空着，后面算出来的数字都可能是错的：</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>要素</th>
+<th>要问的具体内容</th>
+<th>最容易漏掉的一点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>① 家庭结构与抚养义务</td>
+<td>现配偶依赖程度、对前配偶的赡养费义务、未成年子女生活费到几岁、其他被抚养人（残疾家庭成员、年迈父母）</td>
+<td>调解协议里的赡养费<strong>是否随身故终止</strong>取决于措辞，不能假设</td>
+</tr>
+<tr>
+<td>② 收入与就业状况</td>
+<td>雇员收入/未来潜力/工作稳定性/团体福利；企业主按独资/公司/合伙分流；是否临近退休</td>
+<td>需求分析基准是<strong>税后实得收入</strong>，代表遗属实际损失的消费力</td>
+</tr>
+<tr>
+<td>③ 资产与负债</td>
+<td>流动/固定/投资资产，房贷/信用卡/其他贷款，身故税负（视同处置）</td>
+<td>注册资产通常有身故计入规则，但配偶及符合条件的经济依赖子女或孙子女可有例外；RRSP/RRIF须分别核对资格、转移方式及申报</td>
+</tr>
+<tr>
+<td>④ 现有保障</td>
+<td>个人险、企业险（与买卖协议的关联）、团体险（保额/可转换性）、政府给付（CPP/OAS/工伤）</td>
+<td>算保额时先确认现有保障是否可用、用途是否重复、持续期限是否匹配；团体险的可转换性在 BC 只受 CLHIA 行业自律指引约束，不是法定保护</td>
+</tr>
+<tr>
+<td>⑤ 客户目标与优先事项</td>
+<td>家庭生活方式意愿（配偶何时该复工、房贷要不要全清）、身后事开支偏好、未来规划（教育/婚礼/遗赠）</td>
+<td>客户的<strong>真实意愿</strong>会直接改变保额目标，不是套公式就能替代</td>
+</tr>
+<tr>
+<td>⑥ 税务因素</td>
+<td>视同处置的资本利得、LCGE 是否适用、注册账户展期规则、遗嘱认证与执行人费用</td>
+<td>区分普通合伙与合格农渔业合伙权益，不因都是企业权益就套同一豁免</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="s3-2">2. 收入替代法与资本需求法：同一个人，两套完全不同的答案</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th></th>
+<th>收入替代法（income replacement approach）</th>
+<th>资本需求法（capital needs approach）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>基本逻辑</td>
+<td>把年收入损失<strong>资本化</strong>：假设本金永不动用，只靠利息覆盖收入缺口</td>
+<td>逐项列出遗属身故后的实际收支与一次性需求，求出真实缺口再资本化</td>
+</tr>
+<tr>
+<td>核心公式</td>
+<td>资本化价值 ＝ 年收入 ÷ 投资回报率（可依次调整税后、通胀）</td>
+<td>缺口 ＝ 身故后开支 − 身故后收入；总需求 ＝ 缺口资本化 ＋ 一次性资本需求；建议保额 ＝ 总需求 − 可用资产 − 既有保障</td>
+</tr>
+<tr>
+<td>优点</td>
+<td>计算快，适合初次面谈的粗筛</td>
+<td>精确反映真实需要，教材明确指出这是更被推荐的方法</td>
+</tr>
+<tr>
+<td>缺点</td>
+<td>不问遗属实际需要多少钱、需要多久，也没考虑遗产创造意愿，容易算出偏高的保额</td>
+<td>需要详尽的家庭财务信息，耗时更长</td>
+</tr>
+<tr>
+<td>什么时候用</td>
+<td>快速估算量级、初步沟通预算范围</td>
+<td>正式的保额建议与产品配置</td>
+</tr>
+</tbody>
+</table></div>
+<div class="vv-callout vv-callout--info">
+<p><span class="vv-callout__icon">ℹ️</span></p>
+<div>
+<p><strong>两个方法算出的数字不是「谁对谁错」，是「假设不同」</strong></p>
+<p>前者问「要永远替代这份收入，需要多少本金」，后者问「这个家庭实际的收支缺口有多大、要覆盖多久」。<strong>代理人的责任是让客户看到两个数字、理解假设差异，而不是只报一个「正确答案」。</strong></p>
+</div>
+</div>
+<h3 id="s3-3">3. 逐步算例一：收入替代法的四步演化——假设越精细，数字越夸张</h3>
+<p>素里的电气工程师 Farid，本例需替代的年税后可支配收入为 $84,000，家庭希望用收入替代法估算初步量级。假设投资回报率 5%、边际税率 25%、通胀率 2%：</p>
+<ol>
+<li><strong>未调整</strong>：$84,000 ÷ 5% ＝ <strong>$1,680,000</strong>。</li>
+<li><strong>计入税后回报</strong>：税后回报率 ＝ 5% × (1 − 25%) ＝ 3.75%；$84,000 ÷ 3.75% ＝ <strong>$2,240,000</strong>。</li>
+<li><strong>计入通胀调整</strong>：通胀调整回报率 ＝ (1 + 5%) ÷ (1 + 2%) − 1 ≈ 2.94%；$84,000 ÷ [(1.05 ÷ 1.02) − 1] ＝ <strong>$2,856,000</strong>（保留完整收益率计算）。</li>
+<li><strong>同时计入税后与通胀</strong>：税后通胀调整回报率 ＝ (1 + 3.75%) ÷ (1 + 2%) − 1 ≈ 1.72%；$84,000 ÷ [(1.0375 ÷ 1.02) − 1] ＝ <strong>$4,896,000</strong>。</li>
+</ol>
+<p>同一个人、同一份收入，四种假设精细度算出的保额从 $1,680,000 一路涨到近 $4,900,000，相差近三倍。 这正是收入替代法最大的弱点：分母（回报率）调得越保守、越精细，所需保额就放大得越夸张，而这个数字从没问过「遗属到底需要多少钱、需要多久」。</p>
+<h3 id="s3-4">4. 逐步算例二：资本需求法——先算缺口，再选资本化方式（含现有团体险抵扣）</h3>
+<p>列治文的行政助理 Yuki，月开支身故后预计降到 <strong>$4,200</strong>，遗属能拿到的收入来源为：CPP 遗属月给付（本例假定已核定为 $803.54，且遗属没有新增所得税；不能向所有人预设最高额或忽略其应税性质） ＋ 子女月给付 $307.81 ×1 名子女 ＝ <strong>$1,111.35</strong>。</p>
+<p><strong>收入缺口</strong> ＝ $4,200 − $1,111.35 ≈ <strong>$3,088.65/月</strong>。</p>
+<ul>
+<li><strong>资本保留法</strong>（缺口 ÷ 税后通胀调整回报率，假设仍取 1.72%）：$3,088.65 × 12 ÷ 1.72% ≈ <strong>$2,155,000</strong>（本金永存，只花利息）。</li>
+<li><strong>资本耗尽法的零实际净收益简化例</strong>（本例选择覆盖14年；假定税后收益刚好抵消通胀）：$3,088.65 × 12 × 14 ≈ <strong>$519,000</strong>（本金用尽即止）。</li>
+</ul>
+<p>同样的月缺口，两种资本化方式相差超过 4 倍。 选哪一种取决于这笔钱有没有明确的终止年限——本例把18岁设为预算终点，不是 BC 抚养义务统一终点；成年后仍受扶养的子女亦可能有需求，用耗尽法更贴近真实需要；如果是配偶终身收入替代，才该考虑保留法。</p>
+<p>再往下一步，Yuki 名下还有一份雇主提供的<strong>团体寿险，保额 $150,000</strong>。若本例已确认死亡时可赔、可供家属使用且没有在别处扣除，这笔钱才从总需求中减掉；离职或退休后的缺口须另算，才是需要新增购买的保额——按耗尽法计算：$519,000（缺口资本化）＋ 一次性资本需求（假设丧葬 $20,000 ＋ 清偿信用卡 $8,000）− 既有团体险 $150,000 ＝ <strong>约 $397,000</strong> 建议新增保额。忘记减这一步，是需求分析里最常见、后果也最直接的错误——客户会为一份实际上已经有部分覆盖的保障重复付费。</p>
+<h3 id="s3-5">5. 逐步算例三：房价 vs 按揭余额——净需求算的是「欠了多少」，不是「房子值多少」</h3>
+<p>本拿比的电工 Marcus 和妻子 Lena 共有一套市值 <strong>$980,000</strong> 的房产，<strong>按揭余额还剩 $520,000</strong>（18 年期限，已还 6 年）。需求分析里要覆盖的是「身故后房子能不能保住」，正确算法是：</p>
+<p>净需求（房贷部分）＝ <strong>按揭余额 $520,000</strong>，不是房屋市值 $980,000。</p>
+<p><strong>常见错法</strong>：直接把 $980,000 代入需求分析表，得出一个远超实际负债的保额建议。识别方法很简单：题干或客户资料只要同时出现「房屋市值」与「按揭余额」两个数字，需求分析要用的永远是按揭余额——市值只在计算「身故税负」（视同处置的资本利得）或「可用资产池」时才会用到，而且用的通常是资本利得的市值减 ACB；可用资产则看出售后扣债务、税费及交易成本的净额，不能把资本利得当成可用现金。</p>
+<hr />
+<h2 id="s4">四、2026 市场：先定保障缺口，再比较期限与持续付款能力</h2>
+<p>以下是 2026-09-04 回读官网确认的产品实例。各行说明它对应本章的哪个判断；实际销售资格和责任范围仍须核对具体合同。</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>公司与产品线</th>
+<th>对应本章的判断与使用边界</th>
+<th>官网出处</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>RBC Insurance · RBC YourTerm Life Insurance</td>
+<td>用来观察如何把定期保障与按揭、子女生活费等暂时需求对应。家庭指定的受益人与保额安排，须与贷款机构的债权人保险分开比较。</td>
+<td><a href="https://www.rbcinsurance.com/en-ca/life-insurance/term-life-insurance/">RBC Insurance</a></td>
+</tr>
+<tr>
+<td>Canada Life · Canada Life My Term</td>
+<td>官网按不同阶段需求提供期限选择，并说明转换选项。选择初始期限时同时查看届满续保成本和转换截止条件，不能只比第一年保费。</td>
+<td><a href="https://www.canadalife.com/insurance/life-insurance/term-life-insurance/myterm.html">canadalife.com</a></td>
+</tr>
+<tr>
+<td>iA Financial Group · Pick-A-Term</td>
+<td>产品页把家庭、按揭与企业经营需求分别列出。先给每项需求标结束时间，再决定是否用不同期限分层，而不是将所有开支套在一张最长合同上。</td>
+<td><a href="https://ia.ca/individuals/insurance/life-insurance/pick-a-term">iA Financial Group</a></td>
+</tr>
+</tbody>
+</table></div>
+<p>温哥华家庭做方案时，房贷看剩余本金与还款安排，教育金看未来支出扣除专款储蓄，赡养看实际依赖程度，企业主另核股份或经营权益的身故税务后果。LCGE 有资产资格、年度额度和个人已用额度限制，不能直接从所有企业权益增值中扣一个统一数字。</p>
+<p>可比较三种自拟方案：一份覆盖主要收入缺口的定期险、按债务与抚养期限分层的定期组合、在确有长期需求时加入永久保障。为每种方案写出采用的收入、回报、通胀、期限及预算假设。这是分析方法，不是上述三家公司的报价或建议。</p>
+<p>同样要减去真正可用的现有保障和资产。公司保单若要用于买卖协议，不能又把全部赔款当成家庭可自由支配的现金；短期可能随离职消失的团体保障也不应无条件抵掉长期缺口。</p>
+<h2 id="s5">五、历史变革：这一章的数字为什么必须重算</h2>
+<p><strong>其一，CPP 月给付与一次性身故给付要分开核。</strong> 月给付受指数化及 CPP 增强部分影响；一次性身故给付基本额仍为 $2,500，但 2025 年起符合条件可另获 $2,500。已有合资格遗属的家庭不能直接套最高 $5,000。</p>
+<p><strong>其二，LCGE 必须按处置年度查。</strong> 2024 年提高至 $1,250,000，2025 年仍为该额；CRA 的 2026 栏已是 $1,275,000。合格小型企业股份与合格农渔业财产须核个人剩余额度及具体资格，不能给每类资产各算一份完整豁免。</p>
+<p><strong>其三，需求分析方法论本身没有变，变的是输入的数字。</strong> 两套公式的结构、税与通胀的调整步骤这些年没有变化——理解底层逻辑之后，换上 2026 年的现行数字，整套方法照样能用。结论落在机制上，数值只作当年快照，这条原则在需求分析这一章体现得比任何一章都明显。</p>
+<hr />
+<h2 id="s6">六、案例：三个最容易在需求分析里算错的场景</h2>
+<h3 id="casea">案例 A：混合家庭的六要素清单（示例）</h3>
+<p>素里的项目经理 Aziz（46 岁）与再婚妻子 Farah（37 岁）育有一名 2 岁的儿子；Aziz 与前妻 Sana 共同监护一名 10 岁的女儿，按调解协议每月支付子女抚养费 <strong>$900</strong>，协议约定至女儿 19 岁；Farah 带着一名 5 岁的继子加入家庭，已被 Aziz 收养。Aziz 月税后收入 <strong>$6,800</strong>，Farah 目前全职照护两名幼子，计划 4 年后复工，预期月入 $3,500。</p>
+<p><strong>适用清单</strong>：① 家庭结构——Farah 目前完全依赖 Aziz 的收入，复工前不能按「双收入家庭」计算需求；② 抚养义务——对 Sana 所生女儿的抚养费义务要按协议措辞判断是否随身故终止，本例协议未言明，故 Sana 仍可能对遗产提出索赔；③ 未成年子女——两名幼子的生活费按实际依赖年限及适用抚养义务覆盖，不能假定18岁一律终止，而非笼统按「到成年」一刀切。</p>
+<p><strong>常见错法</strong>：把 Farah 当作「有工作能力的成年人」直接排除在收入替代需求之外——忽略了她目前完全依赖 Aziz 收入这一事实，复工后的收入潜力是未来假设，不能倒推到当下的需求计算里。</p>
+<h3 id="caseb">案例 B：一人公司股东的资产负债与税务缺口（示例）</h3>
+<p>列治文的物理治疗师 Helena，通过自己的 CCPC 执业，公司无其他股东。她名下总资产（个人 ＋ 公司股权）合计 <strong>$1,180,000</strong>，其中本例假定死亡时公司股权公允市值 $650,000（ACB $10,000），符合 QSBC 股份定义、个人剩余 LCGE 足够，且无其他扣除限制。账面价值本身不能代替公允市值。</p>
+<p><strong>税务测算</strong>：股权身故时视同处置，资本利得 ＝ $650,000 − $10,000 ＝ $640,000；按 2026 LCGE <strong>$1,275,000</strong>，资本利得 $640,000 的50%为应税资本利得 $320,000，再按符合条件的资本利得扣除抵减；一般税计算下可抵消这项收入，但须另核替代最低税 AMT，不能把它写成从未产生应税资本利得。</p>
+<p><strong>常见错法</strong>：① 误以为公司股权和合伙企业权益一样不能用 LCGE——恰恰相反，<strong>CCPC 股份还须符合 QSBC 条件；合格家族农渔业合伙权益也可能适用</strong>（第七节陷阱 5）；② 把总资产 $1,180,000 直接当成「可用于遗产需求的资产」——若家人打算保留公司继续经营而非变卖，这部分权益就<strong>不该</strong>计入可变卖资产池，实际可用资产会远小于账面总值。</p>
+<h3 id="casec">案例 C：房贷、团体险与 CPP 现行值的综合计算（示例）</h3>
+<p>北温的护士 Priya（39 岁），单亲抚养一名 8 岁儿子。她月税后收入 $4,100，身故后预计月开支降至 $2,600（已剔除拟一次还清的按揭供款，保留地税、维修等开支）；名下房产市值 $860,000，<strong>按揭余额 $410,000</strong>；雇主提供团体寿险 <strong>$100,000</strong>；儿子可领 CPP 子女月给付，本例假定母亲满足供款资格，按未满18岁标准 <strong>$307.81</strong>，并假定该子女没有因此产生所得税。</p>
+<p><strong>第一步，收入缺口</strong>：$2,600 − $307.81 ＝ <strong>$2,292.19/月</strong>，按零实际净收益的简化耗尽法覆盖10年；这是预算假设，18岁后抚养及升学需求应另列：$2,292.19 × 12 × 10 ≈ <strong>$275,000</strong>。</p>
+<p><strong>第二步，一次性资本需求</strong>：房贷部分用<strong>按揭余额 $410,000</strong>（不是市值 $860,000）＋ 丧葬费 $15,000 ＝ $425,000。</p>
+<p><strong>第三步，总需求与既有保障相减</strong>：$275,000 ＋ $425,000 ＝ $700,000；减去既有团体险 $100,000 ＝ <strong>$600,000</strong> 建议新增保额。</p>
+<p><strong>常见错法</strong>：① 把房屋市值 $860,000 代入而不是按揭余额，会让总需求虚增 $450,000；② 忘记减团体险 $100,000，会让客户为已有的保障重复付费；③ 把 CPP 子女给付误用教材 2022 年的 $264.53 而不是现行 $307.81——三处错法叠加，最终保额建议可能偏差超过 $500,000。</p>
+<hr />
+<h2 id="s7">七、考试陷阱与双口径清单</h2>
+<p>以下每条对应 CISRO 公开样题中需求分析相关题目的考点与陷阱形态，按版权边界只写形态，不复述题干。</p>
+<ol>
+<li>
+<p><strong>用房价代替按揭余额</strong>（错误基准值）。净需求算的是「欠了多少」，不是「房子值多少」。题干同时给出市值与按揭余额两个数字时，需求分析永远用按揭余额；市值只在算资本利得或可用资产时才用得上。</p>
+</li>
+<li>
+<p><strong>忘记减既有保障</strong>（漏算一步）。团体险、既有个人险、政府给付都要在总需求里先减掉，剩下的才是需要新增购买的保额。只有题干确认该保额可用于同一需求且未重复计算时才扣除；存在企业用途、受益人限制或失效风险时另判。</p>
+</li>
+<li>
+<p><strong>把「总资本需求」当成最终建议保额</strong>（漏算一步）。正确公式是总需求减去可用资产、再减既有保障，两项都要参与最后一步相减，只减一项就是不完整答案。</p>
+</li>
+<li>
+<p><strong>「总资产」与「可用于需求的资产」混为一谈</strong>（范畴误用）。配偶要继续居住的自住房、要继续持有的退休金账户、要传给子女的家族物业，即使账面价值很高也<strong>不计入</strong>可变卖的资产池。题干出现「配偶将继续保留/使用」的措辞，这项资产就要剔除。</p>
+</li>
+<li>
+<p><strong>把所有合伙权益视为同一税务类别</strong>。普通经营合伙通常不能用 LCGE；合格家族农渔业合伙权益可有例外。看到「合伙」先核资产定义，不直接排除。</p>
+</li>
+<li>
+<p><strong>两种方法的假设混用</strong>（跳步或重复调整）。税后调整、通胀调整要按顺序依次进行，不能跳步、也不能对同一笔收入重复调整。先确认题目问的是哪一步，再选对应公式代入。</p>
+</li>
+<li>
+<p><strong>资本保留法与资本耗尽法选错</strong>（方法误用）。有明确终止年限的需求（子女到 18 岁、赡养费到前配偶再婚或 65 岁）该用耗尽法；没有明确终点的长期收入替代需求才考虑保留法。题干给出具体年数或年龄终点，答案方向就是耗尽法，用保留法会大幅高估。</p>
+</li>
+<li>
+<p><strong>CPP 遗属给付误用教材 2022 年旧数字</strong>（数字过期）。柜台一律用现行值；考场按题干给出的数字作答，题干没给具体数字才需要判断用哪个口径。</p>
+</li>
+</ol>
+<p><strong>双口径清单（考场 vs 柜台）</strong>：① CPP 遗属月给付与子女月给付——考场按题干／教材旧值，柜台用现行值；② CPP 一次性身故给付——基本 $2,500，2025 年起符合附加条件可达 $5,000；③ LCGE 限额——考场按题干版本，实务核年度及剩余额度，2026 上限 $1,275,000；④ 团体寿险离职转换窗口天数——教材内部本身有 30 天与 31 天两处不一致，柜台一律翻主合同或查 CLHIA 现行指引，不背固定天数。</p>
+<p><strong>边学边测</strong>：本章题库共 42，覆盖三层难度与四道以上情景算数题。</p>
+<hr />
+<h2 id="术语双语表">术语双语表</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>en</th>
+<th>zh</th>
+<th>一句机制</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>needs analysis approach</td>
+<td>需求分析法</td>
+<td>先算清楚缺口再谈产品，独立于产品推荐的一步</td>
+</tr>
+<tr>
+<td>take-home pay</td>
+<td>税后实得收入</td>
+<td>需求分析的收入基准，代表遗属实际损失的消费力</td>
+</tr>
+<tr>
+<td>income replacement approach</td>
+<td>收入替代法</td>
+<td>把年收入损失资本化，假设本金永不动用，容易算出偏高保额</td>
+</tr>
+<tr>
+<td>capital needs approach</td>
+<td>资本需求法</td>
+<td>逐项列出遗属收支缺口与一次性需求，教材更推荐</td>
+</tr>
+<tr>
+<td>capitalized value</td>
+<td>资本化价值</td>
+<td>年收入（或缺口）÷ 投资回报率</td>
+</tr>
+<tr>
+<td>after-tax rate of return</td>
+<td>税后回报率</td>
+<td>回报率 ×（1 − 税率），分母越小所需保额越大</td>
+</tr>
+<tr>
+<td>inflation-adjusted rate of return</td>
+<td>通胀调整回报率</td>
+<td>(1 + 回报率) ÷ (1 + 通胀率) − 1</td>
+</tr>
+<tr>
+<td>income shortfall</td>
+<td>收入缺口</td>
+<td>遗属身故后开支 − 遗属身故后收入</td>
+</tr>
+<tr>
+<td>capital retention method</td>
+<td>资本保留法</td>
+<td>缺口 ÷ 回报率，本金永存，适合无明确终点的需求</td>
+</tr>
+<tr>
+<td>capital drawdown method</td>
+<td>资本耗尽法</td>
+<td>有期限现金流的现值；仅实际净收益为零时等于年缺口×年数</td>
+</tr>
+<tr>
+<td>capital shortfall</td>
+<td>资本缺口</td>
+<td>总资本需求 − 可用资产 − 既有保障，即建议新增保额</td>
+</tr>
+<tr>
+<td>deemed disposition</td>
+<td>视同处置</td>
+<td>资本财产通常依s.70(5)在身故前按市值视同处置；配偶、符合条件的农渔业等展期另核</td>
+</tr>
+<tr>
+<td>lifetime capital gains exemption（LCGE）</td>
+<td>终身资本利得豁免</td>
+<td>2026 上限 $1,275,000；适用合格小型企业股份及合格农渔业财产，含符合定义的农渔业合伙权益</td>
+</tr>
+<tr>
+<td>court-ordered insurance</td>
+<td>法院判定投保义务</td>
+<td>BC s.170(e)可要求维持已有保险并指定受益人，身后抚养另依s.171</td>
+</tr>
+<tr>
+<td>existing coverage review</td>
+<td>既有保障核对</td>
+<td>个人险/企业险/团体险/政府给付逐一核对，用于扣减</td>
+</tr>
+<tr>
+<td>assets available upon death</td>
+<td>身故时可用资产</td>
+<td>只计入愿意变卖的资产，配偶继续使用的资产不计入</td>
+</tr>
+<tr>
+<td>CPP survivor benefits</td>
+<td>CPP 遗属给付</td>
+<td>一次性给付 ＋ 遗属月给付 ＋ 子女月给付，须主动申请</td>
+</tr>
+<tr>
+<td>OAS allowance for the survivor</td>
+<td>OAS 遗属津贴</td>
+<td>60–64 岁低收入遗属专属，收入超线取消；2026年Q3现行$1,702.34/月</td>
+</tr>
+<tr>
+<td>Workers' Compensation fatality benefits</td>
+<td>工伤致死给付</td>
+<td>仅限工伤/职业病致死，不能替代一般寿险需求</td>
+</tr>
+<tr>
+<td>estate equalization</td>
+<td>遗产均等化</td>
+<td>用寿险弥补非现金资产分配不均造成的子女间不公平</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2 id="注意本页-2026-09-05-已回源的三项及仍需留意的口径">注意：本页 2026-09-05 已回源的三项，及仍需留意的口径</h2>
+<ol>
+<li><strong>OAS 遗属津贴 2026 现行月给付与收入门槛</strong>——月给付已核实为 2026 年 Q3 的 $1,702.34；收入门槛官网自身两处数字不一致（$30,336 与 $30,696，未标注各自对应哪个时段），本页不替主管机构选定其中一个门槛；申请时查适用季度官方表并向 Service Canada 确認，以实际核定为准。</li>
+<li><strong>BC WorkSafeBC 工伤致死给付具体标准</strong>——已回源 RSCM Vol.II Chapter 8 现行条款，见第二节第4条表格；此前网络摘要给出的 $601.49/$186.69 系误读，已用一手源数字（配偶最低月给付 $1,451.63、超3子女每人加 $449.20）取代。</li>
+<li><strong>BC《Pension Benefits Standards Act》法定 DBPP 遗属年金比例</strong>——已确认 BC 落点为 60%（现行 PBSA s.80：死亡后给付不低于原额60%），不是笼统区间里的任意一个数。</li>
+</ol>
+<h2 id="来源">来源</h2>
+<ul>
+<li>CPP payment amounts，Government of Canada（ESDC）——<a class="src-ref" href="https://www.canada.ca/en/services/benefits/publicpensions/cpp/payment-amounts.html" title="Canada Pension Plan (CPP) payment amounts">Employment and Social Develo…</a>，抓取日 2026-09-04</li>
+<li>Line 25400 — Capital gains deduction / LCGE，Canada Revenue Agency——<a class="src-ref" href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/deductions-credits-expenses/line-25400-capital-gains-deduction.html" title="Line 25400 — Capital gains deduction / LCGE">CRA</a>，抓取日 2026-09-04</li>
+<li>2026 联邦基本个人免税额 BPA（二手源交叉核对 CRA 数字，未逐字核对官方专页原文）——<a class="src-ref" href="https://harvestportfolios.com/cra-announces-federal-tax-bracket-thresholds-for-2026/" title="2026 联邦基本个人免税额 BPA">Harvest ETFs（行业二手引用 CRA 官方数字…</a>，抓取日 2026-09-04</li>
+<li>Allowance for the Survivor，Government of Canada（Service Canada）——<a class="src-ref" href="https://www.canada.ca/en/services/benefits/publicpensions/old-age-security/guaranteed-income-supplement/allowance-survivor.html" title="Allowance for the Survivor">Government of Canada (Servic…</a>（金额）／<a class="src-ref" href="https://www.canada.ca/en/services/benefits/publicpensions/old-age-security/guaranteed-income-supplement/allowance-survivor/eligibility.html" title="Allowance for the Survivor — Eligibility">Government of Canada (Servic…</a>（资格与收入门槛，页面自相矛盾已如实标注），抓取日 2026-09-05</li>
+<li>Rehabilitation Services &amp; Claims Manual, Volume II, Chapter 8，WorkSafeBC——<a class="src-ref" href="https://www.worksafebc.com/en/resources/law-policy/rehabilitation-services-and-claims-manual-volume-ii/rehabilitation-services-and-claims-manual-volume-ii/chapter-8?lang=en&amp;direct=" title="Rehabilitation Services &amp; Claims Manual, Volume II, Chapter 8 — Compensation on the Death of a Worker">WorkSafeBC</a>，抓取日 2026-09-05；2026 Maximum Wage Rate——<a class="src-ref" href="https://www.worksafebc.com/en/resources/law-policy/board-minutes/2026-maximum-wage-rate?lang=en" title="WorkSafeBC 2026 Maximum Wage Rate">worksafebc.com</a></li>
+<li>Pension Benefits Standards Act (BC) s.80——<a href="https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/00_12030">现行法</a>，核对日2026-09-06；旧s.35不能作为现行条文号</li>
+
+</ul>
+    <div class="doc-nav"><a href="life-ch09-application-underwriting.html">← 投保与核保：保险公司在查什么，加费、除外与拒保怎么来</a><a href="life-ch11-recommending.html" class="r">提出保险推荐：从需求到产品，披露、比较与 reaso →</a></div>
+    <div class="doc-src">本站依据官方原文自撰 · 出处见正文链接</div>
+  </article>
+  <aside class="doc-aside">
+    <details class="doc-toc-details" open>
+      <summary class="doc-toc-summary"><span>本页目录</span><span class="doc-toc-icon">▾</span></summary>
+      <div class="toc"><div class="toc">
+<ul>
+<li><a href="#s0">0. 这一篇解决什么问题</a></li>
+<li><a href="#s1">一、制度设计与底层逻辑：为什么需求分析必须先于产品推荐</a><ul>
+<li><a href="#s1-1">1. 它解决的不是「要不要买保险」，是「买多少」</a></li>
+<li><a href="#s1-2">2. 谁与谁在博弈：代理人的执业风险 vs 客户的信息不对称</a></li>
+<li><a href="#s1-3">3. 法律后果：法院判令与调解协议里的「投保义务」</a></li>
+<li><a href="#s1-4">4. 底层逻辑延伸：企业主的处境不是「雇员处境的放大版」</a></li>
+</ul>
+</li>
+<li><a href="#s2">二、2026 现行政策与数字：教材写的和柜台用的不是一回事</a><ul>
+<li><a href="#s2-1">1. CPP 给付：基本额与附加额分开</a></li>
+<li><a href="#s2-2">2. LCGE：年度金额与资产资格是两道不同的问题</a></li>
+<li><a href="#s2-3">3. 联邦税率与基本个人免税额（BPA）：影响的是收入替代法里的「税后调整」这一步</a></li>
+<li><a href="#s2-4">4. 政府与省级给付侧的现行数字快照（按资格与日期核对）</a></li>
+</ul>
+</li>
+<li><a href="#s3">三、实务流程：把「问处境」和「算保额」拆成两件不同的事</a><ul>
+<li><a href="#s3-1">1. 客户处境六要素清单</a></li>
+<li><a href="#s3-2">2. 收入替代法与资本需求法：同一个人，两套完全不同的答案</a></li>
+<li><a href="#s3-3">3. 逐步算例一：收入替代法的四步演化——假设越精细，数字越夸张</a></li>
+<li><a href="#s3-4">4. 逐步算例二：资本需求法——先算缺口，再选资本化方式（含现有团体险抵扣）</a></li>
+<li><a href="#s3-5">5. 逐步算例三：房价 vs 按揭余额——净需求算的是「欠了多少」，不是「房子值多少」</a></li>
+</ul>
+</li>
+<li><a href="#s4">四、2026 市场：先定保障缺口，再比较期限与持续付款能力</a></li>
+<li><a href="#s5">五、历史变革：这一章的数字为什么必须重算</a></li>
+<li><a href="#s6">六、案例：三个最容易在需求分析里算错的场景</a><ul>
+<li><a href="#casea">案例 A：混合家庭的六要素清单（示例）</a></li>
+<li><a href="#caseb">案例 B：一人公司股东的资产负债与税务缺口（示例）</a></li>
+<li><a href="#casec">案例 C：房贷、团体险与 CPP 现行值的综合计算（示例）</a></li>
+</ul>
+</li>
+<li><a href="#s7">七、考试陷阱与双口径清单</a></li>
+<li><a href="#术语双语表">术语双语表</a></li>
+<li><a href="#注意本页-2026-09-05-已回源的三项及仍需留意的口径">注意：本页 2026-09-05 已回源的三项，及仍需留意的口径</a></li>
+<li><a href="#来源">来源</a></li>
+</ul>
+</div>
+</div>
+    </details>
+    
+    <h3>同板块</h3><ul class="rel"><li><a href="life-ch01-why-life-insurance.html">为什么需要人寿保险：死亡风险、财务冲击与四种风险管理策略（Life 模块地图）</a></li><li><a href="life-ch02-term-life.html">定期寿险：可续、可转、按年定制，2026 市场谁在卖什么（Term Life I</a></li><li><a href="life-ch03-whole-life-t100.html">终身寿险与 T-100：分红、现金价值、保费抵扣，2026 市场的分红险长什么样</a></li><li><a href="life-ch04-universal-life.html">万能寿险：拆开的三要素、YRT 与 LCOI、免税测试，为什么它最容易卖错</a></li><li><a href="life-ch05-riders.html">附加条款与补充保障：每个 rider 解决什么需求，多花的钱值不值</a></li><li><a href="life-ch06-group-life.html">团体寿险：谁是被保险人，离职怎么转换，福利计划里寿险那一格怎么读</a></li></ul>
+    <a class="deck-cta" href="../slides.html?deck=life-ch10-assessing-needs"><b>先过讲义 →</b><span>21 张 · 含 5 道自测 · 约 26 分钟<br>一屏一个意思，比直接啃全文省力</span></a>
+    <a class="vv-btn vv-btn--primary" style="width:100%;margin-top:16px"
+       href="../drill.html?bp=life">练这个板块的题 →</a>
+  </aside>
+</div></main>
+<footer class="foot">
+  <p><b>微出国 · 学</b> — LLQP 人寿保险牌照（BC 省考）备考。内容是学习者视角的整理，不是 AMF 教材。<br>
+  考试以 CISRO 现行考纲为准；实务以 Insurance Council of BC 与各监管机构现行文件为准。发现错的地方，回论坛帖里说一声。</p>
+</footer>
+<script>var UP_PATH="../";var BUILD_TIME="1789338933";</script>
+<script>
+if((localStorage.getItem('vv-theme')||'')==='dark')
+  document.documentElement.setAttribute('data-theme','dark');
+
+// 自动版本更新检测：对比 DOM 的 BUILD_TIME 与服务器最新 manifest.json，出现新版本时带时间戳无缝重载绕过 HTTP 磁盘缓存
+(function(){
+  function checkVersion(){
+    var up = typeof UP_PATH !== 'undefined' ? UP_PATH : '';
+    fetch(up + 'assets/manifest.json?t=' + Date.now(), { cache: 'no-store' }).then(function(r){
+      return r.ok ? r.json() : null;
+    }).then(function(m){
+      if(!m || !m.build_time) return;
+      var serverBuild = String(m.build_time);
+      var clientBuild = typeof BUILD_TIME !== 'undefined' ? String(BUILD_TIME) : '';
+      if(clientBuild && serverBuild && clientBuild !== serverBuild){
+        var reloaded = sessionStorage.getItem('vv_reloaded_build');
+        if(reloaded !== serverBuild){
+          sessionStorage.setItem('vv_reloaded_build', serverBuild);
+          var u = new URL(location.href);
+          u.searchParams.set('_v', serverBuild);
+          location.replace(u.href);
+        } else if(!document.getElementById('vv-update-banner')) {
+          var bar = document.createElement('div');
+          bar.id = 'vv-update-banner';
+          bar.className = 'vv-update-banner';
+          bar.innerHTML = '🎉 网站已更新到最新版本，建议按 <b>Ctrl+F5</b> (或 <b>Cmd+Shift+R</b>) 强制刷新页面。<button onclick="location.reload(true)">立即刷新</button>';
+          document.body.prepend(bar);
+        }
+      }
+    }).catch(function(){});
+  }
+
+  checkVersion();
+  document.addEventListener('visibilitychange', function(){
+    if(document.visibilityState === 'visible') checkVersion();
+  });
+  window.addEventListener('focus', checkVersion);
+  setInterval(checkVersion, 5 * 60 * 1000);
+})();
+
+// 页眉登录态。身份服务不在（纯静态托管、或还没起 dev-server）时静默跳过——
+// 内容页是公开的，永远不该因为身份服务缺席而坏掉。
+fetch('/api/me').then(function(r){return r.ok?r.json():null;}).then(function(m){
+  if(!m||document.getElementById('vv-auth'))return;
+  var n=document.querySelector('.vv-header nav');if(!n)return;
+  var e=document.createElement('span');e.id='vv-auth';e.className='auth';
+  e.innerHTML=m.loggedIn
+    ?'<span title="学习记录已跨设备同步">'+m.username+'</span> <a href="/auth/logout">退出</a>'
+    :'<a href="/auth/login?next='+encodeURIComponent(location.pathname)+'">登录</a>';
+  n.after(e);
+}).catch(function(){});
+
+// ── 阅读器增强：专注/最大化模式 & 键盘/手势切页 ──
+(function(){
+  var prevUrl = typeof PREV_URL !== 'undefined' ? PREV_URL : '';
+  var nextUrl = typeof NEXT_URL !== 'undefined' ? NEXT_URL : '';
+
+  function updateMaxBtns(isMax) {
+    var btns = document.querySelectorAll('.vv-reader-btn-max');
+    for(var i=0; i<btns.length; i++) {
+      btns[i].innerHTML = isMax ? '✕ 退出专注' : '⛶ 专注阅读';
+    }
+  }
+
+  window.toggleDocMaximize = function() {
+    var root = document.documentElement;
+    var isMax = root.classList.toggle('is-doc-maximized');
+    try { localStorage.setItem('vv_doc_maximized', isMax ? 'true' : 'false'); } catch(e){}
+    updateMaxBtns(isMax);
+  };
+
+  function updateAsideBtns(isCol) {
+    var btns = document.querySelectorAll('.vv-aside-btn');
+    for(var i=0; i<btns.length; i++) {
+      btns[i].innerHTML = isCol ? '◨ 展开侧栏' : '◧ 折叠侧栏';
+    }
+  }
+
+  window.toggleSidebarCollapse = function() {
+    var root = document.documentElement;
+    var isCol = root.classList.toggle('is-aside-collapsed');
+    try { localStorage.setItem('vv_aside_collapsed', isCol ? 'true' : 'false'); } catch(e){}
+    updateAsideBtns(isCol);
+  };
+
+  try {
+    if(localStorage.getItem('vv_aside_collapsed') === 'true') {
+      document.documentElement.classList.add('is-aside-collapsed');
+      setTimeout(function(){ updateAsideBtns(true); }, 0);
+    }
+  } catch(e){}
+
+  // 本页目录 <details> 状态记忆
+  var tocDet = document.querySelector('.doc-toc-details');
+  if(tocDet) {
+    try {
+      if(localStorage.getItem('vv_toc_open') === 'false') {
+        tocDet.removeAttribute('open');
+      }
+    } catch(e){}
+    tocDet.addEventListener('toggle', function() {
+      try { localStorage.setItem('vv_toc_open', tocDet.open ? 'true' : 'false'); } catch(e){}
+    });
+  }
+
+  document.addEventListener('keydown', function(e) {
+    var tag = (e.target && e.target.tagName) || '';
+    if (tag === 'INPUT' || tag === 'TEXTAREA' || tag === 'SELECT' || e.target.isContentEditable) return;
+    if (e.key === 'ArrowLeft' && prevUrl) {
+      location.href = prevUrl;
+    } else if (e.key === 'ArrowRight' && nextUrl) {
+      location.href = nextUrl;
+    } else if (e.key === 'f' || e.key === 'F' || e.key === 'm' || e.key === 'M') {
+      toggleDocMaximize();
+    } else if (e.key === 'Escape' && document.documentElement.classList.contains('is-doc-maximized')) {
+      toggleDocMaximize();
+    }
+  });
+
+  var touchStartX = 0, touchStartY = 0;
+  document.addEventListener('touchstart', function(e) {
+    if (e.touches && e.touches.length === 1) {
+      touchStartX = e.touches[0].clientX;
+      touchStartY = e.touches[0].clientY;
+    }
+  }, { passive: true });
+
+  document.addEventListener('touchend', function(e) {
+    if (!e.changedTouches || e.changedTouches.length !== 1) return;
+    var dx = e.changedTouches[0].clientX - touchStartX;
+    var dy = e.changedTouches[0].clientY - touchStartY;
+    if (Math.abs(dx) > 90 && Math.abs(dy) < 60) {
+      if (dx > 0 && prevUrl) {
+        location.href = prevUrl;
+      } else if (dx < 0 && nextUrl) {
+        location.href = nextUrl;
+      }
+    }
+  }, { passive: true });
+})();
+</script>
+<script>if('serviceWorker' in navigator){addEventListener('load',()=>navigator.serviceWorker.register('../sw.js').catch(()=>{}))}</script>
+</body></html>

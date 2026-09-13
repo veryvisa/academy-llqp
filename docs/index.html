@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<title>讲解 · 微出国 · 学</title>
+<link rel="stylesheet" href="../assets/style.css?v=1789338933">
+
+<link rel="manifest" href="../manifest.webmanifest">
+</head>
+<body class="vv">
+<header class="vv-header">
+  <a class="vv-brand" href="../index.html"><svg viewBox="102.305 90.391 73.617 59.957" width="28" aria-hidden="true" class="mark">
+<path fill="#30D9C4" d="M 107.894531 95.808594 L 127.277344 95.808594 C 127.277344 95.808594 129.507812 95.628906 130.835938 97.679688 C 131.585938 98.910156 131.65625 100.316406 131.082031 101.546875 L 121.609375 117.953125 C 121.609375 117.953125 120.335938 120.65625 117.011719 120.824219 C 113.714844 120.910156 112.242188 118.40625 112.242188 118.40625 L 103.722656 103.652344 C 103.722656 103.652344 102.304688 101.792969 103.09375 99.332031 C 103.878906 96.878906 106.148438 95.773438 107.894531 95.808594 "/>
+<path fill="#0082CA" d="M 115.964844 124.792969 C 115.847656 124.59375 116.09375 124.378906 116.277344 124.519531 C 117.195312 125.21875 118.664062 125.902344 120.683594 125.515625 C 122.164062 125.210938 123.550781 124.296875 124.402344 122.757812 C 125.242188 121.300781 138.8125 97.8125 138.8125 97.8125 C 138.8125 97.8125 141.9375 90.917969 150.207031 90.550781 L 169.96875 90.550781 C 169.96875 90.550781 173 90.390625 174.503906 93.40625 C 175.921875 96.433594 173.941406 98.695312 173.667969 99.109375 C 173.394531 99.523438 142.203125 146.726562 142.203125 146.726562 C 142.203125 146.726562 140.003906 150.347656 135.40625 150.347656 C 130.808594 150.347656 128.707031 146.878906 128.417969 146.398438 C 128.175781 145.992188 118.835938 129.78125 115.964844 124.792969 "/></svg>微出国 · 学</a>
+  <nav><a href="../index.html">路线</a><a href="../slides.html">讲义</a><a href="../docs/" aria-current="page">讲解</a><a href="../drill.html">练习</a><a href="../exam.html">模考</a><a href="../progress.html">进度</a></nav>
+  <button class="theme" onclick="var r=document.documentElement,d=r.getAttribute('data-theme')==='dark';r.setAttribute('data-theme',d?'light':'dark');localStorage.setItem('vv-theme',d?'light':'dark')">◐</button>
+</header>
+<main><section class="sec">
+  <h1 style="font-size:var(--vv-fs-2xl);margin:0 0 8px">讲解 · 35 篇</h1>
+  <p class="sub">475,421 字。想不起来「共保在第几章」时，直接搜「共保」。<br>
+  先按标题与小标题匹配；<b>正文索引在你敲下第一个字时才加载</b>（约 360 KB，只下一次），
+  所以打开这一页仍然很快，而搜得到的东西是完整的。</p>
+  <input id="q" class="doc-search" type="search" placeholder="搜索：共保 / 法定条件 / UMP / statutory …"
+         autocomplete="off" spellcheck="false">
+  <p id="qn" class="sub" style="margin:10px 0 0"></p>
+  <div id="qr" class="doc-results"></div>
+</section>
+<script>
+const DOCS = [{"s": "life-ch01-why-life-insurance", "t": "为什么需要人寿保险：死亡风险、财务冲击与四种风险管理策略（Life 模块地图）", "sub": "", "b": "人寿保险（E311）", "w": 25, "tr": "authored", "h": ["0. 这一篇解决什么问题", "一、制度设计与底层逻辑：身故财务风险为什么要单独评估", "二、2026 现行政策与数字：把死亡风险量化成客户能听懂的话", "三、实务流程：从风险清单到需求分析，代理人这一步怎么走", "四、2026 市场：一个 BC 家庭一生的寿险需求曲线", "五、历史变革：为什么这套框架现在这么讲", "六、案例：三个用错死亡风险框架的场景", "七、考试陷阱与双口径清单", "术语双语表", "来源"], "c": 10267}, {"s": "life-ch02-term-life", "t": "定期寿险：可续、可转、按年定制，2026 市场谁在卖什么（Term Life Insurance）", "sub": "", "b": "人寿保险（E311）", "w": 25, "tr": "authored", "h": ["这一章解决什么问题", "一、制度设计与底层逻辑：为什么定期险的合同条款比它的名字复杂得多", "二、2026 现行政策与数字：期限、续保定价与转换的两种算法", "三、实务流程：从选期限到行使转换权，代理人在每一步做什么", "四、2026 市场：谁在卖、产品叫什么、柜台怎么说", "五、历史变革：从「固定几档」到「按年定制」，变的是什么", "六、案例：三个 BC 场景", "七、考试陷阱与双口径清单", "术语双语对照表"], "c": 10915}, {"s": "life-ch03-whole-life-t100", "t": "终身寿险与 T-100：分红、现金价值、保费抵扣，2026 市场的分红险长什么样", "sub": "", "b": "人寿保险（E311）", "w": 25, "tr": "authored", "h": ["0. 这一篇解决什么问题", "一、制度设计与底层逻辑：为什么终身寿险和 T-100 长这个样子", "二、2026 现行政策与数字：分红率、贷款利率、保司倒闭谁来兜底", "三、实务流程：从投保时的选择到停缴那一刻的四选一", "四、2026 市场：谁在卖，产品叫什么，柜台怎么说", "五、历史变革：一次营销丑闻如何决定了今天的披露规则，以及分红率为什么涨了又跌又涨", "六、案例：三个最容易在柜台上讲错的场景", "七、考试陷阱与双口径清单", "术语双语表", "本页的适用边界", "来源"], "c": 13765}, {"s": "life-ch04-universal-life", "t": "万能寿险：拆开的三要素、YRT 与 LCOI、免税测试，为什么它最容易卖错", "sub": "", "b": "人寿保险（E311）", "w": 25, "tr": "authored", "h": ["0. 这一篇解决什么问题", "一、制度设计与底层逻辑：拆开之后，谁在管什么", "二、2026 现行政策与数字：免税测试为什么存在，教材的利率假设为什么该被重新看", "三、实务流程：从三要素拆分图，到保险成本怎么选，到身故给付怎么定", "四、2026 市场：拆分出来的三要素，现在各家怎么卖", "五、历史变革：从「捆绑一口价」到「拆开自己管」，再到「拆太开就征税」", "六、案例", "七、考试陷阱与双口径清单", "术语双语表", "本页的适用边界", "来源"], "c": 13411}, {"s": "life-ch05-riders", "t": "附加条款与补充保障：每个 rider 解决什么需求，多花的钱值不值", "sub": "", "b": "人寿保险（E311）", "w": 25, "tr": "authored", "h": ["这一章解决什么问题", "一、制度设计与底层逻辑", "二、2026 现行政策与数字", "三、实务流程：从需求分析到保单存续期，附加险在每一步扮演什么角色", "四、2026 市场：谁在卖，附加险叫什么名字", "五、历史变革：这一章为什么要跟着市场重新看一遍", "六、案例", "七、考试陷阱与双口径清单", "术语双语表", "本页的口径边界", "来源"], "c": 13917}, {"s": "life-ch06-group-life", "t": "团体寿险：谁是被保险人，离职怎么转换，福利计划里寿险那一格怎么读", "sub": "", "b": "人寿保险（E311）", "w": 25, "tr": "authored", "h": ["0. 这一章解决什么问题", "一、制度设计与底层逻辑：谁持有主保单，成员怎样取得条款", "二、2026 现行政策与数字：教材写的「行业指引」扛住了十几年了吗", "三、实务流程：从入职到离职,团体寿险这份保障怎么跟着一个人走", "四、2026 市场：谁在管理团体寿险,柜台怎么说", "五、教材背景与今天办理时要分清的依据", "六、案例：三个最容易在柜台上问到、也最容易在考场上算错的场景", "七、考试陷阱与双口径清单", "术语双语表", "本页的适用边界", "来源"], "c": 12091}, {"s": "life-ch07-taxation-and-strategies", "t": "寿险与税：死亡给付为什么免税、保单处置什么时候要交税、企业与遗产怎么用它", "sub": "", "b": "人寿保险（E311）", "w": 25, "tr": "authored", "h": ["一、制度设计与底层逻辑：为什么死亡给付免税，处置却不一定免税", "二、2026 现行政策与数字：三笔教材没赶上的联邦税制变化", "三、实务流程：处置什么时候触发税、怎么算、免税测试为什么存在", "四、2026 市场：永久寿险怎样进入税务与遗产规划", "五、历史变革：从「买了就永远免税」到「每年跑一次测试」", "六、案例", "七、考试陷阱与双口径清单", "术语双语表", "来源"], "c": 14451}, {"s": "life-ch08-business-life", "t": "企业寿险：关键人、买卖协议与公司持有保单，温哥华小老板最常问的三件事", "sub": "", "b": "人寿保险（E311）", "w": 25, "tr": "authored", "h": ["一、制度设计与底层逻辑：企业为什么要为\"人\"买保险", "二、2026 现行政策与数字：终身资本利得豁免（LCGE）与小企业税率", "三、实务流程：三种资金结构怎么落地", "四、2026 市场：谁在卖、怎么卖", "五、历史变革：从\"无协议就是一场家族赌博\"到\"三份保单锁死流程\"", "六、案例", "七、考试陷阱与双口径清单", "术语双语表", "来源"], "c": 12651}, {"s": "life-ch09-application-underwriting", "t": "投保与核保：保险公司在查什么，加费、除外与拒保怎么来的（Application and Underwriting）", "sub": "", "b": "人寿保险（E311）", "w": 25, "tr": "authored", "h": ["一、制度设计与底层逻辑：核保在博弈什么", "二、2026 现行政策与数字", "三、实务流程：从填表到冷静期结束", "四、2026 市场：免体检、快捷出单与保证承保要分开", "五、历史变革：从纸质核保到算法核保", "六、案例：三个 BC 场景", "七、考试陷阱与双口径清单", "术语双语对照表", "本页的适用边界"], "c": 14724}, {"s": "life-ch10-assessing-needs", "t": "评估客户处境：一个人到底需要多少寿险（收入替代法 vs 资本需求法）", "sub": "", "b": "人寿保险（E311）", "w": 25, "tr": "authored", "h": ["0. 这一篇解决什么问题", "一、制度设计与底层逻辑：为什么需求分析必须先于产品推荐", "二、2026 现行政策与数字：教材写的和柜台用的不是一回事", "三、实务流程：把「问处境」和「算保额」拆成两件不同的事", "四、2026 市场：先定保障缺口，再比较期限与持续付款能力", "五、历史变革：这一章的数字为什么必须重算", "六、案例：三个最容易在需求分析里算错的场景", "七、考试陷阱与双口径清单", "术语双语表", "注意：本页 2026-09-05 已回源的三项，及仍需留意的口径", "来源"], "c": 13923}, {"s": "life-ch11-recommending", "t": "提出保险推荐：从需求到产品，披露、比较与 reason-why 信怎么写（Recommending an Insurance Policy）", "sub": "", "b": "人寿保险（E311）", "w": 25, "tr": "authored", "h": ["0. 这一篇解决什么问题", "一、制度设计与底层逻辑：为什么\"推荐\"必须留痕", "二、2026 现行政策与数字：推荐环节沿用需求分析的现行值，新增披露规则的版次", "三、实务流程：从\"算出保额\"到\"客户签字接受\"的六步", "四、2026 市场：推荐环节已经软件化，但底层判断没变", "五、历史变革：从\"消失保费\"丑闻到强制两套情景", "六、案例：三个最容易在\"推荐\"这一步出错的场景", "七、考试陷阱与双口径清单", "术语双语表", "注意：本页标为「待深研」的一项", "来源"], "c": 12426}, {"s": "life-ch12-ongoing-service", "t": "保障期内服务：变更、复效、受益人与理赔——BC 规则怎么落地（Ongoing Policy Service）", "sub": "", "b": "人寿保险（E311）", "w": 25, "tr": "authored", "h": ["一、制度设计与底层逻辑：为什么\"卖出保单\"只是开始", "二、2026 现行政策与数字", "三、实务流程：从服务到理赔的四条链", "四、2026 市场：代理人一年里的续期服务清单", "五、历史变革：教材年份与法律适用是两条线", "六、案例：三个 BC 场景", "七、考试陷阱与双口径清单", "术语双语对照表", "本页的适用边界"], "c": 13373}, {"s": "as-ch01-financial-protection", "t": "意外与疾病保险保护什么：个人、家庭与企业的财务目标与四类风险", "sub": "", "b": "意外与疾病保险（E312）", "w": 25, "tr": "authored", "h": ["0. 这一篇解决什么问题", "一、制度设计与底层逻辑：为什么\"评估需求\"要从\"风险有几种\"讲起", "二、2026 现行政策与数字：政府给付层先讲清楚，私人保险才补得对地方", "三、实务流程：从风险清单到产品清单，代理人这一步怎么走", "四、2026 市场：一个 BC 家庭 / 小企业一生会用到的 A&S 产品地图", "五、历史变革：这张地图为什么现在要重画", "六、案例：三个用错风险框架的场景", "七、考试陷阱与双口径清单", "术语双语表", "来源"], "c": 11516}, {"s": "as-ch02-disability-income", "t": "伤残保险（DI）：收入没了谁来付，个人险、团体险与政府给付怎么先后接力", "sub": "", "b": "意外与疾病保险（E312）", "w": 25, "tr": "authored", "h": ["0. 这一篇解决什么问题", "一、制度设计与底层逻辑：为什么伤残险要持续核对工作能力", "二、2026 现行政策与数字：教材写的和柜台用的不是一回事", "三、实务流程：谁先赔、谁殿后、谁被削", "四、2026 市场：同样叫伤残险，保障定义和抵消条款可以不同", "五、历史变革：这一章为什么现在必须重写", "六、案例：三个最爱考、也最容易在柜台上说错的场景", "七、考试陷阱与双口径清单", "术语双语表", "仍需补齐的证据", "来源"], "c": 20228}, {"s": "as-ch03-critical-illness-ltc", "t": "重疾险与长期护理险：定义决定赔不赔（Critical Illness & Long-Term Care Insurance）", "sub": "", "b": "意外与疾病保险（E312）", "w": 25, "tr": "authored", "h": ["0. 这一章解决什么问题", "一、制度设计与底层逻辑", "二、2026 现行政策与数字", "三、实务流程", "四、2026 市场：谁在卖，产品叫什么", "五、历史变革", "六、案例：三个最容易在柜台上说错、也最容易在考场上丢分的场景", "七、考试陷阱与双口径清单", "术语双语表", "本页的口径边界", "来源"], "c": 14709}, {"s": "as-ch04-health-dental-travel", "t": "保储蓄：扩展医疗、牙科与旅行险，BC MSP 不保什么", "sub": "", "b": "意外与疾病保险（E312）", "w": 25, "tr": "authored", "h": ["0. 这一篇解决什么问题", "一、制度设计与底层逻辑：为什么\"有医保\"还要再买一份", "二、2026 现行政策与数字：MSP 覆盖什么，扩展医疗覆盖什么", "三、实务流程：代理人在这条产品线上做什么", "四、2026 市场：谁在卖，产品叫什么，柜台怎么说", "五、历史变革：这条产品线为什么长这个样子", "六、案例：三个最容易在柜台上说错的场景", "七、考试陷阱与双口径清单", "术语双语表", "本页的口径边界", "来源"], "c": 15332}, {"s": "as-ch05-business-as", "t": "企业伤残险三件套：营业费用险（BOE）、关键人伤残与买卖协议买断", "sub": "", "b": "意外与疾病保险（E312）", "w": 25, "tr": "authored", "h": ["0. 这一篇解决什么问题", "一、制度设计与底层逻辑：企业为什么要为\"暂时干不了活\"这件事单独买保险", "二、2026 现行政策与数字", "三、2026 市场：谁在卖、产品叫什么、柜台怎么说", "四、实务流程：三种产品各自怎么落地，代理人在哪一步做什么", "五、历史资料与现行投保资格分开核对", "六、案例", "七、考试陷阱与双口径清单", "术语双语表", "来源"], "c": 15293}, {"s": "as-ch06-client-profile", "t": "客户画像：收入、资产、现有保障与缺口，A&S 模块权重最大的一环", "sub": "", "b": "意外与疾病保险（E312）", "w": 25, "tr": "authored", "h": ["0. 这一篇解决什么问题", "一、制度设计与底层逻辑：为什么「评估客户需求」占了模块权重的三分之一", "二、2026 现行政策与数字：教材写的和柜台用的不是一回事", "三、实务流程：从事实发现到缺口结论", "四、2026 市场：把职业与收入画像变成可核对的投保问题", "五、历史变革：这一章为什么现在必须重写", "六、案例：三个最容易在柜台上说错的画像场景", "七、考试陷阱与双口径清单", "术语双语表", "仍需补齐的证据", "来源"], "c": 15552}, {"s": "as-ch07-recommendation-contract-service", "t": "A&S 的推荐、合同与服务：法定条款、理赔与续保，BC Insurance Act Part 4 怎么说", "sub": "", "b": "意外与疾病保险（E312）", "w": 25, "tr": "authored", "h": ["0. 这一篇解决什么问题", "一、制度设计与底层逻辑：为什么\"推荐\"要留痕、\"合同\"要有法定底线", "二、2026 现行政策与数字：s.101 九条法定条款逐条对表", "三、实务流程：从推荐到理赔的四条链", "四、2026 市场：A&S 推荐到理赔的代理人动作表 + 团体转个人 31 天窗口实务", "五、历史变革：从\"保司想怎么写就怎么写\"到九条法定底线", "六、案例：三个最容易在柜台上说错的推荐与合同场景", "七、考试陷阱与双口径清单", "术语双语表", "本页的适用边界", "来源"], "c": 13168}, {"s": "as-ch08-group-plans", "t": "团体福利计划专章：资格、费率、协调给付与 ASO——一份保单背后的三方生意", "sub": "", "b": "意外与疾病保险（E312）", "w": 25, "tr": "authored", "h": ["0. 这一篇解决什么问题", "一、制度设计与底层逻辑：团体计划是一份三方合同，不是一份放大的个人保单", "二、2026 现行政策与数字：教材写的申报门槛，是不是也跟着 EI 一起变了", "三、实务流程：从雇主找上门,到理赔发生,这条业务链谁在哪一步做什么", "四、2026 市场：团体险这门生意，2026 年谁在做什么", "五、历史变革：从「团体险几乎没人管」到「行业自律指引接管细节」", "六、案例：三个最能体现本章「谁付钱、谁担风险、谁先赔」这条主线的场景", "七、考试陷阱与双口径清单", "术语双语表", "本页的口径边界", "来源"], "c": 16160}, {"s": "seg-ch01-investment-basics", "t": "投资与储蓄基础：复利、注册账户家族与教材没有的 FHSA", "sub": "", "b": "分离基金与年金（E313）", "w": 25, "tr": "authored", "h": ["一、制度设计与底层逻辑：为什么\"账户\"和\"投资\"是两回事", "二、2026 现行政策与数字：算例、账户家族、以及教材没写的两个缺口", "三、实务流程：代理人在\"评估阶段\"具体做什么", "四、2026 市场：账户是税务容器，产品是容器里的安排", "五、历史变革：注册账户家族是怎么一步步补齐的", "六、案例（以下人物与数字均为示例，不对应真实客户）", "七、考试陷阱与双口径清单", "术语双语表"], "c": 16847}, {"s": "seg-ch02-segregated-funds", "t": "分离基金：保证、保护与它和共同基金的真正区别", "sub": "", "b": "分离基金与年金（E313）", "w": 25, "tr": "authored", "h": ["一、制度设计与底层逻辑：为什么分离基金能有\"保证\"", "二、2026 现行政策与数字：教材写的和现在不一样的地方", "三、实务流程：代理人在哪一步做什么", "四、2026 市场：保证系列、底层基金与费用要分别比较", "五、历史变革：为什么现在的规则跟教材不一样", "六、案例（以下人物与数字均为示例，不对应真实客户）", "七、考试陷阱与双口径清单", "术语双语表"], "c": 15015}, {"s": "seg-ch03-annuities", "t": "年金：把一笔钱换成一辈子的收入，三类年金与 prescribed 税务", "sub": "", "b": "分离基金与年金（E313）", "w": 25, "tr": "authored", "h": ["一、制度设计与底层逻辑：年金在赌什么", "二、2026 现行政策与数字：Assuris 保护、prescribed 税务与算例", "三、实务流程：代理人在这一步该做什么", "四、2026 市场：谁在卖，产品叫什么，柜台怎么说", "五、历史变革：从\"提案\"到\"真实产品\"的时间线", "六、案例：三个最容易在柜台上讲错的场景", "七、考试陷阱与双口径清单", "术语双语表"], "c": 12493}, {"s": "seg-ch04-investor-profile", "t": "投资者画像：KYC、风险承受力与适当性——为什么它是本模块 35% 的大头", "sub": "", "b": "分离基金与年金（E313）", "w": 25, "tr": "authored", "h": ["一、制度设计与底层逻辑：为什么\"了解客户\"是一项持续义务，不是开户手续", "二、2026 现行政策与数字：教材没写到、或写死了的地方", "三、实务流程：从一张净值表到一份推荐理由信", "四、2026 市场：风险问卷之后，还要核产品与现金流", "五、历史变革：从\"代理人主观判断\"到\"结构化留痕\"", "六、案例（案例一至三人物与数字均为示例，不对应真实客户；案例四为官方纪律决定及未核定线索）", "七、考试陷阱与双口径清单", "术语双语表"], "c": 12634}, {"s": "seg-ch05-recommendation", "t": "分离基金与年金的推荐：从画像到产品、申请表与 reason-why 信（Segregated Fund and Annuity Recommendation）", "sub": "", "b": "分离基金与年金（E313）", "w": 25, "tr": "authored", "h": ["一、制度设计与底层逻辑：推荐是判断，不是销售动作", "二、2026 现行政策与数字：DSC 已走完新单禁令，TCR 把\"保证成本\"单独列出来", "三、实务流程：从画像到申请表，六步走完一份合规的推荐", "四、2026 市场：一份 2025 年才发布的整合指引，把推荐与年报要求写进了同一份文件", "五、历史变革：从\"口头推荐\"到\"结构化文件+ 分省监管整合\"", "六、案例（以下人物与数字均为示例，不对应真实客户）", "七、考试陷阱与双口径清单", "术语双语表"], "c": 11857}, {"s": "seg-ch06-07-contracts", "t": "分离基金合同（IVIC）与年金合同：条款逐项读，哪些是保证、哪些能改", "sub": "", "b": "分离基金与年金（E313）", "w": 25, "tr": "authored", "h": ["一、制度设计与底层逻辑：合同条款回归哪部法律", "二、2026 现行政策与数字：教材写的和现在不一样的地方", "三、实务流程：从申请到理赔，谁在哪一步做什么", "四、2026 市场：读一份真实 Information Folder 的顺序", "五、历史变革：为什么现在的规则跟教材不一样", "六、案例（以下人物与数字均为示例，不对应真实客户）", "七、考试陷阱与双口径清单", "术语双语表"], "c": 12499}, {"s": "seg-ch08-group-retirement", "t": "团体退休与投资计划：DB 与 DC 的责任分工，CPP 增强之后企业还要不要办计划", "sub": "", "b": "分离基金与年金（E313）", "w": 25, "tr": "authored", "h": ["一、制度设计与底层逻辑：发起方、管理方、成员、保险人，四方各自的义务边界", "二、2026 现行政策与数字：六种计划怎么分类、CPP 之上要补多少、钱锁在哪里", "三、实务流程：代理人在团体计划里到底做什么", "四、2026 市场:谁在卖、产品叫什么、柜台怎么说", "五、历史变革:从\"雇主兜底\"到\"员工自担\",以及 CPP 增强填补的那一段空白", "六、案例:三个团体计划场景怎么落地", "七、考试陷阱与双口径清单", "术语双语表", "本页的适用边界"], "c": 12243}, {"s": "ethics-ch01-legal-framework", "t": "寿险的法律框架：BC 到底用的是哪部法（Legal Framework Governing Life Insurance）", "sub": "", "b": "伦理与职业实践·普通法（E112）", "w": 25, "tr": "authored", "h": ["一、制度设计与底层逻辑：先分清你在问哪一层", "二、2026 现行政策与数字：BC 这一格具体填什么", "三、实务流程：这一章的规则落到动作上是什么样", "四、2026 市场：一个 BC 寿险代理人日常会撞到的法律清单", "五、历史变革：这一章的规则怎么长成今天这样", "六、案例：三个 BC 场景", "七、考试陷阱与双口径清单", "术语双语对照表", "本页的适用边界"], "c": 18605}, {"s": "ethics-ch02-policy-provisions", "t": "保单条款：谁是当事人、合同何时成立、法律替你写好的那些条款（Insurance Policy Provisions）", "sub": "", "b": "伦理与职业实践·普通法（E112）", "w": 25, "tr": "authored", "h": ["一、制度设计与底层逻辑：一份被立法改写过的合同", "二、2026 现行政策与条文：法定条款逐条对照", "三、实务流程：四条链，每条链上代理人各做什么", "四、2026 市场：读一份真实寿险保单的顺序，与交付时要指给客户看的五处", "五、历史变革：从\"合同自由\"到\"法律替你写好一半\"", "六、案例：三个 BC 场景", "七、考试陷阱与双口径清单", "术语双语对照表", "本页的适用边界"], "c": 16933}, {"s": "ethics-ch03-claims-payment", "t": "理赔与给付：钱最后到谁手里（Claims and Payment of Proceeds）", "sub": "", "b": "伦理与职业实践·普通法（E112）", "w": 25, "tr": "authored", "h": ["一、制度设计与底层逻辑：理赔是一场关于「谁有权拿钱」的举证", "二、2026 现行政策与数字：条号、天数与三张双口径表", "三、实务流程：从接到那通电话到钱到账", "四、2026 市场：理赔柜台上真正会发生的事", "五、历史变革：从「保险人自证清白」到「三把伞 ＋ 硬时限」", "六、案例：三个 BC 场景", "七、考试陷阱与双口径清单", "术语双语对照表", "本页的适用边界"], "c": 17202}, {"s": "ethics-ch04a-client-protection-bodies", "t": "保护客户的机构：谁在管加拿大寿险，各管什么（Bodies That Protect the Client）", "sub": "", "b": "伦理与职业实践·普通法（E112）", "w": 25, "tr": "authored", "h": ["一、制度设计与底层逻辑：为什么这是一张分层的网", "二、2026 现行政策与数字：一张机构地图", "三、实务流程：三条链，各自的入口", "四、2026 市场：拿到具体产品后，怎样找到负责的机构", "五、历史变革：四次改名、一次上调、一次撤回", "六、案例：三个 BC 场景", "七、考试陷阱与双口径清单", "术语双语对照表", "本页的适用边界"], "c": 19832}, {"s": "ethics-ch04b-agent-duties", "t": "寿险代理人的主要义务：从 KYC 到替换披露，违规怎么罚（Main Responsibilities of Life Insurance Agents）", "sub": "", "b": "伦理与职业实践·普通法（E112）", "w": 25, "tr": "authored", "h": ["一、制度设计与底层逻辑：原则管方向，规则管底线", "二、2026 现行政策与数字：三条必须留痕的义务链", "三、实务流程：五条链，各自要在哪一步留痕", "四、2026 市场：把披露、替换与适当性落实到产品比较", "五、历史变革", "六、真实纪律决定：三件 Insurance Council of BC 公开案例（2026-09-05 回源，非虚构）", "七、案例：三个 BC 场景（自拟示例，人物与数字均为虚构）", "八、考试陷阱与双口径清单", "术语双语对照表", "本页的适用边界"], "c": 16702}, {"s": "kb-01-exam-guide", "t": "LLQP 考试制度指南：BC 怎么报名、怎么考、怎么申诉", "sub": "", "b": "考试制度（kb，不计权重）", "w": 0, "tr": "kb", "h": ["0. 先分清两件事：这不是一场考试，是四场", "一、报名：CIPR 号是第一道门槛", "二、考试当天：只许用 CISRO 的电子版参考资料", "三、为什么是模块制 + 60% 及格线 + pilot 题：CISRO 的设计逻辑", "四、三个 12 个月窗口：LLQP 备考最容易踩的坑", "五、重考：前三次不设等待期，第四次要等一年", "六、成绩发布与申诉：内容本身不可申诉", "七、保密条款：为什么本课没有\"真题\"这一层", "八、这份指南和 bc-level1 的普通险 Level 1 有什么不同", "术语对照", "来源"], "c": 6320}, {"s": "kb-02-after-exam-bc", "t": "考完 LLQP 之后：BC 入行清单", "sub": "", "b": "入行与持牌（kb，不计权重）", "w": 0, "tr": "kb", "h": ["0. 通过四场考试只是走了一半的路", "一、Council Rules Course：全员必修，含非居民", "二、找一家保险公司签约（或加入 MGA）", "三、BC的新代理人监管：至少24个月，符合条件可缩短", "四、E&O保险：最低每次100万、累计200万", "五、犯罪记录核查：申请前 90 天内", "六、递交申请：费用与时点", "七、拿到牌照之后：持续义务清单", "八、两条持牌路径对比：Life vs A&S-only", "九、与普通险 Level 1（bc-level1）的对照", "术语对照", "办理前核对", "来源"], "c": 5178}, {"s": "kb-03-pass-rates", "t": "LLQP 通过率怎么读：模块、路径与统计边界", "sub": "", "b": "考试制度（kb，不计权重）", "w": 0, "tr": "kb", "h": ["0. 一个常见的误解：以为难度是全国统一的", "一、全国首次通过率（2025-08 至 2026-07，滚动 12 个月）", "二、课程提供商之间的通过率差：CSI 98%–99% vs Primerica 56%–62%（普通法路径）", "三、BC 省的旧数据：仅供参考，口径不完全一致", "四、13 周学习计划怎么排", "五、给考生的可用结论（不是通过率数字本身）", "术语对照", "来源"], "c": 3189}];
+const qi = document.getElementById("q"), qr = document.getElementById("qr"), qn = document.getElementById("qn");
+const E = (x) => String(x).replace(/[&<>"]/g, (c) => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const TRACK = {foi:"FOI 教材", caib:"CAIB1 导读", quiz:"温习自测", kb:"制度事实", guide:"ICBC 指南"};
+let BODY = null, bodyState = "idle";
+async function loadBody() {
+  if (bodyState !== "idle") return;
+  bodyState = "loading"; qn.textContent = "正在载入正文索引…";
+  try {
+    const rows = await fetch("../assets/search-index.json").then((r) => r.json());
+    BODY = Object.fromEntries(rows.map((r) => [r.s, r.b.toLowerCase()]));
+    bodyState = "ready";
+  } catch (e) { bodyState = "failed"; }
+  draw();
+}
+function hit(d, q) {
+  if (!q) return {ok:true, why:""};
+  const inTitle = (d.t + d.sub).toLowerCase().includes(q);
+  const hs = d.h.filter((h) => h.toLowerCase().includes(q));
+  if (inTitle || hs.length || d.b.includes(q)) return {ok:true, why:hs.slice(0,3).join(" · ")};
+  // 正文命中：给一段上下文，让人不用点进去就知道是不是要找的那一处
+  const body = BODY && BODY[d.s];
+  if (body) {
+    const i = body.indexOf(q);
+    if (i >= 0) {
+      const from = Math.max(0, i - 24);
+      return {ok:true, why:"正文：…" + body.slice(from, i + q.length + 40).trim() + "…"};
+    }
+  }
+  return {ok:false};
+}
+function draw() {
+  const q = qi.value.trim().toLowerCase();
+  const rows = DOCS.map((d) => ({d, m:hit(d, q)})).filter((x) => x.m.ok);
+  if (q && bodyState === "idle") loadBody();
+  qn.textContent = q
+    ? `${rows.length} 篇命中` + (bodyState === "loading" ? "（正文索引载入中…）"
+        : bodyState === "failed" ? "（正文索引没载上，当前只搜了标题）" : "")
+    : "";
+  qr.innerHTML = rows.map(({d, m}) => `<a class="doc-row" href="${d.s}.html">
+    <span class="doc-row-b"><b>${E(d.t)}</b>
+      <span class="doc-row-m">${E(TRACK[d.tr]||d.tr)} · ${E(d.b)} 考纲 ${d.w}% · ${d.c.toLocaleString()} 字</span>
+      ${m.why ? `<span class="doc-row-h">↳ ${E(m.why)}</span>` : ""}</span></a>`).join("")
+    || `<p class="sub">没找到「${E(q)}」${bodyState === "ready" ? "（标题与正文都搜过了）" : ""}。试试更短的词，或去<a href="../drill.html">练习</a>里搜题。</p>`;
+}
+qi.addEventListener("input", draw);
+qi.addEventListener("keydown", (e) => { if (e.key === "Escape") { qi.value = ""; draw(); } });
+draw();
+</script></main>
+<footer class="foot">
+  <p><b>微出国 · 学</b> — LLQP 人寿保险牌照（BC 省考）备考。内容是学习者视角的整理，不是 AMF 教材。<br>
+  考试以 CISRO 现行考纲为准；实务以 Insurance Council of BC 与各监管机构现行文件为准。发现错的地方，回论坛帖里说一声。</p>
+</footer>
+<script>var UP_PATH="../";var BUILD_TIME="1789338933";</script>
+<script>
+if((localStorage.getItem('vv-theme')||'')==='dark')
+  document.documentElement.setAttribute('data-theme','dark');
+
+// 自动版本更新检测：对比 DOM 的 BUILD_TIME 与服务器最新 manifest.json，出现新版本时带时间戳无缝重载绕过 HTTP 磁盘缓存
+(function(){
+  function checkVersion(){
+    var up = typeof UP_PATH !== 'undefined' ? UP_PATH : '';
+    fetch(up + 'assets/manifest.json?t=' + Date.now(), { cache: 'no-store' }).then(function(r){
+      return r.ok ? r.json() : null;
+    }).then(function(m){
+      if(!m || !m.build_time) return;
+      var serverBuild = String(m.build_time);
+      var clientBuild = typeof BUILD_TIME !== 'undefined' ? String(BUILD_TIME) : '';
+      if(clientBuild && serverBuild && clientBuild !== serverBuild){
+        var reloaded = sessionStorage.getItem('vv_reloaded_build');
+        if(reloaded !== serverBuild){
+          sessionStorage.setItem('vv_reloaded_build', serverBuild);
+          var u = new URL(location.href);
+          u.searchParams.set('_v', serverBuild);
+          location.replace(u.href);
+        } else if(!document.getElementById('vv-update-banner')) {
+          var bar = document.createElement('div');
+          bar.id = 'vv-update-banner';
+          bar.className = 'vv-update-banner';
+          bar.innerHTML = '🎉 网站已更新到最新版本，建议按 <b>Ctrl+F5</b> (或 <b>Cmd+Shift+R</b>) 强制刷新页面。<button onclick="location.reload(true)">立即刷新</button>';
+          document.body.prepend(bar);
+        }
+      }
+    }).catch(function(){});
+  }
+
+  checkVersion();
+  document.addEventListener('visibilitychange', function(){
+    if(document.visibilityState === 'visible') checkVersion();
+  });
+  window.addEventListener('focus', checkVersion);
+  setInterval(checkVersion, 5 * 60 * 1000);
+})();
+
+// 页眉登录态。身份服务不在（纯静态托管、或还没起 dev-server）时静默跳过——
+// 内容页是公开的，永远不该因为身份服务缺席而坏掉。
+fetch('/api/me').then(function(r){return r.ok?r.json():null;}).then(function(m){
+  if(!m||document.getElementById('vv-auth'))return;
+  var n=document.querySelector('.vv-header nav');if(!n)return;
+  var e=document.createElement('span');e.id='vv-auth';e.className='auth';
+  e.innerHTML=m.loggedIn
+    ?'<span title="学习记录已跨设备同步">'+m.username+'</span> <a href="/auth/logout">退出</a>'
+    :'<a href="/auth/login?next='+encodeURIComponent(location.pathname)+'">登录</a>';
+  n.after(e);
+}).catch(function(){});
+
+// ── 阅读器增强：专注/最大化模式 & 键盘/手势切页 ──
+(function(){
+  var prevUrl = typeof PREV_URL !== 'undefined' ? PREV_URL : '';
+  var nextUrl = typeof NEXT_URL !== 'undefined' ? NEXT_URL : '';
+
+  function updateMaxBtns(isMax) {
+    var btns = document.querySelectorAll('.vv-reader-btn-max');
+    for(var i=0; i<btns.length; i++) {
+      btns[i].innerHTML = isMax ? '✕ 退出专注' : '⛶ 专注阅读';
+    }
+  }
+
+  window.toggleDocMaximize = function() {
+    var root = document.documentElement;
+    var isMax = root.classList.toggle('is-doc-maximized');
+    try { localStorage.setItem('vv_doc_maximized', isMax ? 'true' : 'false'); } catch(e){}
+    updateMaxBtns(isMax);
+  };
+
+  function updateAsideBtns(isCol) {
+    var btns = document.querySelectorAll('.vv-aside-btn');
+    for(var i=0; i<btns.length; i++) {
+      btns[i].innerHTML = isCol ? '◨ 展开侧栏' : '◧ 折叠侧栏';
+    }
+  }
+
+  window.toggleSidebarCollapse = function() {
+    var root = document.documentElement;
+    var isCol = root.classList.toggle('is-aside-collapsed');
+    try { localStorage.setItem('vv_aside_collapsed', isCol ? 'true' : 'false'); } catch(e){}
+    updateAsideBtns(isCol);
+  };
+
+  try {
+    if(localStorage.getItem('vv_aside_collapsed') === 'true') {
+      document.documentElement.classList.add('is-aside-collapsed');
+      setTimeout(function(){ updateAsideBtns(true); }, 0);
+    }
+  } catch(e){}
+
+  // 本页目录 <details> 状态记忆
+  var tocDet = document.querySelector('.doc-toc-details');
+  if(tocDet) {
+    try {
+      if(localStorage.getItem('vv_toc_open') === 'false') {
+        tocDet.removeAttribute('open');
+      }
+    } catch(e){}
+    tocDet.addEventListener('toggle', function() {
+      try { localStorage.setItem('vv_toc_open', tocDet.open ? 'true' : 'false'); } catch(e){}
+    });
+  }
+
+  document.addEventListener('keydown', function(e) {
+    var tag = (e.target && e.target.tagName) || '';
+    if (tag === 'INPUT' || tag === 'TEXTAREA' || tag === 'SELECT' || e.target.isContentEditable) return;
+    if (e.key === 'ArrowLeft' && prevUrl) {
+      location.href = prevUrl;
+    } else if (e.key === 'ArrowRight' && nextUrl) {
+      location.href = nextUrl;
+    } else if (e.key === 'f' || e.key === 'F' || e.key === 'm' || e.key === 'M') {
+      toggleDocMaximize();
+    } else if (e.key === 'Escape' && document.documentElement.classList.contains('is-doc-maximized')) {
+      toggleDocMaximize();
+    }
+  });
+
+  var touchStartX = 0, touchStartY = 0;
+  document.addEventListener('touchstart', function(e) {
+    if (e.touches && e.touches.length === 1) {
+      touchStartX = e.touches[0].clientX;
+      touchStartY = e.touches[0].clientY;
+    }
+  }, { passive: true });
+
+  document.addEventListener('touchend', function(e) {
+    if (!e.changedTouches || e.changedTouches.length !== 1) return;
+    var dx = e.changedTouches[0].clientX - touchStartX;
+    var dy = e.changedTouches[0].clientY - touchStartY;
+    if (Math.abs(dx) > 90 && Math.abs(dy) < 60) {
+      if (dx > 0 && prevUrl) {
+        location.href = prevUrl;
+      } else if (dx < 0 && nextUrl) {
+        location.href = nextUrl;
+      }
+    }
+  }, { passive: true });
+})();
+</script>
+<script>if('serviceWorker' in navigator){addEventListener('load',()=>navigator.serviceWorker.register('../sw.js').catch(()=>{}))}</script>
+</body></html>
