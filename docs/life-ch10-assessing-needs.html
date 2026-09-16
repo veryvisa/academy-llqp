@@ -6,7 +6,7 @@
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
 <title>评估客户处境：一个人到底需要多少寿险（收入替代法 vs 资本需求法） · 微出国 · 学</title>
-<link rel="stylesheet" href="../assets/style.css?v=1789338933">
+<link rel="stylesheet" href="../assets/style.css?v=1789523631">
 <script>var PREV_URL="life-ch09-application-underwriting.html";var NEXT_URL="life-ch11-recommending.html";</script>
 <link rel="manifest" href="../manifest.webmanifest">
 </head>
@@ -22,7 +22,7 @@
 <div class="doc-wrap">
   <article class="doc">
     <div class="doc-bar">
-      <p class="crumb"><a href="../index.html">路线</a> › 人寿保险（E311）</p>
+      <p class="crumb"><a href="../index.html">路线</a> › 人寿保险</p>
       <div class="doc-bar-actions">
         <span class="vv-reader-hint">键盘 ← → 翻页</span>
         <button class="vv-reader-btn vv-aside-btn" onclick="toggleSidebarCollapse()" title="折叠/展开右侧栏">◧ 折叠侧栏</button>
@@ -30,19 +30,19 @@
       </div>
     </div>
     <h1>评估客户处境：一个人到底需要多少寿险（收入替代法 vs 资本需求法）</h1>
-    <div class="doc-meta"><span class="vv-badge vv-badge--accent">人寿保险（E311） · 考纲 25%</span><span class="vv-badge">13,923 字</span><span class="vv-badge">约 27 分钟</span></div>
+    <div class="doc-meta"><span class="vv-badge vv-badge--accent">人寿保险 · 考纲 25%</span><span class="vv-badge">13,954 字</span><span class="vv-badge">约 27 分钟</span></div>
     <blockquote>
 <p>核实日期：2026-09-06｜本页现行数字的出处：CPP 遗属与身故给付 2026 现行值（<a class="src-ref" href="https://www.canada.ca/en/services/benefits/publicpensions/cpp/payment-amounts.html" title="Canada Pension Plan (CPP) payment amounts">Employment and Social Develo…</a>）、终身资本利得豁免 LCGE 现行值（<a class="src-ref" href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/deductions-credits-expenses/line-25400-capital-gains-deduction.html" title="Line 25400 — Capital gains deduction / LCGE">CRA</a>）、2026 BPA 与LCGE年度指数表（<a class="src-ref" href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/frequently-asked-questions-individuals/adjustment-personal-income-tax-benefit-amounts.html" title="Indexation adjustment for personal income tax and benefit amounts - Canada.ca">canada.ca</a>）。
 复核周期：2026-10-01（先复核按季度调整的 OAS；CPP及WorkSafeBC年度数字在2027年初复核）。CPP 各项给付每年会调；OAS 遗属津贴、BC WorkSafeBC 工伤致死给付、BC PBSA 遗属年金比例三项已于 2026-09-05 回源，见第二节第4条与文末「来源」。</p>
 </blockquote>
 <h2 id="s0">0. 这一篇解决什么问题</h2>
-<p>你要考的是 <strong>E311 人寿保险</strong>，本篇对应 CISRO 能力组件 <strong>c1「评估客户需求与处境」，占本模块 35%</strong>——是整个 Life 牌照考纲里单一权重最大的一块，比第二大的 c2「分析可用产品」（30%）还要重。</p>
+<p>你要考的是 <strong>人寿保险模块</strong>，本篇对应 CISRO 能力组件 <strong>c1「评估客户需求与处境」，占本模块 35%</strong>——是整个 Life 牌照考纲里单一权重最大的一块，比第二大的 c2「分析可用产品」（30%）还要重。</p>
 <p>这一篇讲的不是「寿险有哪些种类」，而是<strong>一个具体的人，到底该买多少保额</strong>——这个数字从哪里来，用哪种方法算，算出来的候选答案为什么可以相差三倍以上。需求分析（needs analysis）是整个销售流程里唯一一步先算清楚再谈产品的环节：算错这一步，后面推荐得再漂亮的产品组合也是建在错的地基上。</p>
 <p>学完这一篇，你应该能做三件事：① 用一张清单把客户处境完整问一遍，不漏掉前配偶赡养费、企业股权、注册账户展期这类容易被忽略的项目；② 分别用两种方法算出保额建议，并说清楚数字为什么不一样；③ 识别「用房价代替按揭余额」「忘了减既有保障」这类最常见的算数陷阱。</p>
 <hr />
 <h2 id="s1">一、制度设计与底层逻辑：为什么需求分析必须先于产品推荐</h2>
 <h3 id="s1-1">1. 它解决的不是「要不要买保险」，是「买多少」</h3>
-<p>E311 前九章讲的都是产品——定期险、终身寿险、万能寿险、附加险各自的机制。但一份保单最容易出问题的地方，往往不是产品条款，而是<strong>保额定错了</strong>：保额定低了，家庭在真正需要钱的那一刻缺口打开；保额定高了，客户为用不上的保障年复一年多缴保费。需求分析法（needs analysis approach）存在的唯一理由，就是把「买多少」这个问题从代理人的直觉，变成一套客户能看懂、能核对、能签字确认的计算过程。</p>
+<p>本模块前九讲讲的都是产品——定期险、终身寿险、万能寿险、附加险各自的机制。但一份保单最容易出问题的地方，往往不是产品条款，而是<strong>保额定错了</strong>：保额定低了，家庭在真正需要钱的那一刻缺口打开；保额定高了，客户为用不上的保障年复一年多缴保费。需求分析法（needs analysis approach）存在的唯一理由，就是把「买多少」这个问题从代理人的直觉，变成一套客户能看懂、能核对、能签字确认的计算过程。</p>
 <p>由此产生本章第一条底层逻辑：<strong>需求分析不是产品销售的前奏，是一份独立的、客户应该拿到手的财务分析文件</strong>。它的产出不是「该买哪张保单」，是「这个家庭如果现在少了这份收入，缺口是多少」——产品配置是下一步的事。</p>
 <h3 id="s1-2">2. 谁与谁在博弈：代理人的执业风险 vs 客户的信息不对称</h3>
 <p>需求分析的执业风险集中在<strong>代理人有没有问全</strong>。客户不会主动提起「我和前任还有一份调解协议里的抚养费义务」「我的合伙企业权益身故时要视同处置」——只问「你一年赚多少」就报保额，遗漏的部分不会自动消失，只会在理赔发生、家庭最脆弱的那一刻才暴露出来。</p>
@@ -59,13 +59,13 @@
 <h3 id="s1-4">4. 底层逻辑延伸：企业主的处境不是「雇员处境的放大版」</h3>
 <p>企业主客户会分叉成三条完全不同的路径：<strong>独资企业</strong>身故后企业通常随之消亡，遗属损失的是自雇收入，企业资产按视同处置计算；公司股东身故可能触发其股权视同处置的资本利得，若符合合格小型企业公司条件可用终身资本利得豁免（LCGE）部分抵消；合伙企业权益同样视同处置触发资本利得，普通经营合伙通常不享有 LCGE；合格家族农渔业合伙权益须另核——这条税负差异是本章最容易被误答的一处（详见第二节）。</p>
 <hr />
-<h2 id="s2">二、2026 现行政策与数字：教材写的和柜台用的不是一回事</h2>
-<p>这一章的教材过期密度和伤残险那一章一样高，原因相同：它大量引用政府遗属给付项目，而这些项目每年都在指数化调整。以下现行数字全部挂了 LWS 出处并标了年份快照。</p>
+<h2 id="s2">二、2026 现行政策与数字：考试口径写的和柜台用的不是一回事</h2>
+<p>这一章的考试口径过期密度和伤残险那一章一样高，原因相同：它大量引用政府遗属给付项目，而这些项目每年都在指数化调整。以下现行数字全部挂了 LWS 出处并标了年份快照。</p>
 <h3 id="s2-1">1. CPP 给付：基本额与附加额分开</h3>
 <div class="table-scroll"><table>
 <thead>
 <tr>
-<th>教材 2022 说</th>
+<th>考试口径 2022 说</th>
 <th>2026 现行</th>
 <th>考场答·柜台做</th>
 </tr>
@@ -88,7 +88,7 @@
 <div class="table-scroll"><table>
 <thead>
 <tr>
-<th>教材 2022 说</th>
+<th>考试口径 2022 说</th>
 <th>2026 现行</th>
 <th>考场答·柜台做</th>
 </tr>
@@ -102,7 +102,7 @@
 <tr>
 <td>普通经营合伙权益不适用</td>
 <td>普通合伙与合格家族农渔业合伙须区分，后者符合定义时可适用</td>
-<td>不能把教材的一类企业场景推广为所有合伙权益都不适用</td>
+<td>不能把考试口径的一类企业场景推广为所有合伙权益都不适用</td>
 </tr>
 </tbody>
 </table></div>
@@ -116,7 +116,7 @@
 <th>项目</th>
 <th>2026 现行值</th>
 <th>出处</th>
-<th>教材怎么写</th>
+<th>考试口径怎么写</th>
 </tr>
 </thead>
 <tbody>
@@ -136,7 +136,7 @@
 <td>CPP 一次性身故给付上限</td>
 <td>基本 $2,500；符合附加条件最高 $5,000</td>
 <td><a class="src-ref" href="https://www.canada.ca/en/services/benefits/publicpensions/cpp/cpp-death-benefit.html" title="Death Benefit - Canada.ca">canada.ca</a></td>
-<td>教材旧额；现行须再判附加条件</td>
+<td>考试口径旧额；现行须再判附加条件</td>
 </tr>
 <tr>
 <td>LCGE（小型企业股份 / 农渔业财产，现已统一）</td>
@@ -148,19 +148,19 @@
 <td>OAS 遗属津贴（Allowance for the Survivor，60–64 岁低收入遗属）</td>
 <td>2026年7-9月季度 <strong>$1,702.34/月</strong>；年收入门槛官网自身两处不一致——开篇写 $30,336，收入门槛表写 $30,696（页面标注最后更新2026-05-01，未注明各自对应哪个时段）</td>
 <td>Government of Canada (Servic…（<a class="src-ref" href="https://www.canada.ca/en/services/benefits/publicpensions/old-age-security/guaranteed-income-supplement/allowance-survivor.html" title="Allowance for the Survivor">1</a>、<a class="src-ref" href="https://www.canada.ca/en/services/benefits/publicpensions/old-age-security/guaranteed-income-supplement/allowance-survivor/eligibility.html" title="Allowance for the Survivor — Eligibility">2</a>）</td>
-<td>教材给出 2022 年 Q2 数字 $1,468.47/月，收入门槛 $24,496，均属过期快照；现行月给付已涨约16%</td>
+<td>考试口径给出 2022 年 Q2 数字 $1,468.47/月，收入门槛 $24,496，均属过期快照；现行月给付已涨约16%</td>
 </tr>
 <tr>
 <td>BC WorkSafeBC 工伤致死给付具体标准</td>
 <td>2026年（2026-01-01至2026-12-31）：丧葬及相关费用上限 <strong>$11,704.51</strong>、遗体运送上限 $1,849.23；无子女遗属配偶最低月给付 <strong>$1,451.63</strong>（不扣联邦给付）；超3名子女后每名子女每月额外 $449.20；有子女家庭最低月给付按视同年收入$48,395.62计算下限。无子女配偶须分流：50岁及以上或因身心障碍不能工作者以60%为基准；50岁以下且能工作者，每少一岁减1个百分点，最低30%。再按法例抵扣50%对应联邦给付，并受最低月额保护；有子女家庭另按其规则计算；计算基准年薪上限即2026最高可保工资$127,500</td>
 <td><a class="src-ref" href="https://www.worksafebc.com/en/resources/law-policy/rehabilitation-services-and-claims-manual-volume-ii/rehabilitation-services-and-claims-manual-volume-ii/chapter-8?lang=en&amp;direct=" title="Rehabilitation Services &amp; Claims Manual, Volume II, Chapter 8 — Compensation on the Death of a Worker">WorkSafeBC</a>、<a class="src-ref" href="https://www.worksafebc.com/en/resources/law-policy/board-minutes/2026-maximum-wage-rate?lang=en" title="WorkSafeBC 2026 Maximum Wage Rate">worksafebc.com</a></td>
-<td>教材只给全国 AWCBC 汇总区间（丧葬费 $4,000 至无上限、一次性给付 $2,000 至逾 $100,000、月给付低至 $400），未点名 BC 具体数字</td>
+<td>考试口径只给全国 AWCBC 汇总区间（丧葬费 $4,000 至无上限、一次性给付 $2,000 至逾 $100,000、月给付低至 $400），未点名 BC 具体数字</td>
 </tr>
 <tr>
 <td>BC《Pension Benefits Standards Act》法定 DBPP 遗属年金比例是否落在 60%–66% 区间</td>
 <td>BC 对受现行 PBSA 管辖、含给付公式条款的计划，以 s.80 规定符合条件的退休会员默认联合遗属年金，任一方死亡后不低于原额60%；配偶可在起领前90天内，在见证人面前且会员不在场时签署规定豁免</td>
 <td><a class="src-ref" href="https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/00_12030" title="BC PBSA现行s80遗属年金">bclaws.gov.bc.ca</a></td>
-<td>教材给出因省而异的 60%–66% 区间，未点名 BC 具体条款——现已确认 BC 落在区间下限 60%</td>
+<td>考试口径给出因省而异的 60%–66% 区间，未点名 BC 具体条款——现已确认 BC 落在区间下限 60%</td>
 </tr>
 </tbody>
 </table></div>
@@ -232,7 +232,7 @@
 <tr>
 <td>优点</td>
 <td>计算快，适合初次面谈的粗筛</td>
-<td>精确反映真实需要，教材明确指出这是更被推荐的方法</td>
+<td>精确反映真实需要，考试口径明确指出这是更被推荐的方法</td>
 </tr>
 <tr>
 <td>缺点</td>
@@ -326,7 +326,7 @@
 <p><strong>第一步，收入缺口</strong>：$2,600 − $307.81 ＝ <strong>$2,292.19/月</strong>，按零实际净收益的简化耗尽法覆盖10年；这是预算假设，18岁后抚养及升学需求应另列：$2,292.19 × 12 × 10 ≈ <strong>$275,000</strong>。</p>
 <p><strong>第二步，一次性资本需求</strong>：房贷部分用<strong>按揭余额 $410,000</strong>（不是市值 $860,000）＋ 丧葬费 $15,000 ＝ $425,000。</p>
 <p><strong>第三步，总需求与既有保障相减</strong>：$275,000 ＋ $425,000 ＝ $700,000；减去既有团体险 $100,000 ＝ <strong>$600,000</strong> 建议新增保额。</p>
-<p><strong>常见错法</strong>：① 把房屋市值 $860,000 代入而不是按揭余额，会让总需求虚增 $450,000；② 忘记减团体险 $100,000，会让客户为已有的保障重复付费；③ 把 CPP 子女给付误用教材 2022 年的 $264.53 而不是现行 $307.81——三处错法叠加，最终保额建议可能偏差超过 $500,000。</p>
+<p><strong>常见错法</strong>：① 把房屋市值 $860,000 代入而不是按揭余额，会让总需求虚增 $450,000；② 忘记减团体险 $100,000，会让客户为已有的保障重复付费；③ 把 CPP 子女给付误用考试口径 2022 年的 $264.53 而不是现行 $307.81——三处错法叠加，最终保额建议可能偏差超过 $500,000。</p>
 <hr />
 <h2 id="s7">七、考试陷阱与双口径清单</h2>
 <p>以下每条对应 CISRO 公开样题中需求分析相关题目的考点与陷阱形态，按版权边界只写形态，不复述题干。</p>
@@ -353,10 +353,10 @@
 <p><strong>资本保留法与资本耗尽法选错</strong>（方法误用）。有明确终止年限的需求（子女到 18 岁、赡养费到前配偶再婚或 65 岁）该用耗尽法；没有明确终点的长期收入替代需求才考虑保留法。题干给出具体年数或年龄终点，答案方向就是耗尽法，用保留法会大幅高估。</p>
 </li>
 <li>
-<p><strong>CPP 遗属给付误用教材 2022 年旧数字</strong>（数字过期）。柜台一律用现行值；考场按题干给出的数字作答，题干没给具体数字才需要判断用哪个口径。</p>
+<p><strong>CPP 遗属给付误用考试口径 2022 年旧数字</strong>（数字过期）。柜台一律用现行值；考场按题干给出的数字作答，题干没给具体数字才需要判断用哪个口径。</p>
 </li>
 </ol>
-<p><strong>双口径清单（考场 vs 柜台）</strong>：① CPP 遗属月给付与子女月给付——考场按题干／教材旧值，柜台用现行值；② CPP 一次性身故给付——基本 $2,500，2025 年起符合附加条件可达 $5,000；③ LCGE 限额——考场按题干版本，实务核年度及剩余额度，2026 上限 $1,275,000；④ 团体寿险离职转换窗口天数——教材内部本身有 30 天与 31 天两处不一致，柜台一律翻主合同或查 CLHIA 现行指引，不背固定天数。</p>
+<p><strong>双口径清单（考场 vs 柜台）</strong>：① CPP 遗属月给付与子女月给付——考场按题干／考试口径旧值，柜台用现行值；② CPP 一次性身故给付——基本 $2,500，2025 年起符合附加条件可达 $5,000；③ LCGE 限额——考场按题干版本，实务核年度及剩余额度，2026 上限 $1,275,000；④ 团体寿险离职转换窗口天数——考试口径内部本身有 30 天与 31 天两处不一致，柜台一律翻主合同或查 CLHIA 现行指引，不背固定天数。</p>
 <p><strong>边学边测</strong>：本章题库共 42，覆盖三层难度与四道以上情景算数题。</p>
 <hr />
 <h2 id="术语双语表">术语双语表</h2>
@@ -387,7 +387,7 @@
 <tr>
 <td>capital needs approach</td>
 <td>资本需求法</td>
-<td>逐项列出遗属收支缺口与一次性需求，教材更推荐</td>
+<td>逐项列出遗属收支缺口与一次性需求，考试口径更推荐</td>
 </tr>
 <tr>
 <td>capitalized value</td>
@@ -504,7 +504,7 @@
 <li><a href="#s1-4">4. 底层逻辑延伸：企业主的处境不是「雇员处境的放大版」</a></li>
 </ul>
 </li>
-<li><a href="#s2">二、2026 现行政策与数字：教材写的和柜台用的不是一回事</a><ul>
+<li><a href="#s2">二、2026 现行政策与数字：考试口径写的和柜台用的不是一回事</a><ul>
 <li><a href="#s2-1">1. CPP 给付：基本额与附加额分开</a></li>
 <li><a href="#s2-2">2. LCGE：年度金额与资产资格是两道不同的问题</a></li>
 <li><a href="#s2-3">3. 联邦税率与基本个人免税额（BPA）：影响的是收入替代法里的「税后调整」这一步</a></li>
@@ -543,10 +543,10 @@
   </aside>
 </div></main>
 <footer class="foot">
-  <p><b>微出国 · 学</b> — LLQP 人寿保险牌照（BC 省考）备考。内容是学习者视角的整理，不是 AMF 教材。<br>
+  <p><b>微出国 · 学</b> — LLQP 人寿保险牌照（BC 省考）备考。内容是学习者视角的整理，与 AMF 无隶属关系。<br>
   考试以 CISRO 现行考纲为准；实务以 Insurance Council of BC 与各监管机构现行文件为准。发现错的地方，回论坛帖里说一声。</p>
 </footer>
-<script>var UP_PATH="../";var BUILD_TIME="1789338933";</script>
+<script>var UP_PATH="../";var BUILD_TIME="1789523631";</script>
 <script>
 if((localStorage.getItem('vv-theme')||'')==='dark')
   document.documentElement.setAttribute('data-theme','dark');
