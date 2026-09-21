@@ -1,0 +1,451 @@
+<!doctype html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<title>LLQP 通过率怎么读：模块、路径与统计边界 · 微出国 · 学</title>
+<link rel="stylesheet" href="../assets/style.css?v=1789950443">
+<script>var PREV_URL="kb-02-after-exam-bc.html";var NEXT_URL="";</script>
+<link rel="manifest" href="../manifest.webmanifest">
+</head>
+<body class="vv">
+<header class="vv-header">
+  <a class="vv-brand" href="../index.html"><svg viewBox="102.305 90.391 73.617 59.957" width="28" aria-hidden="true" class="mark">
+<path fill="#30D9C4" d="M 107.894531 95.808594 L 127.277344 95.808594 C 127.277344 95.808594 129.507812 95.628906 130.835938 97.679688 C 131.585938 98.910156 131.65625 100.316406 131.082031 101.546875 L 121.609375 117.953125 C 121.609375 117.953125 120.335938 120.65625 117.011719 120.824219 C 113.714844 120.910156 112.242188 118.40625 112.242188 118.40625 L 103.722656 103.652344 C 103.722656 103.652344 102.304688 101.792969 103.09375 99.332031 C 103.878906 96.878906 106.148438 95.773438 107.894531 95.808594 "/>
+<path fill="#0082CA" d="M 115.964844 124.792969 C 115.847656 124.59375 116.09375 124.378906 116.277344 124.519531 C 117.195312 125.21875 118.664062 125.902344 120.683594 125.515625 C 122.164062 125.210938 123.550781 124.296875 124.402344 122.757812 C 125.242188 121.300781 138.8125 97.8125 138.8125 97.8125 C 138.8125 97.8125 141.9375 90.917969 150.207031 90.550781 L 169.96875 90.550781 C 169.96875 90.550781 173 90.390625 174.503906 93.40625 C 175.921875 96.433594 173.941406 98.695312 173.667969 99.109375 C 173.394531 99.523438 142.203125 146.726562 142.203125 146.726562 C 142.203125 146.726562 140.003906 150.347656 135.40625 150.347656 C 130.808594 150.347656 128.707031 146.878906 128.417969 146.398438 C 128.175781 145.992188 118.835938 129.78125 115.964844 124.792969 "/></svg>微出国 · 学</a>
+  <nav><a href="../index.html">路线</a><a href="../slides.html">讲义</a><a href="../docs/" aria-current="page">讲解</a><a href="../cards/">知识卡</a><a href="../drill.html">练习</a><a href="../exam.html">模考</a><a href="../progress.html">进度</a></nav>
+  <button class="theme" onclick="var r=document.documentElement,d=r.getAttribute('data-theme')==='dark';r.setAttribute('data-theme',d?'light':'dark');localStorage.setItem('vv-theme',d?'light':'dark')">◐</button>
+</header>
+<main><a href="kb-02-after-exam-bc.html" class="vv-float-nav vv-float-nav--prev" title="上一篇: 考完 LLQP 之后：BC 入行清单"><span class="vv-float-nav__icon">‹</span><span class="vv-float-nav__card"><small>← 上一篇</small><strong>考完 LLQP 之后：BC 入行清单</strong></span></a><div class="vv-max-dock"><span class="vv-max-dock__hint">键盘 ← → 切页 | Esc 退出</span><button class="vv-reader-btn vv-reader-btn-max" onclick="toggleDocMaximize()">✕ 退出专注</button></div>
+<section class="cover short" aria-label="页面封面"><div class="cover-in"><p class="cover-eyebrow">考试制度（kb，不计权重） · 考纲 0%</p><p class="crumb"><a href="../index.html">路线</a> › 考试制度（kb，不计权重）</p><h1>LLQP 通过率怎么读：模块、路径与统计边界</h1><div class="doc-meta"><span class="vv-badge vv-badge--accent">考试制度（kb，不计权重） · 考纲 0%</span><span class="vv-badge">3,195 字</span><span class="vv-badge">约 6 分钟</span></div></div></section>
+<div class="doc-wrap">
+  <article class="doc">
+    <div class="doc-bar">
+      
+      <div class="doc-bar-actions">
+        <span class="vv-reader-hint">键盘 ← → 翻页</span>
+        <button class="vv-reader-btn vv-aside-btn" onclick="toggleSidebarCollapse()" title="折叠/展开右侧栏">◧ 折叠侧栏</button>
+        <button class="vv-reader-btn vv-reader-btn-max" onclick="toggleDocMaximize()" title="最大化专注阅读 (快捷键 F)">⛶ 专注阅读</button>
+      </div>
+    </div>
+    
+    <blockquote>
+<p>核读基准：2026-09-06（增补证据抓取2026-09-07）｜来源：CISRO《Exam Pass Rate at First Attempt by Course Provider》滚动 12 个月月报（2025-08 至 2026-07，<a class="src-ref" href="https://www.cisro-ocra.com/Documents/View/2857" title="Exam Pass Rate at First Attempt by Course Provider, Aug 1 2025 – Jul 31 2026">CISRO</a>），另参考 2022–23 旧分省表与 IFSE 13 周学习计划）。
+复核周期：滚动报表按月检查，下一次2026-10-01。CISRO 按滚动 12 个月窗口更新此报表，数字每年都会变。</p>
+</blockquote>
+<h2 id="s0">0. 一个常见的误解：以为难度是全国统一的</h2>
+<p>LLQP使用统一考纲，但不同模块和课程提供商的首考通过率并不相同。通过率是特定时间窗、特定考生群体的结果，不能单凭它判断某家教学更好、某类学员更认真，或某个考生通过的概率。先看分母、模块、时间与样本数量，再谈个人备考安排。</p>
+<h2 id="s1">一、全国首次通过率（2025-08 至 2026-07，滚动 12 个月）</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>模块</th>
+<th style="text-align: right;">考生人数</th>
+<th style="text-align: right;">首考通过率</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>人寿保险 Life Insurance</td>
+<td style="text-align: right;">22,655</td>
+<td style="text-align: right;"><strong>77%</strong></td>
+</tr>
+<tr>
+<td>意外与疾病保险 A&amp;S</td>
+<td style="text-align: right;">23,162</td>
+<td style="text-align: right;"><strong>80%</strong></td>
+</tr>
+<tr>
+<td>分离基金与年金 Seg. Funds</td>
+<td style="text-align: right;">22,452</td>
+<td style="text-align: right;"><strong>77%</strong></td>
+</tr>
+<tr>
+<td>伦理与职业实践（普通法）Ethics Common Law</td>
+<td style="text-align: right;">20,664</td>
+<td style="text-align: right;"><strong>80%</strong></td>
+</tr>
+<tr>
+<td>伦理与职业实践（民法）Ethics Civil Code</td>
+<td style="text-align: right;">3,782</td>
+<td style="text-align: right;">66%</td>
+</tr>
+</tbody>
+</table></div>
+<p>普通法路径四模块的首考未通过比例为20%–23%；民法伦理为34%，不能统一说所有模块约四分之一失败。 人寿保险与分离基金与年金是四个（普通法体系考生实际面对的）模块里通过率最低的两个，都是 77%——报表未识别其原因，不能据此证明内容量或计算题导致较低通过率。伦理（普通法）通过率相对更高，但也有五分之一的人栽在这一门看似"背一背就行"的模块上。</p>
+<div class="vv-callout vv-callout--info">
+<p><span class="vv-callout__icon">ℹ️</span></p>
+<div>
+<p><strong>民法（魁北克）通过率单独看待</strong></p>
+<p>Ethics Civil Code 只适用于魁北克法系考生（普通法体系省份，包括 BC，考的是 Ethics Common Law），两者制度基础不同，不能放在一起比较难度。本课只服务 BC 考生，只关注 Common Law 一列。</p>
+</div>
+</div>
+<h2 id="s2">二、课程提供商之间的通过率差：CSI 98%–99% vs Primerica 56%–62%（普通法路径）</h2>
+<p>同一份月报按课程提供商拆开，差距远比"全国 77%–80%"这个平均数惊人：</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>课程提供商</th>
+<th style="text-align: right;">Ethics CL</th>
+<th style="text-align: right;">Life</th>
+<th style="text-align: right;">A&amp;S</th>
+<th style="text-align: right;">Seg</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>CSI</strong></td>
+<td style="text-align: right;">98%</td>
+<td style="text-align: right;">99%</td>
+<td style="text-align: right;">98%</td>
+<td style="text-align: right;">99%</td>
+</tr>
+<tr>
+<td>Collège des professions financières</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">95%</td>
+<td style="text-align: right;">93%</td>
+<td style="text-align: right;">95%</td>
+</tr>
+<tr>
+<td>Beneva</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">88%</td>
+<td style="text-align: right;">94%</td>
+<td style="text-align: right;">94%</td>
+</tr>
+<tr>
+<td><strong>ADVOCIS</strong></td>
+<td style="text-align: right;">90%</td>
+<td style="text-align: right;">89%</td>
+<td style="text-align: right;">89%</td>
+<td style="text-align: right;">89%</td>
+</tr>
+<tr>
+<td>Learnedly Canada Inc.</td>
+<td style="text-align: right;">95%</td>
+<td style="text-align: right;">90%</td>
+<td style="text-align: right;">93%</td>
+<td style="text-align: right;">92%</td>
+</tr>
+<tr>
+<td>Oliver Publishing</td>
+<td style="text-align: right;">90%</td>
+<td style="text-align: right;">89%</td>
+<td style="text-align: right;">89%</td>
+<td style="text-align: right;">86%</td>
+</tr>
+<tr>
+<td>SeeWhy Learning</td>
+<td style="text-align: right;">81%</td>
+<td style="text-align: right;">84%</td>
+<td style="text-align: right;">84%</td>
+<td style="text-align: right;">83%</td>
+</tr>
+<tr>
+<td>Industrielle Alliance</td>
+<td style="text-align: right;">84%</td>
+<td style="text-align: right;">72%</td>
+<td style="text-align: right;">81%</td>
+<td style="text-align: right;">73%</td>
+</tr>
+<tr>
+<td>Real Estate and Mortgage Institute of Canada</td>
+<td style="text-align: right;">83%</td>
+<td style="text-align: right;">79%</td>
+<td style="text-align: right;">84%</td>
+<td style="text-align: right;">82%</td>
+</tr>
+<tr>
+<td>SeeWhy Learning-WFG</td>
+<td style="text-align: right;">78%</td>
+<td style="text-align: right;">78%</td>
+<td style="text-align: right;">81%</td>
+<td style="text-align: right;">78%</td>
+</tr>
+<tr>
+<td>Olivers-WFG</td>
+<td style="text-align: right;">78%</td>
+<td style="text-align: right;">75%</td>
+<td style="text-align: right;">78%</td>
+<td style="text-align: right;">75%</td>
+</tr>
+<tr>
+<td><strong>Primerica</strong></td>
+<td style="text-align: right;">62%</td>
+<td style="text-align: right;"><strong>56%</strong></td>
+<td style="text-align: right;">60%</td>
+<td style="text-align: right;"><strong>56%</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p>同一套上位考纲不等于所有提供商的辅助考试口径、授课、筛选与学习支持都相同。CISRO表格只给样本人数和首考通过率，没有控制基础能力、投入时间、教学方式或招生方式，因此不能将差距归因于某一个因素。表中“—”也不是零通过率：官方说明少于30人的结果不列为有统计意义的比较数据。</p>
+<p>不能由这份报表确认CSI或Advocis学员主要是金融专业人士，也不能确认低通过率机构的学员主要是兼职招募者。这些招生画像需要独立数据；本页不据此评价学员群体。选择课程时可以自行比较授课方式、费用、认证支持和时间安排，而不是只看排名。</p>
+<div class="vv-callout vv-callout--info">
+<p><span class="vv-callout__icon">🔧</span></p>
+<div>
+<p><strong>不把机构通过率当成个人胜算</strong></p>
+<p>自学者也不能因为采用某种学习方式就被归入高通过率人群。建议用自己的限时练习、错因与模块准备程度作排考依据；这些是学习建议，不是报表证明的因果结论。</p>
+</div>
+</div>
+<h2 id="s3">三、BC 省的旧数据：仅供参考，口径不完全一致</h2>
+<p>所存2022-03至2023-02旧表有两类分母：路径表统计全部所需模块首次通过，模块表统计单个模块首次通过。旧表Life路径BC行2,480人、66%，A&amp;S路径234人、69%；它们不是Life单科和A&amp;S单科通过率。模块表BC行则为Ethics CL 84%、Life 84%、A&amp;S 83%、Seg 81%。</p>
+<p>旧表的原始官方下载URL未在现有登记中保存，本页仅说明存档的统计口径，不把它当2026年BC现行数字。当前CISRO提供商报表也不能回答BC是否比其他省更难。</p>
+<h2 id="s4">四、13 周学习计划怎么排</h2>
+<p>本页参考所存IFSE 2016年13周计划整理以下教学示例，属于历史学习安排，不是2026年官方课程时数或报名承诺：</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>周次</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>第 1 周</td>
+<td>人寿保险税务原理（不单独考，但为 Life ch07 与 Seg ch01 打底）+ Life ch01–02</td>
+</tr>
+<tr>
+<td>第 2–4 周</td>
+<td>Life ch03–12（完）</td>
+</tr>
+<tr>
+<td>第 5–7 周</td>
+<td>A&amp;S ch01–08（完）</td>
+</tr>
+<tr>
+<td>第 8–10 周</td>
+<td>分离基金与年金 ch01–08（完）</td>
+</tr>
+<tr>
+<td>第 11–12 周</td>
+<td>伦理（普通法）ch01–04（完）</td>
+</tr>
+<tr>
+<td>第 13 周</td>
+<td>四模块总复习 + 实际赴考</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>本课在这个骨架上做了一处关键调整</strong>（见本课章节地图）：把每个模块里对应 CISRO c1（评估客户需求，Life/A&amp;S/Seg各占35%；Ethics用独立的60%/40%两组件结构）的那一章，提前到该模块学习周的第 1 周，而不是按考试口径原有章号顺序学到最后——因为考试口径把"评估客户处境"这类方法论章节编排得比较靠后（人寿险 ch10、A&amp;S ch06、分离基金 ch04），但它是Life/A&amp;S/Seg各自考纲的最大组件；不适用于Ethics。按 IFSE 的周计划打骨架，但按 CISRO 权重调整章节顺序，是本课给自学者的具体建议。</p>
+<h2 id="s5">五、给考生的可用结论（不是通过率数字本身）</h2>
+<ul>
+<li>普通法四模块首考未通过约20%–23%，按自己的弱项安排复习，不把群体率当个人概率。</li>
+<li>自设练习目标可高于60%官方及格线，例如本课建议稳定75%；这不是监管要求，也不保证通过。</li>
+<li>先学难点、结合准备程度排考，并为首个通过日起的12个月拿牌窗口预留申请时间。</li>
+<li>保密实考题不得传播；CISRO官方样题及合法原创或获授权练习均可用于学习。</li>
+</ul>
+<h2 id="术语对照">术语对照</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>英文</th>
+<th>中文</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>First attempt pass rate</td>
+<td>首考通过率</td>
+<td>考生第一次参加该模块考试即通过的比例</td>
+</tr>
+<tr>
+<td>Course provider</td>
+<td>课程提供商</td>
+<td>CISRO/Insurance Council 认可、提供 LLQP 课程的机构</td>
+</tr>
+<tr>
+<td>Rolling 12-month report</td>
+<td>滚动 12 个月报表</td>
+<td>CISRO 月报统计口径，每月更新窗口向后滚动</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="来源">来源</h2>
+<ul>
+<li>CISRO《Exam Pass Rate at First Attempt by Course Provider, Aug 1 2025 – Jul 31 2026》：https://www.cisro-ocra.com/Documents/View/2857（<a class="src-ref" href="https://www.cisro-ocra.com/Documents/View/2857" title="Exam Pass Rate at First Attempt by Course Provider, Aug 1 2025 – Jul 31 2026">CISRO</a>）</li>
+<li>CISRO/Insurance Council BC 分省通过率表（2022-03 至 2023-02 旧分省表，本地存档）</li>
+<li>IFSE Institute 13 周学习计划（IFSE Institute 13 周学习计划，本地存档）</li>
+</ul>
+    
+    <div class="doc-nav"><a href="kb-02-after-exam-bc.html">← 考完 LLQP 之后：BC 入行清单</a></div>
+    <div class="doc-src">本站依据官方原文自撰 · 出处见正文链接</div>
+  </article>
+  <aside class="doc-aside">
+    <details class="doc-toc-details" open>
+      <summary class="doc-toc-summary"><span>本页目录</span><span class="doc-toc-icon">▾</span></summary>
+      <div class="toc"><div class="toc">
+<ul>
+<li><a href="#s0">0. 一个常见的误解：以为难度是全国统一的</a></li>
+<li><a href="#s1">一、全国首次通过率（2025-08 至 2026-07，滚动 12 个月）</a></li>
+<li><a href="#s2">二、课程提供商之间的通过率差：CSI 98%–99% vs Primerica 56%–62%（普通法路径）</a></li>
+<li><a href="#s3">三、BC 省的旧数据：仅供参考，口径不完全一致</a></li>
+<li><a href="#s4">四、13 周学习计划怎么排</a></li>
+<li><a href="#s5">五、给考生的可用结论（不是通过率数字本身）</a></li>
+<li><a href="#术语对照">术语对照</a></li>
+<li><a href="#来源">来源</a></li>
+</ul>
+</div>
+</div>
+    </details>
+    
+    <h3>同板块</h3><ul class="rel"><li><a href="kb-01-exam-guide.html">LLQP 考试制度指南：BC 怎么报名、怎么考、怎么申诉</a></li></ul>
+    
+    <a class="vv-btn vv-btn--primary" style="width:100%;margin-top:16px"
+       href="../drill.html?bp=exam">练这个板块的题 →</a>
+  </aside>
+</div></main>
+<footer class="foot">
+  <p><b>微出国 · 学</b> — LLQP 人寿保险牌照（BC 省考）备考。内容是学习者视角的整理，与 AMF 无隶属关系。<br>
+  考试以 CISRO 现行考纲为准；实务以 Insurance Council of BC 与各监管机构现行文件为准。发现错的地方，回论坛帖里说一声。</p>
+</footer>
+<script>var UP_PATH="../";var BUILD_TIME="1789950443";</script>
+<script>
+if((localStorage.getItem('vv-theme')||'')==='dark')
+  document.documentElement.setAttribute('data-theme','dark');
+
+// 自动版本更新检测：对比 DOM 的 BUILD_TIME 与服务器最新 manifest.json，出现新版本时带时间戳无缝重载绕过 HTTP 磁盘缓存
+(function(){
+  function checkVersion(){
+    var up = typeof UP_PATH !== 'undefined' ? UP_PATH : '';
+    fetch(up + 'assets/manifest.json?t=' + Date.now(), { cache: 'no-store' }).then(function(r){
+      return r.ok ? r.json() : null;
+    }).then(function(m){
+      if(!m || !m.build_time) return;
+      var serverBuild = String(m.build_time);
+      var clientBuild = typeof BUILD_TIME !== 'undefined' ? String(BUILD_TIME) : '';
+      if(clientBuild && serverBuild && clientBuild !== serverBuild){
+        var reloaded = sessionStorage.getItem('vv_reloaded_build');
+        if(reloaded !== serverBuild){
+          sessionStorage.setItem('vv_reloaded_build', serverBuild);
+          var u = new URL(location.href);
+          u.searchParams.set('_v', serverBuild);
+          location.replace(u.href);
+        } else if(!document.getElementById('vv-update-banner')) {
+          var bar = document.createElement('div');
+          bar.id = 'vv-update-banner';
+          bar.className = 'vv-update-banner';
+          bar.innerHTML = '🎉 网站已更新到最新版本，建议按 <b>Ctrl+F5</b> (或 <b>Cmd+Shift+R</b>) 强制刷新页面。<button onclick="location.reload(true)">立即刷新</button>';
+          document.body.prepend(bar);
+        }
+      }
+    }).catch(function(){});
+  }
+
+  checkVersion();
+  document.addEventListener('visibilitychange', function(){
+    if(document.visibilityState === 'visible') checkVersion();
+  });
+  window.addEventListener('focus', checkVersion);
+  setInterval(checkVersion, 5 * 60 * 1000);
+})();
+
+// 页眉登录态。身份服务不在（纯静态托管、或还没起 dev-server）时静默跳过——
+// 内容页是公开的，永远不该因为身份服务缺席而坏掉。
+fetch('/api/me').then(function(r){return r.ok?r.json():null;}).then(function(m){
+  if(!m||document.getElementById('vv-auth'))return;
+  var n=document.querySelector('.vv-header nav');if(!n)return;
+  var e=document.createElement('span');e.id='vv-auth';e.className='auth';
+  e.innerHTML=m.loggedIn
+    ?'<span title="学习记录已跨设备同步">'+m.username+'</span> <a href="/auth/logout">退出</a>'
+    :'<a href="/auth/login?next='+encodeURIComponent(location.pathname)+'">登录</a>';
+  n.after(e);
+}).catch(function(){});
+
+// ── 阅读器增强：专注/最大化模式 & 键盘/手势切页 ──
+(function(){
+  var prevUrl = typeof PREV_URL !== 'undefined' ? PREV_URL : '';
+  var nextUrl = typeof NEXT_URL !== 'undefined' ? NEXT_URL : '';
+
+  function updateMaxBtns(isMax) {
+    var btns = document.querySelectorAll('.vv-reader-btn-max');
+    for(var i=0; i<btns.length; i++) {
+      btns[i].innerHTML = isMax ? '✕ 退出专注' : '⛶ 专注阅读';
+    }
+  }
+
+  window.toggleDocMaximize = function() {
+    var root = document.documentElement;
+    var isMax = root.classList.toggle('is-doc-maximized');
+    try { localStorage.setItem('vv_doc_maximized', isMax ? 'true' : 'false'); } catch(e){}
+    updateMaxBtns(isMax);
+  };
+
+  function updateAsideBtns(isCol) {
+    var btns = document.querySelectorAll('.vv-aside-btn');
+    for(var i=0; i<btns.length; i++) {
+      btns[i].innerHTML = isCol ? '◨ 展开侧栏' : '◧ 折叠侧栏';
+    }
+  }
+
+  window.toggleSidebarCollapse = function() {
+    var root = document.documentElement;
+    var isCol = root.classList.toggle('is-aside-collapsed');
+    try { localStorage.setItem('vv_aside_collapsed', isCol ? 'true' : 'false'); } catch(e){}
+    updateAsideBtns(isCol);
+  };
+
+  try {
+    if(localStorage.getItem('vv_aside_collapsed') === 'true') {
+      document.documentElement.classList.add('is-aside-collapsed');
+      setTimeout(function(){ updateAsideBtns(true); }, 0);
+    }
+  } catch(e){}
+
+  // 本页目录 <details> 状态记忆
+  var tocDet = document.querySelector('.doc-toc-details');
+  if(tocDet) {
+    try {
+      if(localStorage.getItem('vv_toc_open') === 'false') {
+        tocDet.removeAttribute('open');
+      }
+    } catch(e){}
+    tocDet.addEventListener('toggle', function() {
+      try { localStorage.setItem('vv_toc_open', tocDet.open ? 'true' : 'false'); } catch(e){}
+    });
+  }
+
+  document.addEventListener('keydown', function(e) {
+    var tag = (e.target && e.target.tagName) || '';
+    if (tag === 'INPUT' || tag === 'TEXTAREA' || tag === 'SELECT' || e.target.isContentEditable) return;
+    // 知识卡弹窗开着时 ← → 归弹窗（翻卡），不归阅读器（翻页）。
+    // 2026-09-20 实伤：bin/site_cards_ui.py 第一次跑就抓到——弹窗里按 →，整页跳到了下一篇讲解页。
+    if (document.body.classList.contains('lb-open')) return;
+    if (e.key === 'ArrowLeft' && prevUrl) {
+      location.href = prevUrl;
+    } else if (e.key === 'ArrowRight' && nextUrl) {
+      location.href = nextUrl;
+    } else if (e.key === 'f' || e.key === 'F' || e.key === 'm' || e.key === 'M') {
+      toggleDocMaximize();
+    } else if (e.key === 'Escape' && document.documentElement.classList.contains('is-doc-maximized')) {
+      toggleDocMaximize();
+    }
+  });
+
+  var touchStartX = 0, touchStartY = 0;
+  document.addEventListener('touchstart', function(e) {
+    if (e.touches && e.touches.length === 1) {
+      touchStartX = e.touches[0].clientX;
+      touchStartY = e.touches[0].clientY;
+    }
+  }, { passive: true });
+
+  document.addEventListener('touchend', function(e) {
+    if (!e.changedTouches || e.changedTouches.length !== 1) return;
+    var dx = e.changedTouches[0].clientX - touchStartX;
+    var dy = e.changedTouches[0].clientY - touchStartY;
+    if (Math.abs(dx) > 90 && Math.abs(dy) < 60) {
+      if (dx > 0 && prevUrl) {
+        location.href = prevUrl;
+      } else if (dx < 0 && nextUrl) {
+        location.href = nextUrl;
+      }
+    }
+  }, { passive: true });
+})();
+</script>
+<script>if('serviceWorker' in navigator){addEventListener('load',()=>navigator.serviceWorker.register('../sw.js').catch(()=>{}))}</script>
+</body></html>
