@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>寿险保障缺口计算器</title>
+<meta name="description" content="家人需要多少寿险，能不能直接按工资倍数买？填你家自己的支出、收入与已有资源，按资本需求法算出保障缺口。">
+<style>
+:root{--bg:#ffffff;--ink:#1b2430;--muted:#5d6b7b;--line:#e3e8ef;--raised:#f6f8fb;--acc:#0b5fff;--ok:#1a7f4b;--okbg:#e9f7ef;--warn:#b54708;--warnbg:#fff3e6}
+@media (prefers-color-scheme:dark){:root{--bg:#0f1419;--ink:#e6ebf2;--muted:#9aa7b5;--line:#2a3340;--raised:#171d25;--acc:#6ea8ff;--ok:#5fd39a;--okbg:#122a1d;--warn:#ffb86b;--warnbg:#2d1f0f}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.7 -apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif}
+main{max-width:760px;margin:0 auto;padding:24px 16px 48px}
+h1{font-size:1.45rem;line-height:1.35;margin:0 0 6px}
+h2{font-size:1.1rem;margin:28px 0 10px;padding-top:14px;border-top:1px solid var(--line)}
+.sub{color:var(--muted);margin:0 0 16px}
+.answer{background:var(--raised);border-left:4px solid var(--acc);padding:12px 14px;border-radius:8px;margin:14px 0}
+.answer b{display:block;margin-bottom:4px}
+label.f{display:block;margin:10px 0}
+label.f span{display:block;font-weight:600}
+label.f small{display:block;color:var(--muted)}
+input[type=number],select{font:inherit;width:180px;max-width:100%;padding:6px 8px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--ink)}
+fieldset{border:1px solid var(--line);border-radius:10px;margin:12px 0;padding:8px 14px}
+legend{font-weight:600;padding:0 6px}
+label.c{display:block;margin:6px 0}
+button{font:inherit;padding:5px 10px;border:1px solid var(--line);border-radius:8px;background:var(--raised);color:var(--ink);cursor:pointer}
+.result{border-radius:10px;padding:12px 14px;margin:14px 0;border:1px solid var(--line);background:var(--raised)}
+.result.warn{background:var(--warnbg);border-color:var(--warn)}
+.result.ok{background:var(--okbg);border-color:var(--ok)}
+table{border-collapse:collapse;width:100%;font-size:.93rem;margin:10px 0}
+th,td{border-bottom:1px solid var(--line);padding:7px 8px;text-align:left;vertical-align:top}
+td.n,th.n{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+th{background:var(--raised)}
+.wrap{overflow-x:auto}
+.pit{margin:0;padding-left:1.2em}
+.pit li{margin:6px 0}
+.foot{margin-top:28px;padding-top:12px;border-top:1px dashed var(--line);font-size:.86rem;color:var(--muted)}
+.foot a{color:var(--acc);overflow-wrap:anywhere}
+.step[hidden]{display:none}
+</style>
+<!-- vf:start --><meta name="vf-version" content="2026.09.30.2"><link rel="stylesheet" href="../vf/framework.css"><style>body[data-vf-site]{--vf-accent:#6f416f;--vf-paper:#faf4fa;--vf-heading:"PingFang SC", sans-serif;--vf-radius:8px;}</style><script defer src="../vf/framework.js"></script><!-- vf:end --><link rel="manifest" href="../manifest.webmanifest">
+</head>
+<body data-vf-site="llqp"><!-- vf:start --><nav class="vf-network" aria-label="微出国跨站导航" data-pagefind-ignore><a class="vf-wordmark" href="https://veryvisa.github.io/">微出国<span> / VERYVISA</span></a><span class="vf-network-label">人寿保险</span><a href="../workspace/index.html">我的清单</a><a href="https://veryvisa.github.io/#professional">专业人员入口</a></nav><!-- vf:end -->
+<main>
+<h1>家人需要多少寿险，能不能直接按工资倍数买？</h1>
+<p class="sub">保障缺口先于产品 · 资本需求法 · 全部数字由你自己填</p>
+
+<div class="answer"><b>倍数只能粗估量级。</b>真正该买的是「家人要付的账」减去「已经有的钱」之后的缺口。这个计算器不内置任何回报率：默认按零实际净收益（假设税后收益刚好抵消通胀）把月缺口乘上年数；你有自己的实际回报假设，可以自己填。</div>
+
+<h2>先看两个算好的例子（不需要脚本）</h2>
+<div class="wrap"><table>
+<thead><tr><th>例子（讲解页示例，非真实家庭）</th><th>算法</th><th>建议新增保额</th></tr></thead>
+<tbody>
+<tr><td>单亲，身故后月开支 $2,600，孩子 CPP 子女给付 $307.81/月，覆盖 10 年；按揭余额 $410,000，丧葬 $15,000；团体寿险 $100,000</td><td>($2,600 − $307.81) × 12 × 10 ≈ $275,063；＋ $425,000 ＝ $700,063；− $100,000</td><td class="n">约 $600,000</td></tr>
+<tr><td>身故后月开支 $4,200，遗属月收入 $1,111.35，覆盖 14 年；丧葬 $20,000、信用卡 $8,000；团体寿险 $150,000</td><td>$3,088.65 × 12 × 14 ≈ $518,893；＋ $28,000 − $150,000</td><td class="n">约 $397,000</td></tr>
+</tbody>
+</table></div>
+
+<form id="f" novalidate>
+<h2>换成你家的数字</h2>
+<fieldset><legend>每月要付的账（身故后）</legend>
+<label class="f"><span>身故后家庭每月开支（加元）</span><small>已打算一次还清的按揭，月供不要再算进来。</small><input type="number" id="exp" min="0" step="100" value="2600"></label>
+<label class="f"><span>遗属每月仍有的收入（加元）</span><small>配偶收入、已核定的 CPP 遗属或子女给付等；不要预设最高额。</small><input type="number" id="inc" min="0" step="50" value="307.81"></label>
+<label class="f"><span>要覆盖几年</span><small>有明确终点的（如孩子到某个年龄）填到终点为止。</small><input type="number" id="yrs" min="0" max="60" step="1" value="10"></label>
+<label class="f"><span>你自己的实际回报假设（% / 年，可填 0）</span><small>税后回报减通胀之后的数。不知道就留 0。</small><input type="number" id="real" min="-5" max="10" step="0.1" value="0"></label>
+</fieldset>
+<fieldset><legend>一次性要付的</legend>
+<label class="f"><span>按揭余额（不是房屋市值）</span><input type="number" id="mort" min="0" step="1000" value="410000"></label>
+<label class="f"><span>其他债务</span><input type="number" id="debt" min="0" step="1000" value="0"></label>
+<label class="f"><span>丧葬及身后费用</span><input type="number" id="fun" min="0" step="1000" value="15000"></label>
+<label class="f"><span>教育、照护等专项（已扣除专款储蓄）</span><input type="number" id="edu" min="0" step="1000" value="0"></label>
+</fieldset>
+<fieldset><legend>已经有的钱</legend>
+<label class="f"><span>家人真能动用的资产</span><input type="number" id="assets" min="0" step="1000" value="0"></label>
+<label class="f"><span>既有寿险保额（团体或个人）</span><input type="number" id="cov" min="0" step="10000" value="100000"></label>
+<label class="c"><input type="checkbox" id="covok" checked> 我已确认这笔保额身故时可赔、可供家人使用，没有另作他用（如买卖协议），也不会因离职而消失</label>
+</fieldset>
+<div id="out" class="result" aria-live="polite"><p>启用脚本后这里显示计算结果；未启用时请看上面算好的例子。</p></div>
+</form>
+
+<h2>算法（全部写在这里，可以手算复核）</h2>
+<ul class="pit">
+<li>月缺口 ＝ 身故后每月开支 − 遗属每月收入，小于 0 按 0。</li>
+<li>实际回报为 0：缺口资本化 ＝ 月缺口 × 12 × 年数。不为 0：按年末支付的年金现值，月缺口 × 12 × (1 − (1 + r)<sup>−年数</sup>) ÷ r。</li>
+<li>总需求 ＝ 缺口资本化 ＋ 按揭余额 ＋ 其他债务 ＋ 丧葬 ＋ 专项。</li>
+<li>建议新增保额 ＝ 总需求 − 可动用资产 − 已确认可用的既有保额，小于 0 按 0。</li>
+</ul>
+
+<h2>这个计算器不算的东西</h2>
+<ul class="pit">
+<li><b>身故当年报税的税款</b>、企业股份的身故税务后果：另请会计师估算后填进「其他债务」。</li>
+<li><b>该买哪种产品</b>：缺口算出来之后才轮到选产品，本页不推荐。</li>
+<li><b>能不能批下来</b>：保额还要经保险公司财务核保。</li>
+</ul>
+
+<div class="foot">
+<p>本页是需求估算的演示，不构成保险建议；结果取决于你填的假设。</p>
+<p>来源：<a href="https://www.canada.ca/en/financial-consumer-agency/services/insurance/life.html">FCAC Life insurance</a>；<a href="https://www.insurancecouncilofbc.com/news/articles/2025/november/code-conduct/">Insurance Council of BC Code of Conduct</a>。</p>
+</div>
+<!-- vf:start --><div class="vf-tools" role="group" data-pagefind-ignore aria-label="阅读工具"><button type="button" data-vf-save hidden>保存本页</button><button type="button" data-vf-print hidden>打印 / 存为 PDF</button><span data-vf-status role="status" aria-live="polite"></span></div><!-- vf:end --></main>
+<script>
+function calc(i){
+  var n=function(x){return Math.max(0,+x||0)};
+  var gap=Math.max(0,(+i.exp||0)-(+i.inc||0)),yrs=n(i.yrs),r=(+i.real||0)/100;
+  var cap=r===0?gap*12*yrs:gap*12*(1-Math.pow(1+r,-yrs))/r;
+  var lump=n(i.mort)+n(i.debt)+n(i.fun)+n(i.edu);
+  var total=cap+lump,cov=i.covok?n(i.cov):0;
+  return{gap:gap,cap:cap,lump:lump,total:total,assets:n(i.assets),cov:cov,need:Math.max(0,total-n(i.assets)-cov)};
+}
+(function(){
+  var out=document.getElementById('out'),ids=['exp','inc','yrs','real','mort','debt','fun','edu','assets','cov','covok'];
+  function $(k){return document.getElementById(k)}
+  function money(x){return '$'+Math.round(x).toLocaleString('en-CA')}
+  function upd(){
+    var v={};ids.forEach(function(k){var e=$(k);v[k]=e.type==='checkbox'?e.checked:e.value});
+    var c=calc(v);
+    out.className='result ok';
+    out.innerHTML='<div class="wrap"><table><tbody>'+
+      '<tr><td>月缺口</td><td class="n">'+money(c.gap)+'</td></tr>'+
+      '<tr><td>缺口资本化</td><td class="n">'+money(c.cap)+'</td></tr>'+
+      '<tr><td>一次性需求</td><td class="n">'+money(c.lump)+'</td></tr>'+
+      '<tr><td>总需求</td><td class="n">'+money(c.total)+'</td></tr>'+
+      '<tr><td>减：可动用资产</td><td class="n">'+money(c.assets)+'</td></tr>'+
+      '<tr><td>减：已确认可用的既有保额</td><td class="n">'+money(c.cov)+'</td></tr>'+
+      '<tr><td><b>建议新增保额（估算）</b></td><td class="n"><b>'+money(c.need)+'</b></td></tr>'+
+      '</tbody></table></div>'+(v.covok?'':'<p>你没有确认既有保额可用，所以没有减它。</p>');
+  }
+  ids.forEach(function(k){$(k).addEventListener('input',upd);$(k).addEventListener('change',upd)});
+  upd();
+})();
+</script>
+<script>if('serviceWorker' in navigator){addEventListener('load',()=>navigator.serviceWorker.register('../sw.js').catch(()=>{}))}</script>
+</body>
+</html>

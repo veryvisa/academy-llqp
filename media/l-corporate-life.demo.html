@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>公司寿险付款路径演示</title>
+<meta name="description" content="公司给老板投保，老板家人就会直接收到赔款吗？按保单上的投保人、受益人和用途，一层层显示身故金先到谁、之后还要经过哪些手续。">
+<style>
+:root{--bg:#ffffff;--ink:#1b2430;--muted:#5d6b7b;--line:#e3e8ef;--raised:#f6f8fb;--acc:#0b5fff;--ok:#1a7f4b;--okbg:#e9f7ef;--warn:#b54708;--warnbg:#fff3e6}
+@media (prefers-color-scheme:dark){:root{--bg:#0f1419;--ink:#e6ebf2;--muted:#9aa7b5;--line:#2a3340;--raised:#171d25;--acc:#6ea8ff;--ok:#5fd39a;--okbg:#122a1d;--warn:#ffb86b;--warnbg:#2d1f0f}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.7 -apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif}
+main{max-width:760px;margin:0 auto;padding:24px 16px 48px}
+h1{font-size:1.45rem;line-height:1.35;margin:0 0 6px}
+h2{font-size:1.1rem;margin:28px 0 10px;padding-top:14px;border-top:1px solid var(--line)}
+.sub{color:var(--muted);margin:0 0 16px}
+.answer{background:var(--raised);border-left:4px solid var(--acc);padding:12px 14px;border-radius:8px;margin:14px 0}
+.answer b{display:block;margin-bottom:4px}
+label.f{display:block;margin:10px 0}
+label.f span{display:block;font-weight:600}
+label.f small{display:block;color:var(--muted)}
+input[type=number],select{font:inherit;width:180px;max-width:100%;padding:6px 8px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--ink)}
+fieldset{border:1px solid var(--line);border-radius:10px;margin:12px 0;padding:8px 14px}
+legend{font-weight:600;padding:0 6px}
+label.c{display:block;margin:6px 0}
+button{font:inherit;padding:5px 10px;border:1px solid var(--line);border-radius:8px;background:var(--raised);color:var(--ink);cursor:pointer}
+.result{border-radius:10px;padding:12px 14px;margin:14px 0;border:1px solid var(--line);background:var(--raised)}
+.result.warn{background:var(--warnbg);border-color:var(--warn)}
+.result.ok{background:var(--okbg);border-color:var(--ok)}
+table{border-collapse:collapse;width:100%;font-size:.93rem;margin:10px 0}
+th,td{border-bottom:1px solid var(--line);padding:7px 8px;text-align:left;vertical-align:top}
+td.n,th.n{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+th{background:var(--raised)}
+.wrap{overflow-x:auto}
+.pit{margin:0;padding-left:1.2em}
+.pit li{margin:6px 0}
+.foot{margin-top:28px;padding-top:12px;border-top:1px dashed var(--line);font-size:.86rem;color:var(--muted)}
+.foot a{color:var(--acc);overflow-wrap:anywhere}
+.step[hidden]{display:none}
+</style>
+<!-- vf:start --><meta name="vf-version" content="2026.09.30.2"><link rel="stylesheet" href="../vf/framework.css"><style>body[data-vf-site]{--vf-accent:#6f416f;--vf-paper:#faf4fa;--vf-heading:"PingFang SC", sans-serif;--vf-radius:8px;}</style><script defer src="../vf/framework.js"></script><!-- vf:end --><link rel="manifest" href="../manifest.webmanifest">
+</head>
+<body data-vf-site="llqp"><!-- vf:start --><nav class="vf-network" aria-label="微出国跨站导航" data-pagefind-ignore><a class="vf-wordmark" href="https://veryvisa.github.io/">微出国<span> / VERYVISA</span></a><span class="vf-network-label">人寿保险</span><a href="../workspace/index.html">我的清单</a><a href="https://veryvisa.github.io/#professional">专业人员入口</a></nav><!-- vf:end -->
+<main>
+<h1>公司给老板投保，老板家人就会直接收到赔款吗？</h1>
+<p class="sub">公司持有寿险的资金归属 · 按合同角色看付款路径 · BC 与联邦税务口径</p>
+
+<div class="answer"><b>不会自动。</b>赔款付给保单上登记的受益人。公司是受益人时，身故金先进公司账户；家人要拿到钱，还要经过公司分配、股份归属和税务手续。受益人没核实之前，本页不猜最终谁拿到钱。</div>
+
+<h2>没有脚本时：三种受益人安排</h2>
+<div class="wrap"><table>
+<thead><tr><th>保单上的受益人</th><th>身故金先到哪里</th><th>之后</th></tr></thead>
+<tbody>
+<tr><td>公司</td><td>公司账户，免税</td><td>扣除保单 ACB 后的部分可增加资本红利账户（CDA）；按规则向加拿大税务居民股东发资本红利须提交 T2054；股份此时多由老板遗产或继承人持有</td></tr>
+<tr><td>具名的家人</td><td>直接付给这位家人</td><td>不进老板遗产，不受老板债权人追偿；公司持有保单而受益人是个人的安排，税务处理交会计师另核</td></tr>
+<tr><td>老板的遗产</td><td>遗产</td><td>按遗嘱或继承规则分配，先受遗产债务与程序影响，失去指定受益人的那层保护</td></tr>
+</tbody>
+</table></div>
+
+<form id="f" novalidate>
+<h2>按你的保单走一遍</h2>
+<fieldset><legend>第一步：保单上写的受益人</legend>
+<label class="c"><input type="radio" name="ben" value="unknown" checked> 还没核实</label>
+<label class="c"><input type="radio" name="ben" value="company"> 公司</label>
+<label class="c"><input type="radio" name="ben" value="family"> 具名的家人</label>
+<label class="c"><input type="radio" name="ben" value="estate"> 老板的遗产</label>
+</fieldset>
+<fieldset><legend>第二步：公司买这张保单的用途</legend>
+<label class="f"><span>用途</span><select id="use">
+<option value="key">关键人保障（弥补公司损失）</option>
+<option value="redeem">公司赎回身故股东的股份</option>
+<option value="hybrid">混合法：资本红利发给幸存股东，再由他们买股</option>
+<option value="other">其他或不清楚</option>
+</select></label>
+</fieldset>
+<fieldset><legend>第三步（公司是受益人时）：从会计师处取得的数字</legend>
+<label class="f"><span>身故金（加元）</span><input type="number" id="db" min="0" step="10000" value="1000000"></label>
+<label class="f"><span>身故时保单的调整后成本基础 ACB（加元）</span><small>由保险公司或会计师提供；定期险也可能不是 0。</small><input type="number" id="acb" min="0" step="1000" value="60000"></label>
+</fieldset>
+<div id="out" class="result" aria-live="polite"><p>启用脚本后这里按你的选择显示付款路径；未启用时请看上面的表。</p></div>
+</form>
+
+<h2>可以手算复核的例子</h2>
+<ul class="pit">
+<li>身故金 $1,000,000，保单 ACB $60,000：CDA 可增加 $1,000,000 − $60,000 ＝ $940,000；那 $60,000 公司拿到手同样不交税，但不进 CDA。</li>
+<li>ACB 大于身故金时，CDA 增加额按 0 计。</li>
+</ul>
+
+<h2>这个演示不判的东西</h2>
+<ul class="pit">
+<li><b>公司整体 CDA 余额与可发数额</b>：还要看公司以往的 CDA 记录，向 CRA 核对或由会计师计算。</li>
+<li><b>股份归谁、买卖协议怎么执行</b>：看遗嘱、股东协议和律师意见。</li>
+<li><b>任何家庭的到手金额</b>：本页只画路径。</li>
+</ul>
+
+<div class="foot">
+<p>本页只演示资金路径，不构成税务或法律意见；企业寿险安排请由代理人、公司会计师与律师共同核。</p>
+<p>来源：<a href="https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/12001_03">BC Insurance Act, Part 3 Life Insurance</a>；<a href="https://www.canada.ca/en/revenue-agency/services/tax/technical-information/income-tax/income-tax-folios-index/series-3-property-investments-savings-plans/series-3-property-investments-savings-plan-folio-2-dividends/income-tax-folio-s3-f2-c1-capital-dividends.html">CRA Income Tax Folio S3-F2-C1 Capital Dividends</a>。</p>
+</div>
+<!-- vf:start --><div class="vf-tools" role="group" data-pagefind-ignore aria-label="阅读工具"><button type="button" data-vf-save hidden>保存本页</button><button type="button" data-vf-print hidden>打印 / 存为 PDF</button><span data-vf-status role="status" aria-live="polite"></span></div><!-- vf:end --></main>
+<script>
+function calc(i){
+  if(i.ben==='unknown')return{stop:true};
+  var r={first:'',steps:[]};
+  if(i.ben==='family'){r.first='直接付给保单上具名的这位家人';r.steps=['不进老板遗产，不受老板债权人追偿','公司持有保单而受益人是个人的安排，税务处理交会计师另核'];return r}
+  if(i.ben==='estate'){r.first='付给老板的遗产';r.steps=['按遗嘱或继承规则分配','先受遗产债务与遗产程序影响，失去指定受益人的那层保护'];return r}
+  var db=Math.max(0,+i.db||0),acb=Math.max(0,+i.acb||0);
+  r.first='付给公司，进公司账户时免税';
+  r.cda=Math.max(0,db-acb);r.notcda=Math.min(db,acb);
+  r.steps=['扣除保单 ACB 后的部分可增加资本红利账户（CDA）','按规则向加拿大税务居民股东发资本红利、可免税，须按时提交 T2054 资本红利选择'];
+  if(i.use==='key')r.steps.push('关键人用途：钱主要留在公司弥补经营损失，家人不一定拿到');
+  else if(i.use==='redeem')r.steps.push('公司赎回用途：公司用这笔钱向老板遗产赎回并注销其股份，遗产收到的是赎回款');
+  else if(i.use==='hybrid')r.steps.push('混合法：公司向幸存股东发资本红利，他们用这笔钱向老板遗产买入股份');
+  else r.steps.push('用途不清：先查股东协议与公司决议');
+  r.steps.push('老板已身故，收公司分配的是股份的持有人，通常是其遗产或继承股份的人');
+  return r;
+}
+(function(){
+  var out=document.getElementById('out');
+  function money(x){return '$'+Math.round(x).toLocaleString('en-CA')}
+  function upd(){
+    var b=document.querySelector('input[name=ben]:checked').value;
+    var r=calc({ben:b,use:document.getElementById('use').value,db:document.getElementById('db').value,acb:document.getElementById('acb').value});
+    if(r.stop){out.className='result warn';out.innerHTML='<p><b>先核实受益人。</b>赔款按保单上登记的受益人给付，被保险人是谁不决定钱给谁。向保险公司或保单文件确认受益人之前，本页不推测最终谁拿到钱。</p>';return}
+    out.className='result';
+    var h='<p><b>第一站：'+r.first+'。</b></p>';
+    if(r.cda!==undefined)h+='<div class="wrap"><table><tbody><tr><td>可增加 CDA 的部分（身故金 − ACB）</td><td class="n">'+money(r.cda)+'</td></tr><tr><td>不进 CDA 的部分（等于 ACB）</td><td class="n">'+money(r.notcda)+'</td></tr></tbody></table></div>';
+    h+='<ol class="pit">'+r.steps.map(function(x){return '<li>'+x+'</li>'}).join('')+'</ol>';
+    out.innerHTML=h;
+  }
+  document.querySelectorAll('input,select').forEach(function(e){e.addEventListener('input',upd);e.addEventListener('change',upd)});
+  upd();
+})();
+</script>
+<script>if('serviceWorker' in navigator){addEventListener('load',()=>navigator.serviceWorker.register('../sw.js').catch(()=>{}))}</script>
+</body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>伤残定义对照演示</title>
+<meta name="description" content="医生说我不能做原来的工作，伤残险就一定赔吗？选出你合同里的伤残定义，看它到底在问哪一个证据问题。">
+<style>
+:root{--bg:#ffffff;--ink:#1b2430;--muted:#5d6b7b;--line:#e3e8ef;--raised:#f6f8fb;--acc:#0b5fff;--ok:#1a7f4b;--okbg:#e9f7ef;--warn:#b54708;--warnbg:#fff3e6}
+@media (prefers-color-scheme:dark){:root{--bg:#0f1419;--ink:#e6ebf2;--muted:#9aa7b5;--line:#2a3340;--raised:#171d25;--acc:#6ea8ff;--ok:#5fd39a;--okbg:#122a1d;--warn:#ffb86b;--warnbg:#2d1f0f}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.7 -apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif}
+main{max-width:760px;margin:0 auto;padding:24px 16px 48px}
+h1{font-size:1.45rem;line-height:1.35;margin:0 0 6px}
+h2{font-size:1.1rem;margin:28px 0 10px;padding-top:14px;border-top:1px solid var(--line)}
+.sub{color:var(--muted);margin:0 0 16px}
+.answer{background:var(--raised);border-left:4px solid var(--acc);padding:12px 14px;border-radius:8px;margin:14px 0}
+.answer b{display:block;margin-bottom:4px}
+label.f{display:block;margin:10px 0}
+label.f span{display:block;font-weight:600}
+label.f small{display:block;color:var(--muted)}
+input[type=number],select{font:inherit;width:180px;max-width:100%;padding:6px 8px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--ink)}
+fieldset{border:1px solid var(--line);border-radius:10px;margin:12px 0;padding:8px 14px}
+legend{font-weight:600;padding:0 6px}
+label.c{display:block;margin:6px 0}
+button{font:inherit;padding:5px 10px;border:1px solid var(--line);border-radius:8px;background:var(--raised);color:var(--ink);cursor:pointer}
+.result{border-radius:10px;padding:12px 14px;margin:14px 0;border:1px solid var(--line);background:var(--raised)}
+.result.warn{background:var(--warnbg);border-color:var(--warn)}
+.result.ok{background:var(--okbg);border-color:var(--ok)}
+table{border-collapse:collapse;width:100%;font-size:.93rem;margin:10px 0}
+th,td{border-bottom:1px solid var(--line);padding:7px 8px;text-align:left;vertical-align:top}
+td.n,th.n{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+th{background:var(--raised)}
+.wrap{overflow-x:auto}
+.pit{margin:0;padding-left:1.2em}
+.pit li{margin:6px 0}
+.foot{margin-top:28px;padding-top:12px;border-top:1px dashed var(--line);font-size:.86rem;color:var(--muted)}
+.foot a{color:var(--acc);overflow-wrap:anywhere}
+.step[hidden]{display:none}
+</style>
+<!-- vf:start --><meta name="vf-version" content="2026.09.30.2"><link rel="stylesheet" href="../vf/framework.css"><style>body[data-vf-site]{--vf-accent:#6f416f;--vf-paper:#faf4fa;--vf-heading:"PingFang SC", sans-serif;--vf-radius:8px;}</style><script defer src="../vf/framework.js"></script><!-- vf:end --><link rel="manifest" href="../manifest.webmanifest">
+</head>
+<body data-vf-site="llqp"><!-- vf:start --><nav class="vf-network" aria-label="微出国跨站导航" data-pagefind-ignore><a class="vf-wordmark" href="https://veryvisa.github.io/">微出国<span> / VERYVISA</span></a><span class="vf-network-label">人寿保险</span><a href="../workspace/index.html">我的清单</a><a href="https://veryvisa.github.io/#professional">专业人员入口</a></nav><!-- vf:end -->
+<main>
+<h1>医生说我不能做原来的工作，伤残险就一定赔吗？</h1>
+<p class="sub">伤残定义决定赔付 · 同一份医生证明，在不同定义下回答的是不同问题</p>
+
+<div class="answer"><b>不一定。</b>是否符合伤残保障，取决于合同定义、证据和限制条件，不由单一诊断或原岗位证明决定。同一家公司不同计划的定义都可能不一样。本页只帮你找出合同在问哪一题，不作医学或理赔结论。</div>
+
+<h2>没有脚本时：四种定义各问什么</h2>
+<div class="wrap"><table>
+<thead><tr><th>定义</th><th>门槛问题</th><th>做别的工作时</th></tr></thead>
+<tbody>
+<tr><td>本职定义（own occupation，个人险）</td><td>能不能履行本职业的全部主要职责</td><td>从事其他工作，给付按定义不受影响</td></tr>
+<tr><td>常规职业定义（regular occupation）；团体险里写的 own occupation 效果常等同于此</td><td>门槛同上</td><td>自愿做别的工作时，给付可能被减甚至归零</td></tr>
+<tr><td>任何职业定义（any occupation）</td><td>能不能从事任何与你教育、训练、经验相匹配的工作</td><td>有匹配的工作可做，就不算伤残</td></tr>
+<tr><td>CPP 伤残（政府给付，不是保险合同）</td><td>是否严重且持久，另有年龄与缴费条件</td><td>标准独立，与保险合同各判各的</td></tr>
+</tbody>
+</table></div>
+
+<form id="f" novalidate>
+<h2>对照你的合同</h2>
+<fieldset><legend>第一步：保单类型与定义原文</legend>
+<label class="f"><span>保单类型</span><select id="plan"><option value="individual">个人伤残险</option><option value="group">雇主团体计划</option></select></label>
+<label class="f"><span>合同里伤残定义的写法</span><select id="def">
+<option value="unknown">还没看合同原文</option>
+<option value="own">own occupation（本职）</option>
+<option value="regular">regular occupation（常规职业）</option>
+<option value="any">any occupation（任何职业）</option>
+</select></label>
+<label class="c"><input type="checkbox" id="switched"> 合同写明给付一段时间后改按任何职业定义判断，且现在已到切换时点</label>
+</fieldset>
+<fieldset><legend>第二步：你手上的证据能回答什么</legend>
+<label class="f"><span>证据能否说明你不能履行本职业的主要职责</span><select id="ownq"><option value="unsure">还说不清</option><option value="yes">能说明</option><option value="no">不能</option></select></label>
+<label class="f"><span>证据能否说明你也不能做与教育、训练、经验相匹配的其他工作</span><select id="anyq"><option value="unsure">还说不清</option><option value="yes">能说明</option><option value="no">不能，我还能做匹配的工作</option></select></label>
+<label class="c"><input type="checkbox" id="working"> 我目前在做别的有收入的工作</label>
+</fieldset>
+<div id="out" class="result" aria-live="polite"><p>启用脚本后这里显示合同在问的那一题；未启用时请看上面的表。</p></div>
+</form>
+
+<h2>就算过了定义这一关，还要看</h2>
+<ul class="pit">
+<li><b>等待期</b>：符合定义后，仍要等合同写的等待期满才开始给付。</li>
+<li><b>证据要求、除外条款、其他收入抵消</b>：合同逐项规定。</li>
+<li><b>部分伤残、剩余伤残</b>：部分复工、收入下降怎么领，按合同条文。</li>
+</ul>
+
+<div class="foot">
+<p>本页不作医学或理赔结论，赔不赔以保险公司依合同和证据作出的决定为准；有争议时可走保险公司内部投诉和独立投诉渠道。</p>
+<p>来源：<a href="https://www.canada.ca/en/financial-consumer-agency/services/insurance/disability.html">FCAC Disability insurance</a>；<a href="https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/12001_04">BC Insurance Act, Part 4 Accident and Sickness Insurance</a>。</p>
+</div>
+<!-- vf:start --><div class="vf-tools" role="group" data-pagefind-ignore aria-label="阅读工具"><button type="button" data-vf-save hidden>保存本页</button><button type="button" data-vf-print hidden>打印 / 存为 PDF</button><span data-vf-status role="status" aria-live="polite"></span></div><!-- vf:end --></main>
+<script>
+function calc(i){
+  if(i.def==='unknown')return{stop:true};
+  var eff=i.def,notes=[];
+  if(i.plan==='group'&&eff==='own'){eff='regular';notes.push('团体计划里写的 own occupation，效果常等同个人险的 regular occupation')}
+  if(i.switched&&eff!=='any'){eff='any';notes.push('已到合同写明的切换时点，改按任何职业定义判断')}
+  var q=eff==='any'?i.anyq:i.ownq,ans;
+  if(eff==='any'){
+    if(q==='yes')ans='meets';else if(q==='no')ans='not';else ans='unclear';
+  }else{
+    if(q==='yes')ans='meets';else if(q==='no')ans='not';else ans='unclear';
+    if(i.working&&eff==='regular')notes.push('自愿做别的有收入工作，在常规职业定义下给付可能被减甚至归零');
+    if(i.working&&eff==='own')notes.push('本职定义下，做其他工作按定义不影响给付；仍要核合同其他条款');
+  }
+  return{eff:eff,ans:ans,notes:notes};
+}
+(function(){
+  var out=document.getElementById('out'),ids=['plan','def','switched','ownq','anyq','working'];
+  function $(k){return document.getElementById(k)}
+  var Q={own:'能不能履行本职业的全部主要职责',regular:'能不能履行本职业的主要职责',any:'能不能从事任何与你教育、训练、经验相匹配的工作'};
+  var NM={own:'本职定义',regular:'常规职业定义',any:'任何职业定义'};
+  var A={meets:'按你勾选的证据，这一题的回答是「不能」，定义门槛这一关看起来对得上',not:'按你勾选的证据，这一题的回答是「能」，按这个定义不算伤残',unclear:'这一题证据还说不清，先补齐能回答它的证据'};
+  function upd(){
+    var v={};ids.forEach(function(k){var e=$(k);v[k]=e.type==='checkbox'?e.checked:e.value});
+    var r=calc(v);
+    if(r.stop){out.className='result warn';out.innerHTML='<p><b>先拿到合同里伤残定义的原文。</b>不知道定义，就不知道合同在问哪一题；医生证明只是证据之一。</p>';return}
+    out.className='result'+(r.ans==='meets'?' ok':' warn');
+    var h='<p><b>适用：'+NM[r.eff]+'。合同在问：'+Q[r.eff]+'？</b></p><p>'+A[r.ans]+'。</p>';
+    if(r.notes.length)h+='<ul class="pit">'+r.notes.map(function(x){return '<li>'+x+'</li>'}).join('')+'</ul>';
+    h+='<p>这只是定义这一题，赔不赔还看证据审核、等待期、除外与抵消条款。</p>';
+    out.innerHTML=h;
+  }
+  ids.forEach(function(k){$(k).addEventListener('change',upd)});
+  upd();
+})();
+</script>
+<script>if('serviceWorker' in navigator){addEventListener('load',()=>navigator.serviceWorker.register('../sw.js').catch(()=>{}))}</script>
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>投保申请核对演示</title>
+<meta name="description" content="没有体检、申请很快，是不是病史就不用认真填？按申请核对流程，逐项确认要由本人确认的事实。">
+<style>
+:root{--bg:#ffffff;--ink:#1b2430;--muted:#5d6b7b;--line:#e3e8ef;--raised:#f6f8fb;--acc:#0b5fff;--ok:#1a7f4b;--okbg:#e9f7ef;--warn:#b54708;--warnbg:#fff3e6}
+@media (prefers-color-scheme:dark){:root{--bg:#0f1419;--ink:#e6ebf2;--muted:#9aa7b5;--line:#2a3340;--raised:#171d25;--acc:#6ea8ff;--ok:#5fd39a;--okbg:#122a1d;--warn:#ffb86b;--warnbg:#2d1f0f}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.7 -apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif}
+main{max-width:760px;margin:0 auto;padding:24px 16px 48px}
+h1{font-size:1.45rem;line-height:1.35;margin:0 0 6px}
+h2{font-size:1.1rem;margin:28px 0 10px;padding-top:14px;border-top:1px solid var(--line)}
+.sub{color:var(--muted);margin:0 0 16px}
+.answer{background:var(--raised);border-left:4px solid var(--acc);padding:12px 14px;border-radius:8px;margin:14px 0}
+.answer b{display:block;margin-bottom:4px}
+label.f{display:block;margin:10px 0}
+label.f span{display:block;font-weight:600}
+label.f small{display:block;color:var(--muted)}
+input[type=number],select{font:inherit;width:180px;max-width:100%;padding:6px 8px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--ink)}
+fieldset{border:1px solid var(--line);border-radius:10px;margin:12px 0;padding:8px 14px}
+legend{font-weight:600;padding:0 6px}
+label.c{display:block;margin:6px 0}
+button{font:inherit;padding:5px 10px;border:1px solid var(--line);border-radius:8px;background:var(--raised);color:var(--ink);cursor:pointer}
+.result{border-radius:10px;padding:12px 14px;margin:14px 0;border:1px solid var(--line);background:var(--raised)}
+.result.warn{background:var(--warnbg);border-color:var(--warn)}
+.result.ok{background:var(--okbg);border-color:var(--ok)}
+table{border-collapse:collapse;width:100%;font-size:.93rem;margin:10px 0}
+th,td{border-bottom:1px solid var(--line);padding:7px 8px;text-align:left;vertical-align:top}
+td.n,th.n{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+th{background:var(--raised)}
+.wrap{overflow-x:auto}
+.pit{margin:0;padding-left:1.2em}
+.pit li{margin:6px 0}
+.foot{margin-top:28px;padding-top:12px;border-top:1px dashed var(--line);font-size:.86rem;color:var(--muted)}
+.foot a{color:var(--acc);overflow-wrap:anywhere}
+.step[hidden]{display:none}
+</style>
+<!-- vf:start --><meta name="vf-version" content="2026.09.30.2"><link rel="stylesheet" href="../vf/framework.css"><style>body[data-vf-site]{--vf-accent:#6f416f;--vf-paper:#faf4fa;--vf-heading:"PingFang SC", sans-serif;--vf-radius:8px;}</style><script defer src="../vf/framework.js"></script><!-- vf:end --><link rel="manifest" href="../manifest.webmanifest">
+</head>
+<body data-vf-site="llqp"><!-- vf:start --><nav class="vf-network" aria-label="微出国跨站导航" data-pagefind-ignore><a class="vf-wordmark" href="https://veryvisa.github.io/">微出国<span> / VERYVISA</span></a><span class="vf-network-label">人寿保险</span><a href="../workspace/index.html">我的清单</a><a href="https://veryvisa.github.io/#professional">专业人员入口</a></nav><!-- vf:end -->
+<main>
+<h1>没有体检、申请很快，是不是病史就不用认真填？</h1>
+<p class="sub">免体检与如实告知 · 签字前的申请核对 · BC 口径</p>
+
+<div class="answer"><b>不是。</b>免体检只是少了体检这一步，告知义务没有少：投保人和被保险人要把自己知道的、对承保有实质影响的事实告诉保险公司。这个核对只列出要你本人确认的事，不替你推测任何一题的答案。</div>
+
+<h2>没有脚本时：签字前的核对清单</h2>
+<ol class="pit">
+<li>弄清这份申请走的是哪种流程：传统核保、加速核保（不体检但仍分级）、简化承保（短表格，直接接受或拒绝）。哪一种都要求如实回答。</li>
+<li>每一道健康与生活习惯问题，本人逐字读过。</li>
+<li>每个答案都是你自己知道的事实，不是代理人或家人替你推测的。</li>
+<li>问题问到的就诊、检查、用药、吸烟等情况，都按问题的字面如实作答。</li>
+<li>看不懂或拿不准的问题，已向保险公司或代理人问清并留下记录。</li>
+<li>申请之后、保单交付之前，健康有变化的，交付前告诉保险公司。</li>
+<li>签字前核对整份申请书，并保存一份副本：申请书是合同的一部分。</li>
+</ol>
+
+<form id="f" novalidate>
+<h2>逐项勾选</h2>
+<fieldset><legend>这份申请的流程</legend>
+<label class="f"><span>流程</span><select id="proc">
+<option value="unknown">还不清楚</option>
+<option value="traditional">传统核保</option>
+<option value="accelerated">加速核保</option>
+<option value="simplified">简化承保</option>
+</select></label>
+</fieldset>
+<fieldset><legend>本人确认</legend>
+<label class="c"><input type="checkbox" id="c1"> 每一道健康与生活习惯问题，我本人逐字读过</label>
+<label class="c"><input type="checkbox" id="c2"> 每个答案都是我自己知道的事实，不是别人替我推测的</label>
+<label class="c"><input type="checkbox" id="c3"> 问题问到的就诊、检查、用药、吸烟等情况，我都按问题字面如实作答</label>
+<label class="c"><input type="checkbox" id="c4"> 拿不准的问题，我已问清并留下记录</label>
+<label class="c"><input type="checkbox" id="c5"> 签字前核对了整份申请书，并保存了副本</label>
+</fieldset>
+<fieldset><legend>申请之后到交付之前</legend>
+<label class="c"><input type="radio" name="chg" value="no" checked> 健康没有变化</label>
+<label class="c"><input type="radio" name="chg" value="yes"> 有新的就诊、诊断或症状</label>
+</fieldset>
+<div id="out" class="result" aria-live="polite"><p>启用脚本后这里显示还没确认的项目；未启用时请按上面的清单逐项核对。</p></div>
+</form>
+
+<h2>答错之后，法律怎么走</h2>
+<ul class="pit">
+<li><b>生效未满 2 年</b>：漏报或误报重大事实，保险公司可以主张撤销合同。</li>
+<li><b>被保险人在世期间合同有效满 2 年</b>：非欺诈的漏报误报，一般不能再据此撤销合同；附加的伤残给付不适用这一条。</li>
+<li><b>欺诈</b>：故意隐瞒或虚报，不受这 2 年保护。</li>
+<li><b>年龄写错</b>：另按真实年龄调整保额。</li>
+</ul>
+
+<div class="foot">
+<p>本页只是核对流程的演示，不判断任何一题该怎么答，也不预判核保或理赔结果；拿不准请直接问保险公司。</p>
+<p>来源：<a href="https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/12001_03">BC Insurance Act, Part 3 Life Insurance（s.51、s.52、s.54）</a>，合并本截至 2026-10-27。</p>
+</div>
+<!-- vf:start --><div class="vf-tools" role="group" data-pagefind-ignore aria-label="阅读工具"><button type="button" data-vf-save hidden>保存本页</button><button type="button" data-vf-print hidden>打印 / 存为 PDF</button><span data-vf-status role="status" aria-live="polite"></span></div><!-- vf:end --></main>
+<script>
+var ITEMS={c1:'本人逐字读过每一道问题',c2:'答案是本人知道的事实，不是别人推测的',c3:'问到的就诊、检查、用药、吸烟等情况如实作答',c4:'拿不准的问题已问清并留记录',c5:'签字前核对整份申请书并保存副本'};
+function calc(i){
+  var miss=[];for(var k in ITEMS)if(!i[k])miss.push(ITEMS[k]);
+  var pn={unknown:'先问清这份申请走哪种流程',traditional:'传统核保：可能安排体检，问卷照样要如实答',accelerated:'加速核保：不体检但仍分级，可能被加费',simplified:'简化承保：短表格加即时数据，直接接受或拒绝'}[i.proc];
+  return{miss:miss,proc:pn,change:i.chg==='yes',ready:miss.length===0&&i.proc!=='unknown'&&i.chg!=='yes'};
+}
+(function(){
+  var out=document.getElementById('out');
+  function $(k){return document.getElementById(k)}
+  function upd(){
+    var v={proc:$('proc').value,chg:document.querySelector('input[name=chg]:checked').value};
+    for(var k in ITEMS)v[k]=$(k).checked;
+    var r=calc(v);
+    out.className='result'+(r.ready?' ok':' warn');
+    var h='<p><b>'+r.proc+'。</b></p>';
+    if(r.miss.length)h+='<p>还没确认的项目：</p><ul class="pit">'+r.miss.map(function(x){return '<li>'+x+'</li>'}).join('')+'</ul>';
+    if(r.change)h+='<p><b>健康有变化：在保单交付前告诉保险公司。</b>申请到交付之间的变化也属于要讲清的事实。</p>';
+    if(r.ready)h+='<p>你勾选的核对项都已确认。答案本身对不对，只有你知道；本页不替你判断。</p>';
+    out.innerHTML=h;
+  }
+  document.querySelectorAll('input,select').forEach(function(e){e.addEventListener('change',upd)});
+  upd();
+})();
+</script>
+<script>if('serviceWorker' in navigator){addEventListener('load',()=>navigator.serviceWorker.register('../sw.js').catch(()=>{}))}</script>
+</body>
+</html>

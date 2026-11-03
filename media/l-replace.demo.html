@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>换保单前的核对演示</title>
+<meta name="description" content="新保单报价便宜，能不能先退旧保单再等新单批下来？并排核对新旧条款和新单生效证据，证据不齐就不该停旧单。">
+<style>
+:root{--bg:#ffffff;--ink:#1b2430;--muted:#5d6b7b;--line:#e3e8ef;--raised:#f6f8fb;--acc:#0b5fff;--ok:#1a7f4b;--okbg:#e9f7ef;--warn:#b54708;--warnbg:#fff3e6}
+@media (prefers-color-scheme:dark){:root{--bg:#0f1419;--ink:#e6ebf2;--muted:#9aa7b5;--line:#2a3340;--raised:#171d25;--acc:#6ea8ff;--ok:#5fd39a;--okbg:#122a1d;--warn:#ffb86b;--warnbg:#2d1f0f}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.7 -apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif}
+main{max-width:760px;margin:0 auto;padding:24px 16px 48px}
+h1{font-size:1.45rem;line-height:1.35;margin:0 0 6px}
+h2{font-size:1.1rem;margin:28px 0 10px;padding-top:14px;border-top:1px solid var(--line)}
+.sub{color:var(--muted);margin:0 0 16px}
+.answer{background:var(--raised);border-left:4px solid var(--acc);padding:12px 14px;border-radius:8px;margin:14px 0}
+.answer b{display:block;margin-bottom:4px}
+label.f{display:block;margin:10px 0}
+label.f span{display:block;font-weight:600}
+label.f small{display:block;color:var(--muted)}
+input[type=number],select{font:inherit;width:180px;max-width:100%;padding:6px 8px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--ink)}
+fieldset{border:1px solid var(--line);border-radius:10px;margin:12px 0;padding:8px 14px}
+legend{font-weight:600;padding:0 6px}
+label.c{display:block;margin:6px 0}
+button{font:inherit;padding:5px 10px;border:1px solid var(--line);border-radius:8px;background:var(--raised);color:var(--ink);cursor:pointer}
+.result{border-radius:10px;padding:12px 14px;margin:14px 0;border:1px solid var(--line);background:var(--raised)}
+.result.warn{background:var(--warnbg);border-color:var(--warn)}
+.result.ok{background:var(--okbg);border-color:var(--ok)}
+table{border-collapse:collapse;width:100%;font-size:.93rem;margin:10px 0}
+th,td{border-bottom:1px solid var(--line);padding:7px 8px;text-align:left;vertical-align:top}
+td.n,th.n{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+th{background:var(--raised)}
+.wrap{overflow-x:auto}
+.pit{margin:0;padding-left:1.2em}
+.pit li{margin:6px 0}
+.foot{margin-top:28px;padding-top:12px;border-top:1px dashed var(--line);font-size:.86rem;color:var(--muted)}
+.foot a{color:var(--acc);overflow-wrap:anywhere}
+.step[hidden]{display:none}
+</style>
+<!-- vf:start --><meta name="vf-version" content="2026.09.30.2"><link rel="stylesheet" href="../vf/framework.css"><style>body[data-vf-site]{--vf-accent:#6f416f;--vf-paper:#faf4fa;--vf-heading:"PingFang SC", sans-serif;--vf-radius:8px;}</style><script defer src="../vf/framework.js"></script><!-- vf:end --><link rel="manifest" href="../manifest.webmanifest">
+</head>
+<body data-vf-site="llqp"><!-- vf:start --><nav class="vf-network" aria-label="微出国跨站导航" data-pagefind-ignore><a class="vf-wordmark" href="https://veryvisa.github.io/">微出国<span> / VERYVISA</span></a><span class="vf-network-label">人寿保险</span><a href="../workspace/index.html">我的清单</a><a href="https://veryvisa.github.io/#professional">专业人员入口</a></nav><!-- vf:end -->
+<main>
+<h1>新保单报价便宜，能不能先退旧保单再等新单批下来？</h1>
+<p class="sub">换保单前的保障空档 · 并排看条款和生效证据 · BC 口径</p>
+
+<div class="answer"><b>不要先退。</b>新单要重新核保，结果可能和报价不同；旧单若已退保，通常回不来。稳妥的顺序是新单生效、条款你也接受了，再处理旧单。报价便宜不是可以退旧单的证据，本页的判断里不用它。</div>
+
+<h2>没有脚本时：停旧单前要齐的证据</h2>
+<ol class="pit">
+<li>新单已签发并交付给你，已经生效（首期保费已付，交付时健康没有变化）。</li>
+<li>新旧条款已并排比过：保额、保费是否保证、除外与加费、现金价值、附加保障。</li>
+<li>新单上的核保结论（标准、加费、除外）你已看过并接受。</li>
+<li>属于替换的，替换声明已在申请前讲解并签字；签替换声明之日起 20 天内可以书面撤回新申请。</li>
+<li>已问过原保险公司能否在原合同上调整，原合同里的转换权也看过。</li>
+</ol>
+
+<form id="f" novalidate>
+<h2>并排核对</h2>
+<fieldset><legend>第一步：旧单打算怎么处理（判断算不算替换）</legend>
+<label class="f"><span>旧单的处理方式</span><select id="old">
+<option value="surrender">退保、撤销或让它失效</option>
+<option value="paidup">改成缴清或展期定期保险，或靠自动垫缴保费</option>
+<option value="reduce">减少保障</option>
+<option value="cash">提取超过表定现金价值 50% 的现金价值</option>
+<option value="borrow">用保单借款超过表定现金价值 50%</option>
+<option value="privilege">行使原保险公司原合同里的权利（如转换），在同一家保险公司出新单</option>
+<option value="annuity">被替换的是年金</option>
+<option value="group">改由团体保险替代</option>
+</select></label>
+</fieldset>
+<fieldset><legend>第二步：新旧两份的年保费（只作对照，不进判断）</legend>
+<label class="f"><span>旧单年保费（加元）</span><input type="number" id="pold" min="0" step="50" value="1800"></label>
+<label class="f"><span>新单报价年保费（加元）</span><input type="number" id="pnew" min="0" step="50" value="1200"></label>
+</fieldset>
+<fieldset><legend>第三步：生效与条款证据</legend>
+<label class="c"><input type="checkbox" id="e1"> 新单已签发、交付并生效</label>
+<label class="c"><input type="checkbox" id="e2"> 新旧条款已并排比过（保额、保证、除外、现金价值、附加保障）</label>
+<label class="c"><input type="checkbox" id="e3"> 新单的核保结论我已看过并接受</label>
+<label class="c"><input type="checkbox" id="e4"> 属于替换的，替换声明已讲解并签字</label>
+<label class="c"><input type="checkbox" id="e5"> 已问过原保险公司能否调整或转换</label>
+</fieldset>
+<div id="out" class="result" aria-live="polite"><p>启用脚本后这里显示还缺哪些证据；未启用时请按上面的清单核对。</p></div>
+</form>
+
+<h2>换了之后会重新开始的东西</h2>
+<ul class="pit">
+<li>新单的不可抗辩期从头算 2 年，这两年里保险公司仍可因漏报误报主张撤销。</li>
+<li>新单按现在的年龄和健康核保；旧单按当年锁定的等级。</li>
+<li>旧单的现金价值退保时可能有费用，新单要重新积累。</li>
+</ul>
+
+<div class="foot">
+<p>本页只做核对演示，不判断某次换单是否划算，也不替你决定退不退旧单。</p>
+<p>来源：<a href="https://bbs.fcgvisa.com/t/55592" data-vf-official-url="https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/327_90">BC Insurance Contracts (Replacement of Life Insurance) Regulation 327/90（s.1、s.3、s.4）<span class="vf-forum-link-label">（论坛解读）</span></a>，合并本截至 2026-10-27；<a href="https://www.insurancecouncilofbc.com/Website/media/Shared/Licensee%20Resources/Resources/Insurance-Council-Code-of-Conduct.pdf">Insurance Council of BC Code of Conduct</a>。</p>
+</div>
+<!-- vf:start --><div class="vf-tools" role="group" data-pagefind-ignore aria-label="阅读工具"><button type="button" data-vf-save hidden>保存本页</button><button type="button" data-vf-print hidden>打印 / 存为 PDF</button><span data-vf-status role="status" aria-live="polite"></span></div><!-- vf:end --></main>
+<script>
+var EV={e1:'新单已签发、交付并生效',e2:'新旧条款已并排比过',e3:'新单核保结论已看过并接受',e4:'替换声明已讲解并签字',e5:'已问过原保险公司能否调整或转换'};
+var EXCL={privilege:'行使原合同权利在同一家保险公司出新单',annuity:'被替换的是年金',group:'改由团体保险替代'};
+function calc(i){
+  var isRep=!EXCL[i.old],miss=[];
+  for(var k in EV){if(k==='e4'&&!isRep)continue;if(!i[k])miss.push(EV[k])}
+  return{isRep:isRep,excl:EXCL[i.old]||'',miss:miss,ok:miss.length===0,diff:(+i.pold||0)-(+i.pnew||0)};
+}
+(function(){
+  var out=document.getElementById('out'),ids=['old','pold','pnew','e1','e2','e3','e4','e5'];
+  function $(k){return document.getElementById(k)}
+  function money(x){return (x<0?'－$':'$')+Math.round(Math.abs(x)).toLocaleString('en-CA')}
+  function upd(){
+    var v={};ids.forEach(function(k){var e=$(k);v[k]=e.type==='checkbox'?e.checked:e.value});
+    var r=calc(v);
+    var h='<p>'+(r.isRep?'按 BC 法规 s.1 的定义，这样处理旧单属于<b>替换</b>，要走替换声明。':'这属于 BC 法规 s.1 明列的排除情形（'+r.excl+'），不按替换处理；生效证据照样要齐。')+'</p>';
+    h+='<p>新旧年保费差 '+money(r.diff)+'：这个数不进下面的判断。</p>';
+    if(r.ok){out.className='result ok';h+='<p><b>你勾选的证据都齐了。</b>处理旧单仍是你的决定；停旧单前再确认一次新单确实已生效。</p>'}
+    else{out.className='result warn';h+='<p><b>现在还不该停旧单。</b>还缺：</p><ul class="pit">'+r.miss.map(function(x){return '<li>'+x+'</li>'}).join('')+'</ul>'}
+    out.innerHTML=h;
+  }
+  ids.forEach(function(k){$(k).addEventListener('input',upd);$(k).addEventListener('change',upd)});
+  upd();
+})();
+</script>
+<script>if('serviceWorker' in navigator){addEventListener('load',()=>navigator.serviceWorker.register('../sw.js').catch(()=>{}))}</script>
+</body>
+</html>
