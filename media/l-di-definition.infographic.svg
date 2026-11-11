@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1489" width="900" height="1489" role="img" aria-labelledby="t d" font-family="'PingFang SC','Hiragino Sans GB','Noto Sans SC','Microsoft YaHei',sans-serif">
+<title id="t">医生说我不能做原来的工作，伤残险就一定赔吗？</title>
+<desc id="d">不一定。医生证明的是你的医学情况；赔不赔，要看你那份合同怎么定义「伤残」、证据是否满足、有没有等待期和限制条件。同一家公司不同计划的定义都可能不一样。</desc>
+<rect width="900" height="1489" fill="#FAFBFC"/>
+<rect x="0" y="0" width="900" height="122" rx="0" fill="#12355B"/>
+<text x="40" y="46" font-size="18" fill="#BFD3E6" font-weight="500" text-anchor="start">伤残定义决定赔付 · 信息图</text>
+<text x="40" y="92" font-size="30" fill="#FFFFFF" font-weight="700" text-anchor="start">医生说我不能做原来的工作，伤残险就一定赔吗？</text>
+<rect x="40" y="146" width="820" height="165" rx="16" fill="#FFFFFF" stroke="#12355B" stroke-width="2"/>
+<text x="64" y="177" font-size="17" fill="#0E7C7B" font-weight="700" text-anchor="start">一句话答案</text>
+<text x="64" y="213" font-size="21" fill="#1F2A37" font-weight="600" text-anchor="start">不一定。医生证明的是你的医学情况；赔不赔，要看你那份合同怎么定义「伤残</text>
+<text x="64" y="246" font-size="21" fill="#1F2A37" font-weight="600" text-anchor="start">」、证据是否满足、有没有等待期和限制条件。同一家公司不同计划的定义都可能</text>
+<text x="64" y="279" font-size="21" fill="#1F2A37" font-weight="600" text-anchor="start">不一样。</text>
+<text x="40" y="355" font-size="22" fill="#12355B" font-weight="700" text-anchor="start">三层分开看，缺一层都不能下结论</text>
+<rect x="40" y="373" width="820" height="129" rx="14" fill="#F4F6F9" stroke="#5B6B7F" stroke-width="1.5"/>
+<text x="58" y="407" font-size="20" fill="#5B6B7F" font-weight="700" text-anchor="start">第一层：医学情况</text>
+<circle cx="64" cy="436" r="3.2" fill="#5B6B7F"/>
+<text x="76" y="441" font-size="17" fill="#1F2A37" font-weight="400" text-anchor="start">诊断、治疗和医生对功能限制的意见</text>
+<circle cx="64" cy="468" r="3.2" fill="#5B6B7F"/>
+<text x="76" y="472" font-size="17" fill="#1F2A37" font-weight="400" text-anchor="start">这是证据的来源，本身不等于合同里的「伤残」</text>
+<line x1="450" y1="504" x2="450" y2="531" stroke="#5B6B7F" stroke-width="2.5"/>
+<path d="M442,528 L458,528 L450,540 Z" fill="#5B6B7F"/>
+<text x="466" y="523" font-size="15" fill="#5B6B7F" font-weight="500" text-anchor="start">再看对工作的影响</text>
+<rect x="40" y="542" width="820" height="160" rx="14" fill="#EAF1F8" stroke="#2F5D8A" stroke-width="1.5"/>
+<text x="58" y="576" font-size="20" fill="#2F5D8A" font-weight="700" text-anchor="start">第二层：职业能力</text>
+<circle cx="64" cy="605" r="3.2" fill="#2F5D8A"/>
+<text x="76" y="610" font-size="17" fill="#1F2A37" font-weight="400" text-anchor="start">能不能履行本职业的主要职责</text>
+<circle cx="64" cy="636" r="3.2" fill="#2F5D8A"/>
+<text x="76" y="642" font-size="17" fill="#1F2A37" font-weight="400" text-anchor="start">能不能从事与你教育、训练、经验相匹配的其他工作</text>
+<circle cx="64" cy="668" r="3.2" fill="#2F5D8A"/>
+<text x="76" y="673" font-size="17" fill="#1F2A37" font-weight="400" text-anchor="start">部分复工、收入下降的情形另有条款</text>
+<line x1="450" y1="704" x2="450" y2="732" stroke="#5B6B7F" stroke-width="2.5"/>
+<path d="M442,728 L458,728 L450,740 Z" fill="#5B6B7F"/>
+<text x="466" y="724" font-size="15" fill="#5B6B7F" font-weight="500" text-anchor="start">最后对照合同那一句</text>
+<rect x="40" y="742" width="820" height="192" rx="14" fill="#FFF4E5" stroke="#B45309" stroke-width="1.5"/>
+<text x="58" y="776" font-size="20" fill="#B45309" font-weight="700" text-anchor="start">第三层：合同定义</text>
+<circle cx="64" cy="806" r="3.2" fill="#B45309"/>
+<text x="76" y="810" font-size="17" fill="#1F2A37" font-weight="400" text-anchor="start">本职定义（own occupation）：不能履行本职业全部主要职责即算</text>
+<circle cx="64" cy="837" r="3.2" fill="#B45309"/>
+<text x="76" y="842" font-size="17" fill="#1F2A37" font-weight="400" text-anchor="start">常规职业定义（regular occupation）：门槛相同，自愿去做别的工作时给付可能被减</text>
+<circle cx="64" cy="868" r="3.2" fill="#B45309"/>
+<text x="76" y="874" font-size="17" fill="#1F2A37" font-weight="400" text-anchor="start">任何职业定义（any occupation）：还能做匹配的其他工作就不算伤残</text>
+<circle cx="64" cy="900" r="3.2" fill="#B45309"/>
+<text x="76" y="905" font-size="17" fill="#1F2A37" font-weight="400" text-anchor="start">团体计划里写的 own occupation，效果常等同个人险的 regular occupation</text>
+<rect x="40" y="956" width="820" height="160" rx="14" fill="#FDECEA" stroke="#B42318" stroke-width="1.5"/>
+<text x="58" y="990" font-size="20" fill="#B42318" font-weight="700" text-anchor="start">常见的定义切换</text>
+<circle cx="64" cy="1020" r="3.2" fill="#B42318"/>
+<text x="76" y="1024" font-size="17" fill="#1F2A37" font-weight="400" text-anchor="start">团体长期伤残常在给付一段时间后改按任何职业定义判断</text>
+<circle cx="64" cy="1051" r="3.2" fill="#B42318"/>
+<text x="76" y="1056" font-size="17" fill="#1F2A37" font-weight="400" text-anchor="start">FCAC 举例：长期计划可能 2 年后只在你不能做任何工作时继续给付</text>
+<circle cx="64" cy="1082" r="3.2" fill="#B42318"/>
+<text x="76" y="1088" font-size="17" fill="#1F2A37" font-weight="400" text-anchor="start">符合定义后，仍要过等待期才开始给付</text>
+<rect x="40" y="1139" width="820" height="160" rx="14" fill="#FFF4E5" stroke="#B45309" stroke-width="1.5"/>
+<text x="58" y="1173" font-size="20" fill="#B45309" font-weight="700" text-anchor="start">最容易弄错</text>
+<circle cx="64" cy="1202" r="3.2" fill="#B45309"/>
+<text x="76" y="1207" font-size="17" fill="#1F2A37" font-weight="400" text-anchor="start">「有医生证明就一定赔」：医学证明是证据之一，结论看合同定义。</text>
+<circle cx="64" cy="1234" r="3.2" fill="#B45309"/>
+<text x="76" y="1238" font-size="17" fill="#1F2A37" font-weight="400" text-anchor="start">「团体险写着 own occupation，所以兼职别的工作不影响」：团体险的这个词效果常更窄。</text>
+<circle cx="64" cy="1265" r="3.2" fill="#B45309"/>
+<text x="76" y="1270" font-size="17" fill="#1F2A37" font-weight="400" text-anchor="start">「保险公司的伤残标准和 CPP 伤残、残疾税抵免一样」：三者标准各自独立。</text>
+<line x1="40" y1="1326" x2="860" y2="1326" stroke="#D5DEE8" stroke-width="1.5"/>
+<text x="40" y="1350" font-size="15" fill="#5B6B7F" font-weight="700" text-anchor="start">来源</text>
+<text x="40" y="1372" font-size="14" fill="#5B6B7F" font-weight="400" text-anchor="start">FCAC · Disability insurance（canada.ca）</text>
+<text x="40" y="1395" font-size="14" fill="#5B6B7F" font-weight="400" text-anchor="start">BC Insurance Act, Part 4 Accident and Sickness Insurance · bclaws.gov.bc.ca</text>
+<text x="40" y="1417" font-size="14" fill="#5B6B7F" font-weight="400" text-anchor="start">本站讲解页「伤残收入保险」四种残疾定义一节</text>
+<text x="40" y="1445" font-size="14" fill="#5B6B7F" font-weight="400" text-anchor="start">本图不作医学或理赔结论；定义与切换时点以你手上那份合同的原文为准。</text>
+</svg>

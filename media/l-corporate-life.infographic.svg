@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1547" width="900" height="1547" role="img" aria-labelledby="t d" font-family="'PingFang SC','Hiragino Sans GB','Noto Sans SC','Microsoft YaHei',sans-serif">
+<title id="t">公司给老板投保，老板家人就会直接收到赔款吗？</title>
+<desc id="d">不会自动。赔款付给保单上登记的受益人。公司既是投保人又是受益人时，身故金先进公司账户；家人要拿到这笔钱，还得经过公司分配、股份归属和税务手续这几层。</desc>
+<rect width="900" height="1547" fill="#FAFBFC"/>
+<rect x="0" y="0" width="900" height="122" rx="0" fill="#12355B"/>
+<text x="40" y="46" font-size="18" fill="#BFD3E6" font-weight="500" text-anchor="start">公司持有寿险的资金归属 · 信息图</text>
+<text x="40" y="92" font-size="30" fill="#FFFFFF" font-weight="700" text-anchor="start">公司给老板投保，老板家人就会直接收到赔款吗？</text>
+<rect x="40" y="146" width="820" height="165" rx="16" fill="#FFFFFF" stroke="#12355B" stroke-width="2"/>
+<text x="64" y="177" font-size="17" fill="#0E7C7B" font-weight="700" text-anchor="start">一句话答案</text>
+<text x="64" y="213" font-size="21" fill="#1F2A37" font-weight="600" text-anchor="start">不会自动。赔款付给保单上登记的受益人。公司既是投保人又是受益人时，身故金</text>
+<text x="64" y="246" font-size="21" fill="#1F2A37" font-weight="600" text-anchor="start">先进公司账户；家人要拿到这笔钱，还得经过公司分配、股份归属和税务手续这几</text>
+<text x="64" y="279" font-size="21" fill="#1F2A37" font-weight="600" text-anchor="start">层。</text>
+<text x="40" y="355" font-size="22" fill="#12355B" font-weight="700" text-anchor="start">钱按这条路走，一层一层核</text>
+<rect x="40" y="373" width="820" height="160" rx="14" fill="#EAF1F8" stroke="#2F5D8A" stroke-width="1.5"/>
+<text x="58" y="407" font-size="20" fill="#2F5D8A" font-weight="700" text-anchor="start">第一层：保单上写的是谁</text>
+<circle cx="64" cy="436" r="3.2" fill="#2F5D8A"/>
+<text x="76" y="441" font-size="17" fill="#1F2A37" font-weight="400" text-anchor="start">被保险人：老板本人</text>
+<circle cx="64" cy="468" r="3.2" fill="#2F5D8A"/>
+<text x="76" y="472" font-size="17" fill="#1F2A37" font-weight="400" text-anchor="start">投保人与受益人：公司（关键人保障、公司赎回股份等用途常见这种安排）</text>
+<circle cx="64" cy="499" r="3.2" fill="#2F5D8A"/>
+<text x="76" y="504" font-size="17" fill="#1F2A37" font-weight="400" text-anchor="start">赔款按受益人指定给付，被保险人是谁不决定钱给谁</text>
+<line x1="450" y1="536" x2="450" y2="562" stroke="#5B6B7F" stroke-width="2.5"/>
+<path d="M442,560 L458,560 L450,572 Z" fill="#5B6B7F"/>
+<text x="466" y="554" font-size="15" fill="#5B6B7F" font-weight="500" text-anchor="start">身故金先到公司</text>
+<rect x="40" y="574" width="820" height="186" rx="14" fill="#E6F4F3" stroke="#0E7C7B" stroke-width="1.5"/>
+<text x="58" y="608" font-size="20" fill="#0E7C7B" font-weight="700" text-anchor="start">第二层：公司收到身故金</text>
+<circle cx="64" cy="636" r="3.2" fill="#0E7C7B"/>
+<text x="76" y="642" font-size="17" fill="#1F2A37" font-weight="400" text-anchor="start">寿险身故金进公司账户时免税，不因受益人是公司而改变</text>
+<circle cx="64" cy="668" r="3.2" fill="#0E7C7B"/>
+<text x="76" y="673" font-size="17" fill="#1F2A37" font-weight="400" text-anchor="start">对符合条件的私人公司，身故金扣除保单调整后成本基础（ACB）后的部分可增加资本红利账户（CD</text>
+<text x="76" y="698" font-size="17" fill="#1F2A37" font-weight="400" text-anchor="start">A）</text>
+<circle cx="64" cy="725" r="3.2" fill="#0E7C7B"/>
+<text x="76" y="730" font-size="17" fill="#1F2A37" font-weight="400" text-anchor="start">等于 ACB 的那部分公司拿到手同样不交税，但不进 CDA</text>
+<line x1="450" y1="762" x2="450" y2="788" stroke="#5B6B7F" stroke-width="2.5"/>
+<path d="M442,786 L458,786 L450,798 Z" fill="#5B6B7F"/>
+<text x="466" y="780" font-size="15" fill="#5B6B7F" font-weight="500" text-anchor="start">要分出去才到股东</text>
+<rect x="40" y="800" width="820" height="160" rx="14" fill="#FFF4E5" stroke="#B45309" stroke-width="1.5"/>
+<text x="58" y="834" font-size="20" fill="#B45309" font-weight="700" text-anchor="start">第三层：公司怎么把钱分出去</text>
+<circle cx="64" cy="862" r="3.2" fill="#B45309"/>
+<text x="76" y="868" font-size="17" fill="#1F2A37" font-weight="400" text-anchor="start">按规则向加拿大税务居民股东发资本红利，可免税，须按时提交 T2054 资本红利选择</text>
+<circle cx="64" cy="894" r="3.2" fill="#B45309"/>
+<text x="76" y="899" font-size="17" fill="#1F2A37" font-weight="400" text-anchor="start">超出 CDA 余额的分配按其他性质处理，税务后果不同</text>
+<circle cx="64" cy="926" r="3.2" fill="#B45309"/>
+<text x="76" y="930" font-size="17" fill="#1F2A37" font-weight="400" text-anchor="start">钱也可能按买卖协议用来赎回股份，或留在公司弥补经营损失</text>
+<line x1="450" y1="962" x2="450" y2="989" stroke="#5B6B7F" stroke-width="2.5"/>
+<path d="M442,986 L458,986 L450,998 Z" fill="#5B6B7F"/>
+<text x="466" y="981" font-size="15" fill="#5B6B7F" font-weight="500" text-anchor="start">最后看谁持有股份</text>
+<rect x="40" y="1000" width="820" height="129" rx="14" fill="#E9F7EF" stroke="#1A7F4B" stroke-width="1.5"/>
+<text x="58" y="1034" font-size="20" fill="#1A7F4B" font-weight="700" text-anchor="start">第四层：家人拿到什么</text>
+<circle cx="64" cy="1063" r="3.2" fill="#1A7F4B"/>
+<text x="76" y="1068" font-size="17" fill="#1F2A37" font-weight="400" text-anchor="start">老板已身故，收分配的是股份的持有人，通常是其遗产或继承股份的人</text>
+<circle cx="64" cy="1094" r="3.2" fill="#1A7F4B"/>
+<text x="76" y="1100" font-size="17" fill="#1F2A37" font-weight="400" text-anchor="start">家人能拿多少、何时拿到，取决于股东协议、遗嘱和公司当时的整体账户</text>
+<rect x="40" y="1151" width="820" height="186" rx="14" fill="#FFF4E5" stroke="#B45309" stroke-width="1.5"/>
+<text x="58" y="1185" font-size="20" fill="#B45309" font-weight="700" text-anchor="start">最容易弄错</text>
+<circle cx="64" cy="1214" r="3.2" fill="#B45309"/>
+<text x="76" y="1219" font-size="17" fill="#1F2A37" font-weight="400" text-anchor="start">「老板是被保险人，家人自然是收款人」：赔款给受益人，受益人是公司时钱先进公司。</text>
+<circle cx="64" cy="1246" r="3.2" fill="#B45309"/>
+<text x="76" y="1250" font-size="17" fill="#1F2A37" font-weight="400" text-anchor="start">「公司收到的免税身故金都能免税发给家人」：只有进了 CDA 的部分才能按规则作资本红利免税分</text>
+<text x="76" y="1276" font-size="17" fill="#1F2A37" font-weight="400" text-anchor="start">配。</text>
+<circle cx="64" cy="1302" r="3.2" fill="#B45309"/>
+<text x="76" y="1308" font-size="17" fill="#1F2A37" font-weight="400" text-anchor="start">「定期险没有现金价值，所以全额进 CDA」：定期险也可能有非零 ACB，须用实际数字算。</text>
+<line x1="40" y1="1363" x2="860" y2="1363" stroke="#D5DEE8" stroke-width="1.5"/>
+<text x="40" y="1388" font-size="15" fill="#5B6B7F" font-weight="700" text-anchor="start">来源</text>
+<text x="40" y="1410" font-size="14" fill="#5B6B7F" font-weight="400" text-anchor="start">BC Insurance Act, Part 3 Life Insurance（受益人指定与给付）· bclaws.gov.bc.ca</text>
+<text x="40" y="1432" font-size="14" fill="#5B6B7F" font-weight="400" text-anchor="start">CRA Income Tax Folio S3-F2-C1 Capital Dividends · canada.ca</text>
+<text x="40" y="1455" font-size="14" fill="#5B6B7F" font-weight="400" text-anchor="start">本站讲解页「企业寿险」3.3 节</text>
+<text x="40" y="1483" font-size="14" fill="#5B6B7F" font-weight="400" text-anchor="start">BC 与联邦税务口径。CDA 增加额、分配顺序和股份归属须由会计师和律师按公司实际账目与协议核算，本图只画路径，不推算任何</text>
+<text x="40" y="1503" font-size="14" fill="#5B6B7F" font-weight="400" text-anchor="start">家庭的到手金额。</text>
+</svg>

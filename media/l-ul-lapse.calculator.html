@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>万能寿险账户余额推演</title>
+<meta name="description" content="万能寿险已经买了多年，为什么还可能需要追加资金？用你保单年度报告上的账户价值和扣费，按两套回报情景推演账户还能撑多久。结果不是保证。">
+<style>
+:root{--bg:#ffffff;--ink:#1b2430;--muted:#5d6b7b;--line:#e3e8ef;--raised:#f6f8fb;--acc:#0b5fff;--ok:#1a7f4b;--okbg:#e9f7ef;--warn:#b54708;--warnbg:#fff3e6}
+@media (prefers-color-scheme:dark){:root{--bg:#0f1419;--ink:#e6ebf2;--muted:#9aa7b5;--line:#2a3340;--raised:#171d25;--acc:#6ea8ff;--ok:#5fd39a;--okbg:#122a1d;--warn:#ffb86b;--warnbg:#2d1f0f}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.7 -apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif}
+main{max-width:760px;margin:0 auto;padding:24px 16px 48px}
+h1{font-size:1.45rem;line-height:1.35;margin:0 0 6px}
+h2{font-size:1.1rem;margin:28px 0 10px;padding-top:14px;border-top:1px solid var(--line)}
+.sub{color:var(--muted);margin:0 0 16px}
+.answer{background:var(--raised);border-left:4px solid var(--acc);padding:12px 14px;border-radius:8px;margin:14px 0}
+.answer b{display:block;margin-bottom:4px}
+label.f{display:block;margin:10px 0}
+label.f span{display:block;font-weight:600}
+label.f small{display:block;color:var(--muted)}
+input[type=number],select{font:inherit;width:180px;max-width:100%;padding:6px 8px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--ink)}
+fieldset{border:1px solid var(--line);border-radius:10px;margin:12px 0;padding:8px 14px}
+legend{font-weight:600;padding:0 6px}
+label.c{display:block;margin:6px 0}
+button{font:inherit;padding:5px 10px;border:1px solid var(--line);border-radius:8px;background:var(--raised);color:var(--ink);cursor:pointer}
+.result{border-radius:10px;padding:12px 14px;margin:14px 0;border:1px solid var(--line);background:var(--raised)}
+.result.warn{background:var(--warnbg);border-color:var(--warn)}
+.result.ok{background:var(--okbg);border-color:var(--ok)}
+table{border-collapse:collapse;width:100%;font-size:.93rem;margin:10px 0}
+th,td{border-bottom:1px solid var(--line);padding:7px 8px;text-align:left;vertical-align:top}
+td.n,th.n{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+th{background:var(--raised)}
+.wrap{overflow-x:auto}
+.pit{margin:0;padding-left:1.2em}
+.pit li{margin:6px 0}
+.foot{margin-top:28px;padding-top:12px;border-top:1px dashed var(--line);font-size:.86rem;color:var(--muted)}
+.foot a{color:var(--acc);overflow-wrap:anywhere}
+.step[hidden]{display:none}
+</style>
+<!-- vf:start --><meta name="vf-version" content="2026.09.30.2"><link rel="stylesheet" href="../vf/framework.css"><style>body[data-vf-site]{--vf-accent:#6f416f;--vf-paper:#faf4fa;--vf-heading:"PingFang SC", sans-serif;--vf-radius:8px;}</style><script defer src="../vf/framework.js"></script><!-- vf:end --><link rel="manifest" href="../manifest.webmanifest">
+</head>
+<body data-vf-site="llqp"><!-- vf:start --><nav class="vf-network" aria-label="微出国跨站导航" data-pagefind-ignore><a class="vf-wordmark" href="https://veryvisa.github.io/">微出国<span> / VERYVISA</span></a><span class="vf-network-label">人寿保险</span><a href="../workspace/index.html">我的清单</a><a href="https://veryvisa.github.io/#professional">专业人员入口</a></nav><!-- vf:end -->
+<main>
+<h1>万能寿险已经买了多年，为什么还可能需要追加资金？</h1>
+<p class="sub">万能寿险资金不足 · 用你自己保单的数字推演 · 结果是情景，不是保证</p>
+
+<div class="answer"><b>因为保单靠账户里的钱付保险成本和费用。</b>账户价值盖不住扣费时，就要追加缴费，否则保单可能失效。这个推演器不内置任何保单的成本或回报率：账户价值、年缴费、年扣费都请抄你保单年度报告上的数，回报率填两套你自己的情景假设，至少一套偏低。</div>
+
+<h2>先看一个算好的例子（不需要脚本）</h2>
+<p>下面这组数字是为演示随手设的，不来自任何真实产品：账户价值 $40,000，每年缴 $1,200，今年扣费（保险成本加费用）$2,000、以后每年涨 8%。</p>
+<div class="wrap"><table>
+<thead><tr><th>回报情景</th><th>账户第一次不够扣的年份</th></tr></thead>
+<tbody>
+<tr><td>每年 4%</td><td class="n">第 20 年</td></tr>
+<tr><td>每年 1%</td><td class="n">第 17 年</td></tr>
+</tbody>
+</table></div>
+<p>第 1 年按 4% 手算：$40,000 ＋ $1,200 − $2,000 ＝ $39,200，× 1.04 ＝ $40,768；第 2 年扣费 $2,000 × 1.08 ＝ $2,160。</p>
+<p>扣费每年涨的那一项，对应逐年更新成本（YRT）随年龄上涨；合同若是平准成本，这一项填 0。</p>
+
+<form id="f" novalidate>
+<h2>换成你保单的数字</h2>
+<fieldset><legend>从保单年度报告抄</legend>
+<label class="f"><span>目前账户价值（加元）</span><small>有保单贷款的，用扣除贷款后的数。</small><input type="number" id="av" min="0" step="1000" value="40000"></label>
+<label class="f"><span>今后每年打算缴的保费（加元）</span><input type="number" id="prem" min="0" step="100" value="1200"></label>
+<label class="f"><span>今年从账户里扣的保险成本加费用（加元）</span><input type="number" id="chg" min="0" step="100" value="2000"></label>
+<label class="f"><span>扣费每年上涨（%）</span><small>逐年更新成本会随年龄上涨，可向保险公司要今后几年的成本表来估；平准成本填 0。</small><input type="number" id="grow" min="0" max="30" step="0.5" value="8"></label>
+</fieldset>
+<fieldset><legend>你自己的两套回报情景（% / 年）</legend>
+<label class="f"><span>情景一</span><input type="number" id="r1" min="-10" max="15" step="0.5" value="4"></label>
+<label class="f"><span>情景二（偏低）</span><input type="number" id="r2" min="-10" max="15" step="0.5" value="1"></label>
+</fieldset>
+<div id="out" class="result" aria-live="polite"><p>启用脚本后这里显示两套情景的推演；未启用时请看上面算好的例子。</p></div>
+</form>
+
+<h2>算法（全部写在这里，可以手算复核）</h2>
+<ul class="pit">
+<li>每一年：年初账户价值 ＋ 当年缴费 − 当年扣费；结果小于 0，就是账户第一次不够扣的那一年。</li>
+<li>不小于 0 时，乘以（1 ＋ 回报率）得到年末账户价值；下一年的扣费 ＝ 今年扣费 ×（1 ＋ 上涨率）。</li>
+<li>最多推演 60 年。</li>
+</ul>
+
+<h2>这个推演器简化掉的东西</h2>
+<ul class="pit">
+<li><b>按月扣费与净风险保额</b>：真实保单按月扣，保险成本按身故给付减账户价值计算，账户变小时扣费还会变高；本页按年、按你填的涨幅近似，结果可能偏乐观。</li>
+<li><b>保费税、退保费用、保证利率下限、费率调整上限</b>：以合同为准。</li>
+<li><b>不够扣之后会怎样</b>：宽限期、通知和能否补缴复效，按合同与保险公司通知。</li>
+</ul>
+
+<div class="foot">
+<p>本页是情景推演，不是保单演示件，也不是保证；要准确数字，请向保险公司索取按现行费率重新出具的演示件（in-force illustration）。</p>
+<p>来源：<a href="https://www.fsrao.ca/media/23856/download">FSRA Observed Practices in the Distribution and Sale of Universal Life Insurance</a>（安大略监管材料，这里只用于说明产品机制与风险）；<a href="https://www.canada.ca/en/financial-consumer-agency/services/insurance/life.html">FCAC Life insurance</a>。</p>
+</div>
+<!-- vf:start --><div class="vf-tools" role="group" data-pagefind-ignore aria-label="阅读工具"><button type="button" data-vf-save hidden>保存本页</button><button type="button" data-vf-print hidden>打印 / 存为 PDF</button><span data-vf-status role="status" aria-live="polite"></span></div><!-- vf:end --></main>
+<script>
+var MAXY=60;
+function run(av,prem,chg,grow,r){
+  var rows=[],a=Math.max(0,+av||0),p=Math.max(0,+prem||0),c=Math.max(0,+chg||0),g=(+grow||0)/100,rr=(+r||0)/100;
+  for(var y=1;y<=MAXY;y++){
+    var mid=a+p-c;
+    if(mid<0)return{lapse:y,rows:rows,short:-mid};
+    a=mid*(1+rr);rows.push({y:y,av:a,chg:c});c=c*(1+g);
+  }
+  return{lapse:0,rows:rows};
+}
+function calc(i){return{s1:run(i.av,i.prem,i.chg,i.grow,i.r1),s2:run(i.av,i.prem,i.chg,i.grow,i.r2)}}
+(function(){
+  var out=document.getElementById('out'),ids=['av','prem','chg','grow','r1','r2'];
+  function $(k){return document.getElementById(k)}
+  function money(x){return '$'+Math.round(x).toLocaleString('en-CA')}
+  function line(name,r,s){return '<tr><td>'+name+'（'+r+'%）</td><td class="n">'+(s.lapse?'第 '+s.lapse+' 年，差 '+money(s.short):'60 年内未出现')+'</td></tr>'}
+  function upd(){
+    var v={};ids.forEach(function(k){v[k]=$(k).value});
+    var c=calc(v),bad=c.s1.lapse||c.s2.lapse;
+    out.className='result'+(bad?' warn':' ok');
+    var h='<div class="wrap"><table><thead><tr><th>情景</th><th class="n">账户第一次不够扣</th></tr></thead><tbody>'+line('情景一',v.r1,c.s1)+line('情景二',v.r2,c.s2)+'</tbody></table></div>';
+    h+='<div class="wrap"><table><thead><tr><th>年末</th><th class="n">情景一账户价值</th><th class="n">情景二账户价值</th></tr></thead><tbody>';
+    [5,10,15,20,30].forEach(function(y){var a=c.s1.rows[y-1],b=c.s2.rows[y-1];h+='<tr><td>第 '+y+' 年</td><td class="n">'+(a?money(a.av):'—')+'</td><td class="n">'+(b?money(b.av):'—')+'</td></tr>'});
+    h+='</tbody></table></div><p>'+(bad?'按这些假设，到那一年账户不够扣，届时要追加缴费，否则保单可能失效。':'按这些假设账户撑得住，但假设变了结果就变，每年对一次年度报告。')+'这是情景，不是保证。</p>';
+    out.innerHTML=h;
+  }
+  ids.forEach(function(k){$(k).addEventListener('input',upd)});
+  upd();
+})();
+</script>
+<script>if('serviceWorker' in navigator){addEventListener('load',()=>navigator.serviceWorker.register('../sw.js').catch(()=>{}))}</script>
+</body>
+</html>

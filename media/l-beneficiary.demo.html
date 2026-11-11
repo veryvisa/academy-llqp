@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>受益人指定类型演示</title>
+<meta name="description" content="指定不可撤销受益人以后，我还能随意改人或处置保单吗？切换指定类型和想做的操作，看要核哪些同意与文件。">
+<style>
+:root{--bg:#ffffff;--ink:#1b2430;--muted:#5d6b7b;--line:#e3e8ef;--raised:#f6f8fb;--acc:#0b5fff;--ok:#1a7f4b;--okbg:#e9f7ef;--warn:#b54708;--warnbg:#fff3e6}
+@media (prefers-color-scheme:dark){:root{--bg:#0f1419;--ink:#e6ebf2;--muted:#9aa7b5;--line:#2a3340;--raised:#171d25;--acc:#6ea8ff;--ok:#5fd39a;--okbg:#122a1d;--warn:#ffb86b;--warnbg:#2d1f0f}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.7 -apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif}
+main{max-width:760px;margin:0 auto;padding:24px 16px 48px}
+h1{font-size:1.45rem;line-height:1.35;margin:0 0 6px}
+h2{font-size:1.1rem;margin:28px 0 10px;padding-top:14px;border-top:1px solid var(--line)}
+.sub{color:var(--muted);margin:0 0 16px}
+.answer{background:var(--raised);border-left:4px solid var(--acc);padding:12px 14px;border-radius:8px;margin:14px 0}
+.answer b{display:block;margin-bottom:4px}
+label.f{display:block;margin:10px 0}
+label.f span{display:block;font-weight:600}
+label.f small{display:block;color:var(--muted)}
+input[type=number],select{font:inherit;width:180px;max-width:100%;padding:6px 8px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--ink)}
+fieldset{border:1px solid var(--line);border-radius:10px;margin:12px 0;padding:8px 14px}
+legend{font-weight:600;padding:0 6px}
+label.c{display:block;margin:6px 0}
+button{font:inherit;padding:5px 10px;border:1px solid var(--line);border-radius:8px;background:var(--raised);color:var(--ink);cursor:pointer}
+.result{border-radius:10px;padding:12px 14px;margin:14px 0;border:1px solid var(--line);background:var(--raised)}
+.result.warn{background:var(--warnbg);border-color:var(--warn)}
+.result.ok{background:var(--okbg);border-color:var(--ok)}
+table{border-collapse:collapse;width:100%;font-size:.93rem;margin:10px 0}
+th,td{border-bottom:1px solid var(--line);padding:7px 8px;text-align:left;vertical-align:top}
+td.n,th.n{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+th{background:var(--raised)}
+.wrap{overflow-x:auto}
+.pit{margin:0;padding-left:1.2em}
+.pit li{margin:6px 0}
+.foot{margin-top:28px;padding-top:12px;border-top:1px dashed var(--line);font-size:.86rem;color:var(--muted)}
+.foot a{color:var(--acc);overflow-wrap:anywhere}
+.step[hidden]{display:none}
+</style>
+<!-- vf:start --><meta name="vf-version" content="2026.09.30.2"><link rel="stylesheet" href="../vf/framework.css"><style>body[data-vf-site]{--vf-accent:#6f416f;--vf-paper:#faf4fa;--vf-heading:"PingFang SC", sans-serif;--vf-radius:8px;}</style><script defer src="../vf/framework.js"></script><!-- vf:end --><link rel="manifest" href="../manifest.webmanifest">
+</head>
+<body data-vf-site="llqp"><!-- vf:start --><nav class="vf-network" aria-label="微出国跨站导航" data-pagefind-ignore><a class="vf-wordmark" href="https://veryvisa.github.io/">微出国<span> / VERYVISA</span></a><span class="vf-network-label">人寿保险</span><a href="../workspace/index.html">我的清单</a><a href="https://veryvisa.github.io/#professional">专业人员入口</a></nav><!-- vf:end -->
+<main>
+<h1>指定不可撤销受益人以后，我还能随意改人或处置保单吗？</h1>
+<p class="sub">受益人指定与控制权 · 切换指定类型，看要核的同意与文件 · BC 口径</p>
+
+<div class="answer"><b>不能随意。</b>在 BC，按法定方式成立的不可撤销指定，只要这位受益人在世，投保人未经其同意不得变更或撤销这项指定；退保、保单贷款等会减少或终止其保险金的操作也要先取得其书面同意；把保单质押给银行，银行要身故时优先受偿同样须其书面同意（不经同意的转让，受让人的权益排在这位受益人之后）。谁交保费不改变这一点，离婚也不会自动解除。</div>
+
+<h2>没有脚本时：先看这张对照表</h2>
+<div class="wrap"><table>
+<thead><tr><th>你的指定实际是</th><th>改受益人</th><th>退保、保单贷款、质押、转让</th></tr></thead>
+<tbody>
+<tr><td>可撤销（BC 默认，即使指定的是配偶）</td><td>投保人用书面声明即可变更，送达保险公司</td><td>投保人按合同办理，不需要受益人同意</td></tr>
+<tr><td>不可撤销：写在合同里或书面声明中，并在被保险人在世期间送达保险公司在加拿大的总部或主要办事处</td><td>受益人在世期间，须其同意</td><td>退保、保单贷款：须这位受益人书面同意。质押、转让：Regulation s.9.1(4)(e) 允许不经同意转让，但受让人的权益排在这位受益人之后（s.66(3)）；银行或受让人要排在其之前受偿，须其书面同意</td></tr>
+<tr><td>写在遗嘱里的「不可撤销」，或没有按上面方式送达的</td><td colspan="2">法律按可撤销处理，同第一行</td></tr>
+</tbody>
+</table></div>
+
+<form id="f" novalidate>
+<h2>切换看看</h2>
+<fieldset><legend>第一步：指定是怎么作出的</legend>
+<label class="c"><input type="radio" name="how" value="revocable" checked> 普通指定，没有写不可撤销</label>
+<label class="c"><input type="radio" name="how" value="filed"> 写明不可撤销，写在合同里或书面声明中，并在被保险人在世期间送达保险公司在加拿大的总部或主要办事处</label>
+<label class="c"><input type="radio" name="how" value="will"> 写在遗嘱里，说是不可撤销</label>
+<label class="c"><input type="radio" name="how" value="notfiled"> 写明不可撤销，但没有送达保险公司总部（例如只交给了代理人）</label>
+<label class="c"><input type="radio" name="how" value="unknown"> 不清楚</label>
+</fieldset>
+<fieldset><legend>第二步：这位受益人现在</legend>
+<label class="c"><input type="radio" name="alive" value="yes" checked> 在世</label>
+<label class="c"><input type="radio" name="alive" value="no"> 已身故</label>
+</fieldset>
+<fieldset><legend>第三步：你想做什么</legend>
+<label class="f"><span>操作</span><select id="act">
+<option value="change">改受益人或撤销指定</option>
+<option value="surrender">退保或提取现金价值</option>
+<option value="loan">申请保单贷款</option>
+<option value="collateral">把保单质押给银行（担保转让）</option>
+<option value="absolute">把保单整份转给别人（绝对转让）</option>
+</select></label>
+<label class="c"><input type="checkbox" id="divorce"> 我和这位受益人已经离婚，离婚协议里写了双方放弃对方保单权益</label>
+</fieldset>
+<div id="out" class="result" aria-live="polite"><p>启用脚本后这里按你的选择显示要核的同意与文件；未启用时请看上面的对照表。</p></div>
+</form>
+
+<h2>这个演示不判的东西</h2>
+<ul class="pit">
+<li><b>Regulation s.9.1 放行的其他操作</b>（增加保额、增加保障或被保险人、账户或投资选项间转换等，前提是不减少其保险金或利益，也不取消或退保这项指定所涉及的保单、保障或条款）：本页没有列出，个案对条文与保险公司文件。</li>
+<li><b>受益人先于被保险人身故时份额怎么处理</b>：看合同、声明和 BC 法例 s.63 的再分配规则，回保险公司核。</li>
+<li><b>离婚财产分割、债务追偿等法律问题</b>：请交律师。</li>
+</ul>
+
+<div class="foot">
+<p>本页只演示规则的走法，不构成法律意见；以你的保单、保险公司表格和律师意见为准。BC 口径，法条合并本截至 2026-10-27。</p>
+<p>来源：<a href="https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/12001_03">BC Insurance Act, Part 3 Life Insurance（s.59、s.60、s.65、s.66）</a>；<a href="https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/403_2012#section9.1">BC Insurance Regulation（B.C. Reg. 403/2012）s.9.1</a>。</p>
+</div>
+<!-- vf:start --><div class="vf-tools" role="group" data-pagefind-ignore aria-label="阅读工具"><button type="button" data-vf-save hidden>保存本页</button><button type="button" data-vf-print hidden>打印 / 存为 PDF</button><span data-vf-status role="status" aria-live="polite"></span></div><!-- vf:end --></main>
+<script>
+function calc(i){
+  var eff=i.how==='filed'?'irrevocable':(i.how==='unknown'?'unknown':'revocable');
+  var r={eff:eff,docs:[],consent:'none',notes:[]};
+  if(eff==='unknown'){r.consent='check';r.docs.push('向保险公司索取现行受益人记录，确认是可撤销还是不可撤销、何时送达');return r}
+  if(i.how==='will'||i.how==='notfiled')r.notes.push('写在遗嘱里或没有按法定方式送达的「不可撤销」，法律按可撤销处理');
+  if(eff==='revocable'){
+    r.consent='none';
+    r.docs.push(i.act==='change'?'用书面声明或保险公司变更表作出新指定，送达保险公司':'按保险公司表格由投保人办理');
+  }else if(i.alive!=='yes'){
+    r.consent='check';
+    r.notes.push('须其同意这一限制以受益人在世为前提；受益人先于被保险人身故的，其份额怎么处理，看合同、声明与 s.63');
+    r.docs.push('向保险公司确认受益人身故后的记录与处理方式');
+  }else if(i.act==='change'){
+    r.consent='required';
+    r.docs.push('这位受益人签署的书面同意，送达保险公司');
+  }else if(i.act==='surrender'||i.act==='loan'){
+    r.consent='required';
+    r.docs.push('这位受益人签署的书面同意，送达保险公司');
+    r.notes.push('退保、提取现金价值、保单贷款会减少或终止其保险金，Insurance Regulation s.9.1(5) 不放行这类操作');
+  }else{
+    r.consent='assign';
+    r.notes.push('Insurance Regulation s.9.1(4)(e) 允许不经同意转让投保人的权利，但受让人取得的权益排在这位受益人之后（s.66(3)），不能借转让变更受益人或退保');
+    r.docs.push('受让人（如银行）要优先于这位受益人受偿，须另取得其书面同意并送达保险公司');
+  }
+  if(i.act==='collateral')r.docs.push('银行的担保转让文件送达保险公司；身故时先还未偿贷款，余额归受益人');
+  if(i.act==='absolute')r.notes.push('绝对转让后受让人成为新投保人，还会触发处置的税务判断');
+  if(i.divorce&&eff==='irrevocable')r.notes.push('离婚本身不解除不可撤销指定；离婚协议里的放弃条款保险公司不是当事方，要解除须对方另签保险公司的同意或释放文件');
+  return r;
+}
+(function(){
+  var out=document.getElementById('out');
+  function v(n){var e=document.querySelector('input[name='+n+']:checked');return e?e.value:''}
+  var NAME={revocable:'可撤销',irrevocable:'不可撤销',unknown:'未确认'};
+  var CON={none:'不需要受益人同意',required:'须这位受益人书面同意',assign:'受让人要排在这位受益人之前受偿，须其书面同意；没有同意，受让人的权益排在其后',check:'先核记录再判断'};
+  function upd(){
+    var r=calc({how:v('how'),alive:v('alive'),act:document.getElementById('act').value,divorce:document.getElementById('divorce').checked});
+    out.className='result'+(r.consent==='none'?' ok':' warn');
+    var h='<p><b>按你的选择，这项指定实际是：'+NAME[r.eff]+'；'+CON[r.consent]+'。</b></p>';
+    if(r.notes.length)h+='<ul class="pit">'+r.notes.map(function(x){return '<li>'+x+'</li>'}).join('')+'</ul>';
+    h+='<p>要准备或核对的文件：</p><ul class="pit">'+r.docs.map(function(x){return '<li>'+x+'</li>'}).join('')+'</ul>';
+    out.innerHTML=h;
+  }
+  document.querySelectorAll('input,select').forEach(function(e){e.addEventListener('change',upd)});
+  upd();
+})();
+</script>
+<script>if('serviceWorker' in navigator){addEventListener('load',()=>navigator.serviceWorker.register('../sw.js').catch(()=>{}))}</script>
+</body>
+</html>

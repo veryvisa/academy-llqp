@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1636" width="900" height="1636" role="img" aria-labelledby="t d" font-family="'PingFang SC','Hiragino Sans GB','Noto Sans SC','Microsoft YaHei',sans-serif">
+<title id="t">万能寿险已经买了多年，为什么还可能需要追加资金？</title>
+<desc id="d">因为万能寿险靠账户里的钱付每月的保险成本和费用。只要账户价值盖不住这些扣费，就要追加缴费，否则保单可能失效。最初的演示数字不是保证。</desc>
+<rect width="900" height="1636" fill="#FAFBFC"/>
+<rect x="0" y="0" width="900" height="122" rx="0" fill="#12355B"/>
+<text x="40" y="46" font-size="18" fill="#BFD3E6" font-weight="500" text-anchor="start">万能寿险资金不足 · 信息图</text>
+<text x="40" y="92" font-size="30" fill="#FFFFFF" font-weight="700" text-anchor="start">万能寿险已经买了多年，为什么还可能需要追加资金？</text>
+<rect x="40" y="146" width="820" height="132" rx="16" fill="#FFFFFF" stroke="#12355B" stroke-width="2"/>
+<text x="64" y="177" font-size="17" fill="#0E7C7B" font-weight="700" text-anchor="start">一句话答案</text>
+<text x="64" y="213" font-size="21" fill="#1F2A37" font-weight="600" text-anchor="start">因为万能寿险靠账户里的钱付每月的保险成本和费用。只要账户价值盖不住这些扣</text>
+<text x="64" y="246" font-size="21" fill="#1F2A37" font-weight="600" text-anchor="start">费，就要追加缴费，否则保单可能失效。最初的演示数字不是保证。</text>
+<text x="40" y="322" font-size="22" fill="#12355B" font-weight="700" text-anchor="start">四种最容易把账户掏空的情形</text>
+<rect x="40.0" y="342" width="403.0" height="172" rx="14" fill="#FFF4E5" stroke="#B45309" stroke-width="1.5"/>
+<text x="54.0" y="374" font-size="19" fill="#B45309" font-weight="700" text-anchor="start">缴得少</text>
+<text x="54.0" y="402" font-size="14" fill="#5B6B7F" font-weight="700" text-anchor="start">长期只缴最低缴费</text>
+<text x="54.0" y="424" font-size="16" fill="#1F2A37" font-weight="400" text-anchor="start">最低缴费按设计假设算出，不等于终身保证</text>
+<text x="54.0" y="458" font-size="14" fill="#5B6B7F" font-weight="700" text-anchor="start">减少或停缴保费</text>
+<text x="54.0" y="480" font-size="16" fill="#1F2A37" font-weight="400" text-anchor="start">全靠账户价值付扣费</text>
+<rect x="457.0" y="342" width="403.0" height="172" rx="14" fill="#FDECEA" stroke="#B42318" stroke-width="1.5"/>
+<text x="471.0" y="374" font-size="19" fill="#B42318" font-weight="700" text-anchor="start">取得多、赚得少</text>
+<text x="471.0" y="402" font-size="14" fill="#5B6B7F" font-weight="700" text-anchor="start">大额提取账户价值</text>
+<text x="471.0" y="424" font-size="16" fill="#1F2A37" font-weight="400" text-anchor="start">账户变小，保险成本反而升高</text>
+<text x="471.0" y="458" font-size="14" fill="#5B6B7F" font-weight="700" text-anchor="start">投资回报低于预期</text>
+<text x="471.0" y="480" font-size="16" fill="#1F2A37" font-weight="400" text-anchor="start">演示件里的较低回报情景可能才是现实</text>
+<text x="40" y="558" font-size="22" fill="#12355B" font-weight="700" text-anchor="start">钱在账户里怎么流</text>
+<rect x="40" y="576" width="820" height="129" rx="14" fill="#EAF1F8" stroke="#2F5D8A" stroke-width="1.5"/>
+<text x="58" y="610" font-size="20" fill="#2F5D8A" font-weight="700" text-anchor="start">进：你缴的保费</text>
+<circle cx="64" cy="639" r="3.2" fill="#2F5D8A"/>
+<text x="76" y="644" font-size="17" fill="#1F2A37" font-weight="400" text-anchor="start">先扣省级保费税等费用</text>
+<circle cx="64" cy="671" r="3.2" fill="#2F5D8A"/>
+<text x="76" y="676" font-size="17" fill="#1F2A37" font-weight="400" text-anchor="start">剩下的进入账户价值</text>
+<line x1="450" y1="707" x2="450" y2="734" stroke="#5B6B7F" stroke-width="2.5"/>
+<path d="M442,731 L458,731 L450,743 Z" fill="#5B6B7F"/>
+<text x="466" y="726" font-size="15" fill="#5B6B7F" font-weight="500" text-anchor="start">每月从账户里扣</text>
+<rect x="40" y="745" width="820" height="160" rx="14" fill="#FDECEA" stroke="#B42318" stroke-width="1.5"/>
+<text x="58" y="779" font-size="20" fill="#B42318" font-weight="700" text-anchor="start">出：保险成本与费用</text>
+<circle cx="64" cy="808" r="3.2" fill="#B42318"/>
+<text x="76" y="813" font-size="17" fill="#1F2A37" font-weight="400" text-anchor="start">保险成本按净风险保额算：身故给付减账户价值</text>
+<circle cx="64" cy="840" r="3.2" fill="#B42318"/>
+<text x="76" y="845" font-size="17" fill="#1F2A37" font-weight="400" text-anchor="start">逐年更新成本（YRT）随年龄上涨，后期可能涨得很快</text>
+<circle cx="64" cy="871" r="3.2" fill="#B42318"/>
+<text x="76" y="876" font-size="17" fill="#1F2A37" font-weight="400" text-anchor="start">部分合同允许保险公司在上限内调整保险成本费率</text>
+<line x1="450" y1="908" x2="450" y2="935" stroke="#5B6B7F" stroke-width="2.5"/>
+<path d="M442,932 L458,932 L450,944 Z" fill="#5B6B7F"/>
+<text x="466" y="927" font-size="15" fill="#5B6B7F" font-weight="500" text-anchor="start">剩下的钱去投资</text>
+<rect x="40" y="946" width="820" height="129" rx="14" fill="#E6F4F3" stroke="#0E7C7B" stroke-width="1.5"/>
+<text x="58" y="980" font-size="20" fill="#0E7C7B" font-weight="700" text-anchor="start">变：投资结果</text>
+<circle cx="64" cy="1009" r="3.2" fill="#0E7C7B"/>
+<text x="76" y="1014" font-size="17" fill="#1F2A37" font-weight="400" text-anchor="start">日息、保证投资、指数或基金联动账户，各有保底或没有保底</text>
+<circle cx="64" cy="1040" r="3.2" fill="#0E7C7B"/>
+<text x="76" y="1045" font-size="17" fill="#1F2A37" font-weight="400" text-anchor="start">回报下降时，账户长得慢，保险成本还因净风险保额高而偏高，两头一起挤</text>
+<line x1="450" y1="1077" x2="450" y2="1104" stroke="#5B6B7F" stroke-width="2.5"/>
+<path d="M442,1101 L458,1101 L450,1113 Z" fill="#5B6B7F"/>
+<text x="466" y="1096" font-size="15" fill="#5B6B7F" font-weight="500" text-anchor="start">结果反映在余额上</text>
+<rect x="40" y="1115" width="820" height="129" rx="14" fill="#FFF4E5" stroke="#B45309" stroke-width="1.5"/>
+<text x="58" y="1149" font-size="20" fill="#B45309" font-weight="700" text-anchor="start">余额：账户价值</text>
+<circle cx="64" cy="1178" r="3.2" fill="#B45309"/>
+<text x="76" y="1183" font-size="17" fill="#1F2A37" font-weight="400" text-anchor="start">账户价值足够：保单维持，还可能停缴保费靠账户自己付</text>
+<circle cx="64" cy="1209" r="3.2" fill="#B45309"/>
+<text x="76" y="1214" font-size="17" fill="#1F2A37" font-weight="400" text-anchor="start">账户价值不够扣：要追加缴费，否则保单可能失效</text>
+<rect x="40" y="1266" width="820" height="160" rx="14" fill="#FFF4E5" stroke="#B45309" stroke-width="1.5"/>
+<text x="58" y="1300" font-size="20" fill="#B45309" font-weight="700" text-anchor="start">最容易弄错</text>
+<circle cx="64" cy="1329" r="3.2" fill="#B45309"/>
+<text x="76" y="1334" font-size="17" fill="#1F2A37" font-weight="400" text-anchor="start">「按最初演示付款，就不可能失效」：演示是假设，回报、扣费变了结果就变。</text>
+<circle cx="64" cy="1360" r="3.2" fill="#B45309"/>
+<text x="76" y="1365" font-size="17" fill="#1F2A37" font-weight="400" text-anchor="start">「缴了这么多年，钱一定够了」：要看账户价值和今后的扣费，不看已缴多少年。</text>
+<circle cx="64" cy="1392" r="3.2" fill="#B45309"/>
+<text x="76" y="1397" font-size="17" fill="#1F2A37" font-weight="400" text-anchor="start">「YRT 前期便宜，就一直便宜」：逐年更新成本越往后越贵。</text>
+<line x1="40" y1="1452" x2="860" y2="1452" stroke="#D5DEE8" stroke-width="1.5"/>
+<text x="40" y="1477" font-size="15" fill="#5B6B7F" font-weight="700" text-anchor="start">来源</text>
+<text x="40" y="1499" font-size="14" fill="#5B6B7F" font-weight="400" text-anchor="start">FSRA · Observed Practices in the Distribution and Sale of Universal Life Insurance</text>
+<text x="40" y="1522" font-size="14" fill="#5B6B7F" font-weight="400" text-anchor="start">FCAC · Life insurance（canada.ca）</text>
+<text x="40" y="1544" font-size="14" fill="#5B6B7F" font-weight="400" text-anchor="start">本站讲解页「万能寿险」三要素与账户价值两节</text>
+<text x="40" y="1572" font-size="14" fill="#5B6B7F" font-weight="400" text-anchor="start">FSRA 是安大略监管材料，这里只用于说明产品机制与风险，不把该省执业规则推广到 BC。每年看一次保单年度报告，具体保证与</text>
+<text x="40" y="1593" font-size="14" fill="#5B6B7F" font-weight="400" text-anchor="start">费用以合同为准。</text>
+</svg>
